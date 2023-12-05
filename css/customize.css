@@ -50,3 +50,41 @@ html {
 img {
     display: block;
 }
+
+.button__fill {
+    background-color: #ff5c00;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 0 30px;
+    line-height: 60px;
+    border-radius: var(--curve);
+    width: 170px;
+    transition: all .5s;
+}
+
+
+.button__fill:hover {
+    border: 1px solid #ff5c00;
+    background-color: transparent;
+    color: #ff5c00;
+}
+
+.button__stroke {
+    background-color: transparent;
+    color:#ff5c00;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid #ff5c00;
+    padding: 0 30px;
+    line-height: 60px;
+    border-radius: var(--curve);
+    width: 170px;
+    transition: all .5s;
+}
+
+.button__stroke:hover {
+    color:#fff;
+    background-color: #ff5c00;
+}

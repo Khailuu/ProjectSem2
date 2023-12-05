@@ -127,7 +127,7 @@ header input {
 .gg-sun,
 .gg-sun:after,
 .gg-sun:before {
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .gg-sun:after,
@@ -232,6 +232,7 @@ input:checked + .mode-container i.gg-moon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 
 .colection .colection__content h3 a {
@@ -316,6 +317,10 @@ input:checked + .mode-container i.gg-moon {
   border-radius: var(--curve);
 }
 
+.products .products__content .product__img {
+  position: relative;
+}
+
 .products .products__content img {
   border-radius: var(--curve);
 
@@ -325,4 +330,83 @@ input:checked + .mode-container i.gg-moon {
 .products .products__content .col-4:nth-child(2),
 .products .products__content .col-4:nth-child(3) {
   margin-bottom: 30px;
+}
+
+.products .products__content .product__bottom span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #000;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.products .products__content .product__bottom span:first-child {
+  background-color: bisque;
+}
+
+.products .products__content .product__bottom span:nth-child(2){
+  background-color: burlywood;
+}
+.products .products__content .product__bottom span:nth-child(3){
+  background-color:aquamarine;
+}
+.products .products__content .product__bottom span:nth-child(4){
+  background-color:lightskyblue;
+}
+.products .products__content .product__bottom h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.products .products__content .product__bottom h3 a {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.products .products__content .product__bottom h3 a:hover {
+  color: var(--primary);
+}
+
+.products .products__content .product__bottom p:first-of-type {
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.products .products__content .product__bottom p:last-of-type {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.products .products__content .product__img .product__overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--curve);
+  transition: all .5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.products .products__content .product__img .product__overlay .button__fill {
+  margin-bottom: 30px;
+}
+
+.products .products__content .product__img:hover .product__overlay {
+  opacity: 1;
+}
+
+.products .button {
+  margin-top: 18px;
 }
