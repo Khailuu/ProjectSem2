@@ -20,3 +20,12 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+function getEle (ele) {
+    return document.querySelector(ele);
+}
+
+getEle('.nav-menu').onclick = ()=>{
+    const menu = getEle('.header__nav');
+    menu.classList.toggle('active');
+}
