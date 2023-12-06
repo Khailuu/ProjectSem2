@@ -1,8 +1,9 @@
 /* Header  */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: var(--bg-hd-color);
   height: 90px;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -27,6 +28,14 @@ header ul {
 header ul li {
   margin-right: 30px;
   list-style: none;
+  line-height: 30px;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+header .sub-menu .menu__product a:hover {
 }
 
 header ul li a {
@@ -313,7 +322,7 @@ input:checked + .mode-container i.gg-moon {
 /* Products  */
 
 .products {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
 }
 
 .products .products__content .col-4 {
@@ -325,7 +334,7 @@ input:checked + .mode-container i.gg-moon {
   box-shadow: var(--card-box-shadow);
   border: 1px solid var(--border-color-light);
   border-radius: var(--curve);
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -339,7 +348,7 @@ input:checked + .mode-container i.gg-moon {
 
 .products .products__content img {
   border-radius: var(--curve);
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .products .products__content .col-4:first-child,
@@ -364,14 +373,14 @@ input:checked + .mode-container i.gg-moon {
   background-color: bisque;
 }
 
-.products .products__content .product__bottom span:nth-child(2){
+.products .products__content .product__bottom span:nth-child(2) {
   background-color: burlywood;
 }
-.products .products__content .product__bottom span:nth-child(3){
-  background-color:aquamarine;
+.products .products__content .product__bottom span:nth-child(3) {
+  background-color: aquamarine;
 }
-.products .products__content .product__bottom span:nth-child(4){
-  background-color:lightskyblue;
+.products .products__content .product__bottom span:nth-child(4) {
+  background-color: lightskyblue;
 }
 .products .products__content .product__bottom h3 {
   font-size: 16px;
@@ -382,7 +391,7 @@ input:checked + .mode-container i.gg-moon {
 .products .products__content .product__bottom h3 a {
   color: var(--title-color);
   text-decoration: none;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .products .products__content .product__bottom h3 a:hover {
@@ -409,7 +418,7 @@ input:checked + .mode-container i.gg-moon {
   align-items: center;
   justify-content: center;
   border-radius: var(--curve);
-  transition: all .5s;
+  transition: all 0.5s;
   cursor: pointer;
   opacity: 0;
 }
@@ -427,12 +436,123 @@ input:checked + .mode-container i.gg-moon {
 }
 
 .products hr {
-  border: .2px solid var(--text-color);
+  border: 0.2px solid var(--text-color);
   margin-top: 24px;
 }
 
+/* Footer  */
+footer {
+  background-image: url(../imgs/footer.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+}
+
+footer h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+footer ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+footer ul li a {
+  color: #f8f8f8;
+  text-transform: capitalize;
+}
+
+footer .footer__mail {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+footer .footer__mail input {
+  height: 50px;
+  width: 100%;
+  border-radius: var(--curve);
+  padding-left: 15px;
+  border: none;
+}
+
+footer .footer__mail i {
+  position: absolute;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary);
+  border-top-right-radius: var(--curve);
+  border-bottom-right-radius: var(--curve);
+  line-height: 50px;
+  text-align: center;
+  right: 0;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer .footer__link li a {
+  transition: all 0.5s;
+}
+
+footer .footer__link li:hover a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
 /* Responsive */
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 1200px) {
+  header .sub-menu li {
+    position: relative;
+  }
+
+  header .sub-menu li:nth-child(2):hover .menu__product {
+    display: flex;
+  }
+
+  header .sub-menu li:nth-child(2) i {
+    transition: all 0.1s;
+  }
+
+  header .sub-menu li:nth-child(2):hover i {
+    transform: rotate(180deg);
+  }
+
+  header .menu__product {
+    position: absolute;
+    width: 222%;
+    top: 28px;
+    left: -50%;
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-hd-color);
+    padding: 20px 30px;
+    border: 1px solid var(--text-color);
+    border-radius: var(--curve);
+    cursor: pointer;
+  }
+  header .menu__product a:hover {
+    color: var(--primary);
+  }
+}
+
+@media screen and (max-width: 1200px) {
   header .nav-menu {
     display: block;
     font-size: 24px;
@@ -451,7 +571,7 @@ input:checked + .mode-container i.gg-moon {
   }
 
   header .header__nav.active {
-    display:block;
+    display: block;
     position: absolute;
     top: 90px;
     left: 0;
@@ -474,20 +594,82 @@ input:checked + .mode-container i.gg-moon {
   header .menu__product {
     display: none;
     opacity: 0;
-    transition: height all .3s, opacity all .3s;
+    transition: height all 0.3s, opacity all 0.3s;
   }
 
   header .sub-menu li:nth-child(2):hover .menu__product {
     display: block;
     opacity: 1;
-    transition: height all .3s, opacity all .3s;
+    transition: height all 0.3s, opacity all 0.3s;
   }
+
+  /* Footer  */
+  footer .footer__content .footer__link {
+    display: none;
+  }
+
+  footer .footer__content h2 {
+    cursor: pointer;
+  }
+
+  footer .footer__content .footer__link.active {
+    display: block;
+  }
+
+  footer .footer__content .col-xl-4:first-child {
+    margin-bottom: 0 !important;
+  }
+  
+  footer .btn-footer i {
+    font-size: 14px;
+  }
+
+  .footer__link {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .footer__link.active {
+    max-height: 100px; /* Adjust the value based on your content height */
+  }
+  
+  .fa-angle-down {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-angle-down.active {
+    transform: rotate(180deg);
+    color: #fff;
+  }
+  
+
 }
 
+@media screen and (max-width: 991px) {
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header .header__nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  header img {
+    width: 200px;
+  }
+  header .header__link i {
+    font-weight: bold;
+    margin-left: 8px;
+    color: var(--title-color);
   }
 }
 

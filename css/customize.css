@@ -57,10 +57,9 @@ img {
     text-transform: uppercase;
     font-size: 16px;
     border: 1px solid transparent;
-    padding: 0 30px;
-    line-height: 60px;
+    line-height: 50px;
     border-radius: var(--curve);
-    width: 170px;
+    width: 160px;
     transition: all .5s;
 }
 
@@ -77,10 +76,9 @@ img {
     text-transform: uppercase;
     font-size: 16px;
     border: 1px solid #ff5c00;
-    padding: 0 30px;
-    line-height: 60px;
+    line-height: 50px;
     border-radius: var(--curve);
-    width: 170px;
+    width: 160px;
     transition: all .5s;
 }
 
