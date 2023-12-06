@@ -101,13 +101,33 @@
               <span class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline">/</span>
               <a href="" class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline">Signup</a>
             </li>
-            <li class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline">
-              <i class="fa-solid fa-magnifying-glass d-xl-none d-lg-inline d-md-inline d-sm-inline d-"></i>
+            <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+              <div class="search-right">
+                <span><a href="#search" class="search-search" title="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a></span>
+                <div id="search" class="pop-overlay">
+                  <div class="popup">
+                    <form action="" method="GET" class="search-box d-sm-flex">
+                      <input
+                        type="search"
+                        placeholder="Enter Keyword"
+                        name="s"
+                        required="required"
+                        autofocus=""
+                      />
+                      <button type="submit" class="btn">Search</button>
+                    </form>
+                    <a class="close" href="#close">×</a>
+                  </div>
+                </div>
+              </div>
+              
             </li>
           </ul>
         </div>
         <div class="col-3 header__link">
-          <i class="fa-solid fa-magnifying-glass d-none d-xl-inline"></i>
+          
           <i class="fa-solid fa-cart-shopping"></i>
           <a href="" class="d-none d-xl-inline">Login</a>
           <span class="d-none d-xl-inline">/</span>
@@ -370,7 +390,7 @@
     <div class="container">
       <div class="footer__content">
         <div class="row">
-          <div class="col-xl-12 col-md-6">
+          <div class="col-xl-12 col-md-6 col-sm-6">
             <div class="row row__up ">
               <div class="col-xl-4 mb-3">
                 <h2 class="btn-footer">about us
@@ -382,7 +402,7 @@
                     <a href="">Art & Culture</a>
                   </li>
                   <li>
-                    <a href="">careers</a>
+                    <a href="">care ers</a>
                   </li>
                   <li>
                     <a href="">FAQs</a>
@@ -419,7 +439,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-12 col-md-6">
+          <div class="col-xl-12 col-md-6 col-sm-6">
             <div class="row">
               <div class="col-xl-4">
                 <h2 class="btn-footer">return & cancellations
