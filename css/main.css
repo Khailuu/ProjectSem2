@@ -454,6 +454,10 @@ input:checked + .mode-container i.gg-moon {
   transform: translateY(-0.5rem);
 }
 
+.products .products__content .bg__product:hover a {
+  color: var(--primary);
+}
+
 .products .products__content .product__img {
   position: relative;
 }
@@ -630,6 +634,7 @@ footer .footer__link li:hover a {
 
 /* Responsive */
 @media screen and (min-width: 1200px) {
+  
   header .sub-menu li {
     position: relative;
   }
@@ -663,8 +668,12 @@ footer .footer__link li:hover a {
     color: var(--primary);
   }
 }
-
+/* <= 1200 px  */
 @media screen and (max-width: 1200px) {
+  header  .header__mobile{
+    width: 90%;
+    margin: 0 auto;
+  }
   header .nav-menu {
     display: block;
     font-size: 24px;
@@ -677,6 +686,60 @@ footer .footer__link li:hover a {
   }
   header .header__nav {
     display: none;
+    overflow: hidden;
+    
+  }
+
+
+
+  header .menu__product {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    background-color: var(--bg-hd-color);
+    bottom:0;
+    top: 72px;
+  }
+
+  header .menu__product li{
+    cursor: pointer;
+  }
+  
+  header .menu__product li:hover a {
+    color: var(--primary);
+  }
+
+  header .menu__product.active {
+    display: block;
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul.sub-menu > li:nth-child(2) {
+    margin-bottom: 0 !important;
+  }
+
+  header ul.sub-menu > li:nth-child(3) {
+    margin-top: 16px;
+  }
+
+  header ul.menu__product{
+    width: 100%;
+  }
+
+  header ul.menu__product li {
+    margin-bottom: 16px !important;
+    width: 100%;
+  }
+
+  header ul.menu__product li:first-child {
+    margin-top: 16px;
+  }
+
+  header ul.menu__product li:last-child {
+    margin-bottom: 0 !important;
   }
 
   header .col-6 {
@@ -758,6 +821,20 @@ footer .footer__link li:hover a {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header .header__nav {
+    display: none;
+    width: 50vw;
+    height:100vh;
+    align-items: flex-start;
+  }
+
+  header ul {
+    align-items: flex-start;
+  }
+
+}
+
 @media screen and (max-width: 991px) {
   footer h2 {
     font-size: 20px;
@@ -771,6 +848,12 @@ footer .footer__link li:hover a {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header .header__nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header .header__mobile {
+    width: 100%
   }
 }
 

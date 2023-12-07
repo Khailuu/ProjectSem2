@@ -1,6 +1,7 @@
 :root {
     --bg-hd-color: #fff;
     --bg-color: #fff;
+    --bg-gray-color: #efefef;
     --title-color: #000;
     --primary: #ff5c00;
     --bg-color-light: #fff;
@@ -15,9 +16,11 @@
 [data-theme="dark"] {
     --bg-hd-color: #000;
     --bg-color: #131617;
+    --bg-gray-color: #131617;
     --title-color: #fff;
     --light-bg-color: #191c1d;
-    --text-color: #7b7b7b;    --border-color-light: #333;
+    --text-color: #7b7b7b;   
+    --border-color-light: #333;
 }
   
 *{
@@ -41,6 +44,7 @@ html {
     color: var(--primary);
     text-align: center;
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 .section__padding {

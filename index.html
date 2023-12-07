@@ -30,7 +30,7 @@
 
 <body>
   <header class="d-flex align-items-center">
-    <div class="container-fluid">
+    <div class="container-fluid header__mobile">
       <div class="row align-items-center">
         <div class="col-3 nav-menu">
           <i class="fa-solid fa-bars-staggered"></i>
@@ -43,46 +43,48 @@
             <li>
               <a class="active" href="">Home</a>
             </li>
-            <li>
-              <a href=""><span>products</span>
+            <li >
+              <a id="btn__product" href=""><span>products</span>
                 <i class="fa-solid fa-chevron-down"></i>
-                <ul class="menu__product">
-                  <li class=""><a href="">
-
-                    Living Room
+                
+              </a>
+              <ul class="menu__product">
+                <li>
+                  <a href="">
+                    living room
                   </a>
                 </li>
-                  <li class=""><a href="">
-
-                    Dining Room
+                <li>
+                  <a href="">
+                    dining room
                   </a>
                 </li>
-                  <li class=""><a href="">
-
-                    Kitchen Room</li>
-                  </a>
-                  <li class=""><a href="">
-
-                    Bedding Room
+                <li>
+                  <a href="">
+                    kitchen room
                   </a>
                 </li>
-                  <li class=""><a href="">
-
-                    Bath Room
+                <li>
+                  <a href="">
+                    bedding room
                   </a>
-                  </li>
-                  <li class=""><a href="">
-
-                    Outdoor
+                </li>
+                <li>
+                  <a href="">
+                    bath room
                   </a>
-                  </li>
-                  <li class=""><a href="">
-
+                </li>
+                <li>
+                  <a href="">
+                    outdoor
+                  </a>
+                </li>
+                <li>
+                  <a href="">
                     lighting
                   </a>
                 </li>
-                </ul>
-              </a>
+              </ul>
             </li>
             <li>
               <a href="">collection</a>
@@ -104,30 +106,23 @@
             <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
               <div class="search-right">
                 <span><a href="#search" class="search-search" title="search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a></span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a></span>
                 <div id="search" class="pop-overlay">
                   <div class="popup">
                     <form action="" method="GET" class="search-box d-sm-flex">
-                      <input
-                        type="search"
-                        placeholder="Enter Keyword"
-                        name="s"
-                        required="required"
-                        autofocus=""
-                      />
+                      <input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus="" />
                       <button type="submit" class="btn">Search</button>
                     </form>
                     <a class="close" href="#close">×</a>
                   </div>
                 </div>
               </div>
-              
             </li>
           </ul>
         </div>
         <div class="col-3 header__link">
-          
+
           <i class="fa-solid fa-cart-shopping"></i>
           <a href="" class="d-none d-xl-inline">Login</a>
           <span class="d-none d-xl-inline">/</span>
@@ -475,7 +470,7 @@
                 </h2>
                 <div class="footer__mail">
                   <input type="mail" placeholder="email" required>
-                <i class="fa-regular fa-paper-plane"></i>
+                  <i class="fa-regular fa-paper-plane"></i>
                 </div>
                 <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
               </div>

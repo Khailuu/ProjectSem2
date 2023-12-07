@@ -65,3 +65,10 @@ btnFooters.forEach((btnFooter, index) => {
     });
   };
 });
+
+
+getEle('#btn__product').onclick = ()=> {
+  const menuProduct = getEle('.menu__product');
+
+  menuProduct.classList.toggle('active');
+}
