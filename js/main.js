@@ -1,3 +1,4 @@
+// Change theme
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
@@ -32,54 +33,52 @@ function getEleAll(ele) {
 }
 
 getEle(".nav-menu").onclick = () => {
-  const overlay = getEle('.overlay__menu');
+  const overlay = getEle(".overlay__menu");
   const menu = getEle(".header__nav");
   menu.classList.toggle("active");
   overlay.classList.toggle("active");
 };
 
-getEle('.overlay__menu').onclick = () => {
+getEle(".overlay__menu").onclick = () => {
   const menu = getEle(".header__nav");
   menu.classList.toggle("active");
-  getEle('.overlay__menu.active').classList.remove('active');
-}
+  getEle(".overlay__menu.active").classList.remove("active");
+};
 
-const btnFooters = document.querySelectorAll('.btn-footer');
-const footerLinks = document.querySelectorAll('.footer__link');
-const icons = document.querySelectorAll('.fa-angle-down');
+const btnFooters = document.querySelectorAll(".btn-footer");
+const footerLinks = document.querySelectorAll(".footer__link");
+const icons = document.querySelectorAll(".fa-angle-down");
 
 btnFooters.forEach((btnFooter, index) => {
   btnFooter.onclick = function () {
     const currentFooterLink = footerLinks[index];
     const currentIcon = icons[index];
-    
+
     // Close all other footer__link elements
     footerLinks.forEach((link, i) => {
-      if (i !== index && link.classList.contains('active')) {
-        link.classList.remove('active');
+      if (i !== index && link.classList.contains("active")) {
+        link.classList.remove("active");
       }
     });
 
     // Toggle active class for the clicked footer__link
-    currentFooterLink.classList.toggle('active');
+    currentFooterLink.classList.toggle("active");
 
     // Rotate icons
     icons.forEach((icon, i) => {
       if (i === index) {
-        icon.classList.toggle('active');
+        icon.classList.toggle("active");
       } else {
-        icon.classList.remove('active');
+        icon.classList.remove("active");
       }
     });
   };
 });
 
+getEle("#btn__product").onclick = () => {
+  const menuProduct = getEle(".menu__product");
+  const iconNav = getEle(".fa-chevron-down");
 
-getEle('#btn__product').onclick = ()=> {
-  const menuProduct = getEle('.menu__product');
-  const iconNav = getEle('.fa-chevron-down');
-
-
-  iconNav.classList.toggle('active')
-  menuProduct.classList.toggle('active');
-}
+  iconNav.classList.toggle("active");
+  menuProduct.classList.toggle("active");
+};

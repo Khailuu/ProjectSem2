@@ -1,0 +1,141 @@
+.bar {
+    background-color: var(--bg-gray-color);
+    padding: 15px 0;
+}
+
+.bar span:last-child {
+    color: var(--primary);
+}
+
+.bar span:first-child,
+.bar span:nth-child(2) {
+    color: var(--title-color);
+}
+
+.faq {
+    background-color: var(--bg-hd-color);
+}
+
+.faq.section__padding {
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+.faq .question__right,
+.faq .question__left {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.faq .question__right {
+  padding-left: 3rem;
+  padding-right: 15px;
+}
+
+.faq .question__left img {
+  border-radius: var(--curve);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.faq .question__left img:hover {
+  transform: var(--transformY);
+  transition: 0.3s ease-in-out;
+}
+
+.faq .question__right ul {
+  padding-left: 0;
+}
+
+.faq .question__right ul li {
+  list-style: none;
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid var(--text-color);
+  margin: 0 0 15px 0;
+  border-radius: var(--curve);
+  background: var(--bg-color);
+}
+
+.faq .question__right ul li h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: normal;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: var(--title-color);
+}
+
+.faq .question__right ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 16px;
+}
+
+.faq .question__right ul li i::before,
+.faq .question__right ul li i::after {
+  content: "";
+  position: absolute;
+  background-color: var(--title-color);
+  width: 3px;
+  height: 9px;
+}
+
+.faq .question__right ul li i::before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.faq .question__right ul li i::after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.faq .question__right ul li p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  margin-bottom: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.faq .question__right input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+}
+
+.faq .question__right input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.faq .question__right i {
+    transition: transform 0.1s ease-in-out;
+}
+
+.faq .question__right input[type="checkbox"]:not(:checked) ~ i {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 991px) {
+    .faq .question__right {
+        padding-left: 15px;
+    }
+}
