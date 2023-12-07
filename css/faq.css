@@ -7,9 +7,15 @@
     color: var(--primary);
 }
 
-.bar span:first-child,
+.bar span:first-child a,
 .bar span:nth-child(2) {
     color: var(--title-color);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.bar span:first-child a:hover {
+  color: var(--primary);
 }
 
 .faq {
@@ -17,8 +23,7 @@
 }
 
 .faq.section__padding {
-    padding-top: 16px;
-    padding-bottom: 48px;
+    
 }
 
 .faq .question__right,

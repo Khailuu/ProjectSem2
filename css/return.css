@@ -1,0 +1,39 @@
+.bar {
+  background-color: var(--bg-gray-color);
+  padding: 15px 0;
+}
+
+.bar span:last-child {
+  color: var(--primary);
+}
+
+.bar span:first-child a,
+.bar span:nth-child(2) {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.bar span:first-child a:hover {
+  color: var(--primary);
+}
+
+.return {
+  background-color: var(--bg-hd-color);
+}
+
+.return h3 {
+  color: var(--title-color)
+}
+
+.return p {
+  color: var(--text-color);
+}
+
+.return li::marker {
+  color: var(--text-color);
+}
+
+.return ul {
+    transform: translateX(30px);
+}
