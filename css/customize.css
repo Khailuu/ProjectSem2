@@ -35,10 +35,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.active {
-    color: var(--primary);
+a.active {
+    color: #ff5c00;
 }
-
 .title h2 {
     font-size: 48px;
     color: var(--primary);

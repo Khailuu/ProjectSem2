@@ -69,6 +69,9 @@ btnFooters.forEach((btnFooter, index) => {
 
 getEle('#btn__product').onclick = ()=> {
   const menuProduct = getEle('.menu__product');
+  const iconNav = getEle('.fa-chevron-down');
 
+
+  iconNav.classList.toggle('active')
   menuProduct.classList.toggle('active');
 }

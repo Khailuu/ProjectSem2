@@ -156,7 +156,7 @@ header ul li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 header ul li a:hover {
@@ -686,7 +686,6 @@ footer .footer__link li:hover a {
   }
   header .header__nav {
     display: none;
-    overflow: hidden;
     
   }
 
@@ -694,11 +693,13 @@ footer .footer__link li:hover a {
 
   header .menu__product {
     display: none;
-    position: absolute;
+    /* position: absolute;
     z-index: 10000;
     background-color: var(--bg-hd-color);
     bottom:0;
-    top: 72px;
+    top: 0;
+    width: 50%;
+    height: 50%; */
   }
 
   header .menu__product li{
@@ -727,6 +728,28 @@ footer .footer__link li:hover a {
 
   header ul.menu__product{
     width: 100%;
+  }
+
+  header ul.menu__product.active {
+    display: block;
+    z-index:10000
+  }
+
+header ul.sub-menu li {
+  cursor: pointer;
+  
+}
+
+.fa-chevron-down {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-chevron-down.active {
+  transform: rotate(180deg);
+}
+
+  header ul.sub-menu > li:hover > a {
+    color: var(--primary);
   }
 
   header ul.menu__product li {
@@ -761,22 +784,24 @@ footer .footer__link li:hover a {
   header .header__nav.active ul li {
     margin-bottom: 15px;
   }
-
+  header span {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
   header .header__nav.active ul li span {
     color: var(--title-color);
   }
 
   header .menu__product {
     display: none;
-    opacity: 0;
     transition: height all 0.3s, opacity all 0.3s;
   }
 
-  header .sub-menu li:nth-child(2):hover .menu__product {
+  /* header .sub-menu li:nth-child(2):hover .menu__product {
     display: block;
     opacity: 1;
     transition: height all 0.3s, opacity all 0.3s;
-  }
+  } */
 
   /* Footer  */
   footer .footer__content .footer__link {
