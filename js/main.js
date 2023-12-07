@@ -32,9 +32,17 @@ function getEleAll(ele) {
 }
 
 getEle(".nav-menu").onclick = () => {
+  const overlay = getEle('.overlay__menu');
   const menu = getEle(".header__nav");
   menu.classList.toggle("active");
+  overlay.classList.toggle("active");
 };
+
+getEle('.overlay__menu').onclick = () => {
+  const menu = getEle(".header__nav");
+  menu.classList.toggle("active");
+  getEle('.overlay__menu.active').classList.remove('active');
+}
 
 const btnFooters = document.querySelectorAll('.btn-footer');
 const footerLinks = document.querySelectorAll('.footer__link');
