@@ -1,3 +1,4 @@
+
 .bar {
   background-color: var(--bg-gray-color);
   padding: 15px 0;
@@ -36,4 +37,5 @@
 
 .return ul {
     transform: translateX(30px);
+    max-width: 79%;
 }
