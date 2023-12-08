@@ -30,6 +30,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap-4.4.1.css" />
 
+    <!-- Owl  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <!-- CSS  -->
     <link rel="stylesheet" href="./css/customize.css" />
     <link rel="stylesheet" href="./css/common.css" />
@@ -98,19 +101,19 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
-                <a
+                <span
                   href=""
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Login</a
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                  >Login</span
                 >
                 <span
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
                   >/</span
                 >
-                <a
+                <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Signup</a
+                  >Signup</span
                 >
               </li>
               <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
@@ -140,9 +143,11 @@
           </div>
           <div class="col-3 header__link">
             <i class="fa-solid fa-cart-shopping"></i>
-            <a href="" class="d-none d-xl-inline">Login</a>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Login</span
+            >
             <span class="d-none d-xl-inline">/</span>
-            <a href="" class="d-none d-xl-inline">Signup</a>
+            <span href="" class="d-none d-xl-inline">Signup</span>
             <div class="mobile-position DarkandLight d-inline-block">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">
@@ -160,6 +165,121 @@
         </div>
       </div>
     </header>
+    <!-- button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+    <!-- Wrapper  -->
+    <section id="popUp">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label for="click-checkbox">
+                <input type="checkbox" id="click-checkbox" /><span
+                  id="checkbox"
+                >
+                  Remember me
+                </span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <div class="login__social mt-3">
+              <div class="row">
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+                <div class="col-2">
+                  <span style="color: #fff">Or</span>
+                </div>
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-register">
+              <p>
+                Don't Have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label for="conditions">
+                <input type="checkbox" id="conditions" /><span id="checkbox">
+                  I agree to the terms and conditions
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <div class="login-register">
+              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- address bar -->
     <section class="bar">
       <div class="container">
@@ -194,123 +314,153 @@
         </div>
         <div class="opportunity__content">
           <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Acounting & Finance</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Acounting & Finance</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Customer Service & Sale</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Customer Service & Sale</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Distribution</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Distribution</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Engineering</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Engineering</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Human Resouces</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Human Resouces</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Internship</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Internship</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>IT</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>IT</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Legal</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Legal</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Maintenance</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Maintenance</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Manufacturing</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Manufacturing</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Marketing</p>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </a>
-            </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
-              <div class="bg__item">
-                <a href="">
-                    <p>Quality Control</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Marketing</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Supply Chain</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Quality Control</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Transpotation</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Supply Chain</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
               <div class="bg__item">
                 <a href="">
-                    <p>Other</p>
-                    <i class="fa-solid fa-chevron-right"></i>
+                  <p>Transpotation</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 opportunity__item"
+            >
+              <div class="bg__item">
+                <a href="">
+                  <p>Other</p>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </a>
               </div>
             </div>
@@ -320,59 +470,77 @@
     </section>
     <!-- Family  -->
     <section class="family section__padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                    <img src="./imgs/purpose2.webp" class="img-fluid" alt="">
-                </div>
-                <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1 col-md-12 col-sm-12 col-12">
-                    <div class="title">
-                        <h2>We’re more than just a business...We’re a family</h2>
-                        <p>As a privately held, family-owned company spanning three generations, we realize success isn’t achieved in silos. It comes from the collective talents of each of our valued teammates. That’s why when the Wanek family founded Ashely in 1945, it was built upon a strong foundation that included hard work, an unwavering commitment to excellence and a passion for innovation. Our humble roots, steeped in service to our clients, customers and more than 35,000 teammates across the globe have helped us become the largest manufacturer of furniture in the world and largest retail furniture store brand in North America.</p>
-                        <p>We know none of the success we’ve achieved would be possible without the dedication and tenacity of all our valued team members, who we consider to be an extension of our own family. As we work together to continuously improve our collective goal of being the best furniture company in the world, we invite you to become part of the family so we can win together.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+            <img src="./imgs/purpose2.webp" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1 col-md-12 col-sm-12 col-12"
+          >
+            <div class="title">
+              <h2>We’re more than just a business...We’re a family</h2>
+              <p>
+                As a privately held, family-owned company spanning three
+                generations, we realize success isn’t achieved in silos. It
+                comes from the collective talents of each of our valued
+                teammates. That’s why when the Wanek family founded Ashely in
+                1945, it was built upon a strong foundation that included hard
+                work, an unwavering commitment to excellence and a passion for
+                innovation. Our humble roots, steeped in service to our clients,
+                customers and more than 35,000 teammates across the globe have
+                helped us become the largest manufacturer of furniture in the
+                world and largest retail furniture store brand in North America.
+              </p>
+              <p>
+                We know none of the success we’ve achieved would be possible
+                without the dedication and tenacity of all our valued team
+                members, who we consider to be an extension of our own family.
+                As we work together to continuously improve our collective goal
+                of being the best furniture company in the world, we invite you
+                to become part of the family so we can win together.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Working  -->
     <section class="working section__padding">
-        <div class="container">
-            <div class="title">
-                <h2>working at COZY</h2>
-            </div>
-            <div class="working__content">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working1.svg" alt="">
-                        <p>Medical, dental & vision plans for the entire family</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working2.svg" alt="">
-                        <p>Safe & clean work spaces</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working3.svg" alt="">
-                        <p>Paid time off</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working4.svg" alt="">
-                        <p>Tuition reimbursement</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working5.svg" alt="">
-                        <p>Service awards</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
-                        <img src="./imgs/working6.svg" alt="">
-                        <p>Employee wellness programs</p>
-                    </div>
-                </div>
-                <div class="working__btn text-center mt-3">
-                    <button class="button__fill">Join Us Now</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="title">
+          <h2>working at COZY</h2>
         </div>
+        <div class="working__content owl-carousel owl-theme">
+          <div class="item">
+            <img src="./imgs/working1.svg" alt="" />
+            <p>Medical, dental & vision plans for the entire family</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working2.svg" alt="" />
+            <p>Safe & clean work spaces</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working3.svg" alt="" />
+            <p>Paid time off</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working4.svg" alt="" />
+            <p>Tuition reimbursement</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working5.svg" alt="" />
+            <p>Service awards</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working6.svg" alt="" />
+            <p>Employee wellness programs</p>
+          </div>
+        </div>
+        <div class="working__btn text-center mt-3">
+          <button class="button__fill">Join Us Now</button>
+        </div>
+      </div>
     </section>
     <!-- Footer  -->
     <footer class="section__padding">
@@ -495,6 +663,32 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap-4.4.1.js"></script>
+    <!-- Ơwl  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: false,
+        autoplay: true,
+        // autoplayTimeout: 3000,
+        smartSpeed: 800,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          500: {
+            items: 2,
+          },
+          784: {
+            items: 3,
+          },
+          1215: {
+            items: 6,
+          },
+        },
+      });
+    </script>
     <!-- main js -->
     <script src="./js/main.js"></script>
   </body>

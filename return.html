@@ -98,19 +98,19 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
-                <a
+                <span
                   href=""
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Login</a
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                  >Login</span
                 >
                 <span
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
                   >/</span
                 >
-                <a
+                <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Signup</a
+                  >Signup</span
                 >
               </li>
               <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
@@ -140,9 +140,11 @@
           </div>
           <div class="col-3 header__link">
             <i class="fa-solid fa-cart-shopping"></i>
-            <a href="" class="d-none d-xl-inline">Login</a>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Login</span
+            >
             <span class="d-none d-xl-inline">/</span>
-            <a href="" class="d-none d-xl-inline">Signup</a>
+            <span href="" class="d-none d-xl-inline">Signup</span>
             <div class="mobile-position DarkandLight d-inline-block">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">
@@ -160,6 +162,121 @@
         </div>
       </div>
     </header>
+    <!-- button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+    <!-- Wrapper  -->
+    <section id="popUp">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label for="click-checkbox">
+                <input type="checkbox" id="click-checkbox" /><span
+                  id="checkbox"
+                >
+                  Remember me
+                </span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <div class="login__social mt-3">
+              <div class="row">
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+                <div class="col-2">
+                  <span style="color: #fff">Or</span>
+                </div>
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-register">
+              <p>
+                Don't Have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label for="conditions">
+                <input type="checkbox" id="conditions" /><span id="checkbox">
+                  I agree to the terms and conditions
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <div class="login-register">
+              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- address bar -->
     <section class="bar">
       <div class="container">

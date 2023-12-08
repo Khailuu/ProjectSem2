@@ -98,19 +98,19 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
-                <a
+                <span
                   href=""
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Login</a
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                  >Login</span
                 >
                 <span
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
                   >/</span
                 >
-                <a
+                <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Signup</a
+                  >Signup</span
                 >
               </li>
               <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
@@ -140,9 +140,11 @@
           </div>
           <div class="col-3 header__link">
             <i class="fa-solid fa-cart-shopping"></i>
-            <a href="" class="d-none d-xl-inline">Login</a>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Login</span
+            >
             <span class="d-none d-xl-inline">/</span>
-            <a href="" class="d-none d-xl-inline">Signup</a>
+            <span href="" class="d-none d-xl-inline">Signup</span>
             <div class="mobile-position DarkandLight d-inline-block">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">
@@ -160,6 +162,121 @@
         </div>
       </div>
     </header>
+    <!-- button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+    <!-- Wrapper  -->
+    <section id="popUp">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label for="click-checkbox">
+                <input type="checkbox" id="click-checkbox" /><span
+                  id="checkbox"
+                >
+                  Remember me
+                </span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <div class="login__social mt-3">
+              <div class="row">
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+                <div class="col-2">
+                  <span style="color: #fff">Or</span>
+                </div>
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-register">
+              <p>
+                Don't Have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label for="conditions">
+                <input type="checkbox" id="conditions" /><span id="checkbox">
+                  I agree to the terms and conditions
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <div class="login-register">
+              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- address bar -->
     <section class="bar">
       <div class="container">
@@ -172,10 +289,14 @@
     <section class="faq section__padding">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-0 offset-lg-0 offset-md-3 offset-sm-3 question__left">
+          <div
+            class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-6 offset-xl-0 offset-lg-0 offset-md-3 offset-sm-3 question__left"
+          >
             <img class="img-fluid" src="./imgs/faqs.jpg" alt="" />
           </div>
-          <div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12 question__right">
+          <div
+            class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12 question__right"
+          >
             <ul>
               <li>
                 <input type="checkbox" checked="" />
@@ -290,69 +411,68 @@
                   deemed by FIT to be faulty a new item will be provided. All
                   other warranties, express or implied, are excluded.
                 </p>
+                <p style="font-weight: bold">How long is your warranty?</p>
+                <p>All FIT’s products are backed by a three year warranty.</p>
                 <p style="font-weight: bold">
-                    How long is your warranty?
+                  What do I do if I have a problem with a FIT product?
                 </p>
                 <p>
-                    All FIT’s products are backed by a three year warranty.
-                </p>
-                <p style="font-weight: bold">
-                    What do I do if I have a problem with a FIT product?
-                </p>
-                <p>
-                    We will help you with any queries after your purchase. Contact us at hello@fit-furniture.com if you require any assistance with your product after purchase.
+                  We will help you with any queries after your purchase. Contact
+                  us at hello@fit-furniture.com if you require any assistance
+                  with your product after purchase.
                 </p>
               </li>
               <li>
                 <input type="checkbox" checked="" />
                 <i class="fa-solid fa-chevron-down"></i>
                 <h2>Pricing</h2>
+                <p style="font-weight: bold">Are your prices in Euro (€)?</p>
+                <p>All prices are in Euro (€).</p>
+                <p style="font-weight: bold">Do your prices include VAT?</p>
+                <p>All prices include your country specific VAT.</p>
                 <p style="font-weight: bold">
-                    Are your prices in Euro (€)?
+                  What payment methods do you offer?
                 </p>
-                <p>
-                    All prices are in Euro (€).
-                </p>
-                <p style="font-weight: bold">
-                    Do your prices include VAT?
-                </p>
-                <p>
-                    All prices include your country specific VAT.
-                </p>
-                <p style="font-weight: bold">
-                    What payment methods do you offer?
-                </p>
-                <p>
-                    FIT accepts major credit cards, Paypal and Apple Pay. 
-                </p>
+                <p>FIT accepts major credit cards, Paypal and Apple Pay.</p>
               </li>
               <li>
                 <input type="checkbox" checked="" />
                 <i class="fa-solid fa-chevron-down"></i>
                 <h2>Assembly</h2>
                 <p style="font-weight: bold">
-                    How do I assemble my FIT product(s)?
+                  How do I assemble my FIT product(s)?
                 </p>
                 <p>
-                    Each FIT product family is assembled differently. You will receive a set of intuitive and easy to follow instructions that guide you through the assembly process for your specific furniture piece. It’s advisable that you have someone to assist during assembly. 
+                  Each FIT product family is assembled differently. You will
+                  receive a set of intuitive and easy to follow instructions
+                  that guide you through the assembly process for your specific
+                  furniture piece. It’s advisable that you have someone to
+                  assist during assembly.
                 </p>
                 <p style="font-weight: bold">
-                    What will I need to assemble my FIT product?
+                  What will I need to assemble my FIT product?
                 </p>
                 <p>
-                    FIT furniture need only be assembled by hand. But securing shelves to the wall will require a drill and screwdriver. For safety reasons, securing tall shelf units to the wall is advisable. 
+                  FIT furniture need only be assembled by hand. But securing
+                  shelves to the wall will require a drill and screwdriver. For
+                  safety reasons, securing tall shelf units to the wall is
+                  advisable.
                 </p>
                 <p style="font-weight: bold">
-                    How long will it take to assemble my FIT product?
+                  How long will it take to assemble my FIT product?
                 </p>
                 <p>
-                    This depends on the product you have purchased, however we have planned that assembly is a quick and simple process. 
+                  This depends on the product you have purchased, however we
+                  have planned that assembly is a quick and simple process.
                 </p>
                 <p style="font-weight: bold">
-                    Can I dissemble my FIT furniture for transportation?
+                  Can I dissemble my FIT furniture for transportation?
                 </p>
                 <p>
-                    Absolutely, FIT furniture can be easily disassembled for easy transportation. We do recommend you take care when disassembling your furniture though, as rough handling may lead to chipping or denting of your FIT product.  
+                  Absolutely, FIT furniture can be easily disassembled for easy
+                  transportation. We do recommend you take care when
+                  disassembling your furniture though, as rough handling may
+                  lead to chipping or denting of your FIT product.
                 </p>
               </li>
             </ul>
