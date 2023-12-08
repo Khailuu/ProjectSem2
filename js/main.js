@@ -1,14 +1,13 @@
-// Change theme
-const toggleSwitch = document.querySelector(
-  '.theme-switch input[type="checkbox"]'
-);
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem("theme");
+const logo = document.querySelector('.change__logo'); // Corrected selector
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
+    changeLogo("dark"); // Add this line to change logo on page load if theme is dark
   }
 }
 
@@ -16,9 +15,20 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
+    changeLogo("dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
+    changeLogo("light");
+  }
+}
+
+function changeLogo(theme) {
+  if (theme === "dark") {
+    logo.src = "./imgs/logo__bgblack.png";
+  } else {
+    // Change this to the path for the light theme logo
+    logo.src = "./imgs/logo__bgwhite.png";
   }
 }
 
