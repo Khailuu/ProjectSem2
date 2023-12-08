@@ -245,7 +245,9 @@ input:checked + .mode-container i.gg-moon {
   position: absolute;
   /* display: none; */
   top: 0%;
+  
   transform: translateX(400px);
+  -webkit-transform: translateX(400px);
 
 }
 .wrapper .register h2 {
@@ -270,14 +272,18 @@ input:checked + .mode-container i.gg-moon {
   z-index: 1000;
   margin: 0 auto;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transition: height 0.5s ease;
   transform: scale(0);
+  -webkit-transform: scale(0);
 }
 .wrapper.active-popup,
 .wrapper.active-popup.active {
   transform: scale(1);
+  -webkit-transform: scale(1);
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 .wrapper.active {
   height: 520px;
@@ -285,11 +291,13 @@ input:checked + .mode-container i.gg-moon {
 .wrapper.active .form-box.login {
   /* transition: none; */
   transform: translateX(-400px);
+  -webkit-transform: translateX(-400px);
   display: none;
   transition: transform 0.4s ease;
 }
 .wrapper.active .form-box.register {
   transform: translate(0);
+  -webkit-transform: translate(0);
   /* transform: translate(400px, -50%); */
 
   transition: transform 0.4s ease;
