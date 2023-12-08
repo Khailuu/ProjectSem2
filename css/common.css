@@ -264,6 +264,7 @@ input:checked + .mode-container i.gg-moon {
   background: #fff1;
   border: 2px solid #eee;
   backdrop-filter: blur(100px);
+  --webkit-backdrop-filter: blur(100px);
   /* background-color: #fff; */
   display: flex;
   overflow: hidden;
