@@ -51,8 +51,6 @@ getEle(".nav-menu").onclick = () => {
   overlay.classList.toggle("active");
 };
 
-
-
 const btnFooters = document.querySelectorAll(".btn-footer");
 const footerLinks = document.querySelectorAll(".footer__link");
 const icons = document.querySelectorAll(".fa-angle-down");
@@ -155,7 +153,7 @@ if (btnMenu) {
 if (btnPopup) {
   btnPopup.addEventListener("click", () => {
     wrapper.classList.add("active-popup");
-    
+
     overlay.classList.add("active");
     const menu = getEle(".header__nav");
     menu.classList.remove("active");
@@ -165,7 +163,7 @@ if (btnPopup) {
 if (btnPopup1) {
   btnPopup1.addEventListener("click", () => {
     wrapper.classList.add("active-popup");
-    
+
     overlay.classList.add("active");
     const menu = getEle(".header__nav");
     menu.classList.remove("active");
@@ -197,5 +195,54 @@ getEle(".overlay__menu").onclick = () => {
   const menu = getEle(".header__nav");
   getEle(".overlay__menu.active").classList.remove("active");
   wrapper.classList.remove("active-popup");
-    menu.classList.remove("active");
+  menu.classList.remove("active");
 };
+const checks = getEleAll(".checkbox");
+const image = getEle(".faq__img");
+const contents = getEleAll(".content");
+checks.forEach((check, index) => {
+  check.onclick = () => {
+    // getEle(".checkbox.active").classList.remove("active");
+    const currentContent = contents[index];
+
+    contents.forEach((content, i) => {
+      if (i !== index && content.classList.contains("active")) {
+        content.classList.remove("active");
+        image.src = "../imgs/faqs.jpg";
+      }
+    });
+
+    currentContent.classList.toggle("active");
+
+    // Cuộn trang lên
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Nếu bạn muốn cuộn mượt
+    });
+
+    if (currentContent.classList.contains("active")) {
+      switch (index) {
+        case 0:
+          image.src = "../imgs/shipping.jpg";
+          break;
+        case 1:
+          image.src = "../imgs/return.jpg";
+          break;
+        case 2:
+          image.src = "../imgs/warranty.jpeg";
+          break;
+        case 3:
+          image.src = "../imgs/pricing.jpeg";
+          break;
+        case 4:
+          image.src = "../imgs/assambly.jpg";
+          break;
+      }
+    } else {
+      // Nếu không active, đặt hình ảnh mặc định
+      image.src = "../imgs/faqs.jpg";
+    }
+
+  };
+});
+
