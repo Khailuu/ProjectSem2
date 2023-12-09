@@ -223,24 +223,24 @@ checks.forEach((check, index) => {
     if (currentContent.classList.contains("active")) {
       switch (index) {
         case 0:
-          image.src = "../imgs/shipping.jpg";
+          image.src = "./imgs/shipping.jpg";
           break;
         case 1:
-          image.src = "../imgs/return.jpg";
+          image.src = "./imgs/return.jpg";
           break;
         case 2:
-          image.src = "../imgs/warranty.jpeg";
+          image.src = "./imgs/warranty.jpeg";
           break;
         case 3:
-          image.src = "../imgs/pricing.jpeg";
+          image.src = "./imgs/pricing.jpeg";
           break;
         case 4:
-          image.src = "../imgs/assambly.jpg";
+          image.src = "./imgs/assambly.jpg";
           break;
       }
     } else {
       // Nếu không active, đặt hình ảnh mặc định
-      image.src = "../imgs/faqs.jpg";
+      image.src = "./imgs/faqs.jpg";
     }
 
   };
