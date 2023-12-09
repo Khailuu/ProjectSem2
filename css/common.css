@@ -1,3 +1,24 @@
+.bar {
+  background-color: var(--bg-gray-color);
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.bar span:last-child {
+  color: var(--primary);
+}
+
+.bar span:first-child a,
+.bar span:nth-child(2) {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.bar span:first-child a:hover {
+color: var(--primary);
+}
+
 /* Header  */
 header {
   position: sticky;
@@ -477,6 +498,9 @@ span.buttonText {
   color: var(--primary);
 }
 
+.wrapper .login__social .row__bottom span {
+  color: #000 !important;
+}
 /* Footer  */
 footer {
   background-image: url(../imgs/footer.jpg);

@@ -147,7 +147,23 @@
 }
 
 /* Responsive  */
+@media screen and (min-width: 992px) {
+  .purpose img {
+    transition: all .3s;
+  }
 
+  .purpose img:hover {
+    transform: translateY(-5px); 
+  }
+
+  .family img {
+    transition: all .3s;
+  }
+
+  .family img:hover {
+    transform: translateY(-5px);
+  }
+}
 
 @media screen and (max-width: 991px) {
     .purpose .title h2 {

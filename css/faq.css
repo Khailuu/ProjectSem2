@@ -144,3 +144,12 @@
         padding-left: 15px;
     }
 }
+
+@media screen and (min-width: 992px) {
+  .faq .question__left img {
+    transition: all .3s;
+  }
+  .faq .question__left img:hover {
+    transform: translateY(-5px);
+  }
+}
