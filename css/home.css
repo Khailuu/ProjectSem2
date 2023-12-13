@@ -28,7 +28,7 @@
 
 /* Colection  */
 .colection {
-  background-color: var(--bg-color);
+  background-color: var(--light-bg-color);
 }
 
 .colection.section__padding {
@@ -144,7 +144,7 @@
 /* Products  */
 
 .products {
-  background-color: var(--light-bg-color);
+  background-color: var(--bg-color);
 }
 
 .products.section__padding {
@@ -272,6 +272,165 @@
   border: 0.2px solid var(--text-color);
   margin-top: 24px;
 }
+
+
+/* Feedback */
+.feedback {
+  /* background: var(--light-bg-color) */
+  /* background: linear-gradient(
+      to right,
+      var(--light-bg-color),
+      rgba(0,0,0,0.5)
+    ),
+    url(../imgs/feeedback.jpg); */
+    background: url(../imgs/feeedback.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+backdrop-filter: brightness(40%);
+}
+
+
+.feedback::before {
+  position: absolute;
+  content:"";
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--bg-feedback);
+  z-index: 0;
+}
+
+.feedback h2 {
+  position: absolute;
+  z-index: 1;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback .feedback__content .feedback__bottom .feedback__info {
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 50px;
+  background-color: var(--bg-color);
+  border-radius: var(--curve);
+}
+
+.feedback .feedback__content .feedback__bottom .feedback__info .feedback__img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f3f6f9;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+}
+
+.feedback .feedback__content .feedback__bottom .feedback__comment {
+  position: relative;
+}
+
+.feedback .feedback__content .feedback__bottom .feedback__comment i {
+  font-size: 30px;
+  color: var(--title-color);
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  right: 0;
+}
+
+.feedback .feedback__content .feedback__bottom .feedback__comment p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+  margin-bottom: 0;
+}
+
+.feedback
+  .feedback__content
+  .feedback__bottom
+  .feedback__comment
+  .feedback__name {
+  padding-top: 1.5rem;
+}
+
+.feedback
+  .feedback__content
+  .feedback__bottom
+  .feedback__comment
+  .feedback__name
+  h4 {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.feedback
+  .feedback__content
+  .feedback__bottom
+  .feedback__comment
+  .feedback__name
+  p {
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: transparent;
+  padding: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  margin: 5px 5px;
+  background: var(--bg-color);
+  display: block;
+  border: none;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 0;
+  position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--primary);
+}
+
+.community {
+  background-color: var(--bg-color);
+}
+
+.community .title {
+  margin-bottom: 0;
+}
+
+.community .title h2{
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.community .title p {
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
 
 /* Responsive */
 @media screen and (min-width: 1200px) {

@@ -41,21 +41,20 @@
 
   <body>
     <div class="overlay__menu"></div>
-    <header class="d-flex align-items-center">
+    <header id="site-header" class="d-flex align-items-center">
       <div class="container-fluid header__mobile">
         <div class="row align-items-center">
           <div class="col-3 nav-menu">
             <i class="fa-solid fa-bars-staggered"></i>
           </div>
           <div class="col-3 header__logo">
-            <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            <a href="#">
+              <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            </a>
           </div>
 
           <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
             <ul class="sub-menu">
-              <li>
-                <a class="" href="./index.html">Home</a>
-              </li>
               <li id="btn__product">
                 <a class="d-none d-xl-inline" href="">
                   <span>products</span>
@@ -87,7 +86,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">collection</a>
+                <a href="">trends</a>
               </li>
               <li>
                 <a href="">giftset</a>
@@ -142,12 +141,13 @@
             </ul>
           </div>
           <div class="col-3 header__link">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="header__account d-inline">
+              <i class="fa-solid fa-user d-none d-xl-inline"></i>
             <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
-              >Login</span
+              >Account</span
             >
-            <span class="d-none d-xl-inline">/</span>
-            <span href="" class="d-none d-xl-inline">Signup</span>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
             <div class="mobile-position DarkandLight d-inline-block">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">

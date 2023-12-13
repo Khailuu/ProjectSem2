@@ -7,10 +7,12 @@
     --bg-color-light: #fff;
     --text-color: #5a5a5a;
     --curve: 8px;
+    --bg-feedback: rgba(255,255,255,0.3);
     --light-bg-color: #fff;
     --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
     --card-hover-box-shadow: 0 0.5rem 1rem rgba(149, 126, 126, 0.09);
     --border-color-light: #fff;
+    --sub-menu-color: #444;
 }
 
 [data-theme="dark"] {
@@ -21,6 +23,8 @@
     --light-bg-color: #191c1d;
     --text-color: #7b7b7b;   
     --border-color-light: #333;
+    --bg-feedback: rgba(0,0,0,0.7);
+    --sub-menu-color: #ddd;
 }
   
 *{
@@ -39,12 +43,28 @@ html {
 a.active {
     color: #ff5c00;
 }
+
+.title {
+    margin-bottom: 48px;
+}
 .title h2 {
     font-size: 48px;
     color: var(--primary);
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .title h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .title h2 {
+        font-size: 36px;
+    }
 }
 
 .section__padding {
@@ -56,7 +76,7 @@ img {
 }
 
 .button__fill {
-    background-color: #ff5c00;
+    background-color: #ff5e00e8;
     color:#fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -64,15 +84,14 @@ img {
     line-height: 50px;
     border-radius: var(--curve);
     width: 160px;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 
 .button__fill:hover {
     border: 1px solid #ff5c00;
-    background-color: transparent;
-    color: #ff5c00;
-}
+    background-color: #ff5c00;
+}   
 
 .button__stroke {
     background-color: transparent;

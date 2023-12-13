@@ -60,14 +60,14 @@ btnFooters.forEach((btnFooter, index) => {
     const currentFooterLink = footerLinks[index];
     const currentIcon = icons[index];
 
-    // Close all other footer__link elements
+    
     footerLinks.forEach((link, i) => {
       if (i !== index && link.classList.contains("active")) {
         link.classList.remove("active");
       }
     });
 
-    // Toggle active class for the clicked footer__link
+    
     currentFooterLink.classList.toggle("active");
 
     // Rotate icons
@@ -144,12 +144,6 @@ if (btnMenu) {
   });
 }
 
-// if(btnMenu) {
-//     btnMenu.addEventListener('click', ()=> {
-//         popUpMenu.classList.remove('active-menu');
-//     })
-// }
-
 if (btnPopup) {
   btnPopup.addEventListener("click", () => {
     wrapper.classList.add("active-popup");
@@ -202,7 +196,6 @@ const image = getEle(".faq__img");
 const contents = getEleAll(".content");
 checks.forEach((check, index) => {
   check.onclick = () => {
-    // getEle(".checkbox.active").classList.remove("active");
     const currentContent = contents[index];
 
     contents.forEach((content, i) => {
@@ -214,10 +207,9 @@ checks.forEach((check, index) => {
 
     currentContent.classList.toggle("active");
 
-    // Cuộn trang lên
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Nếu bạn muốn cuộn mượt
+      behavior: "smooth", 
     });
 
     if (currentContent.classList.contains("active")) {
@@ -239,10 +231,35 @@ checks.forEach((check, index) => {
           break;
       }
     } else {
-      // Nếu không active, đặt hình ảnh mặc định
       image.src = "./imgs/faqs.jpg";
     }
 
   };
+});
+
+
+$(window).on("scroll", function () {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 80) {
+    $("#site-header").addClass("nav-fixed");
+  } else {
+    $("#site-header").removeClass("nav-fixed");
+  }
+});
+
+//Main navigation Active Class Add Remove
+$(".navbar-toggler").on("click", function () {
+  $("header").toggleClass("active");
+});
+$(document).on("ready", function () {
+  if ($(window).width() > 991) {
+    $("header").removeClass("active");
+  }
+  $(window).on("resize", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+  });
 });
 

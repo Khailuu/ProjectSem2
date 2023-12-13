@@ -1,8 +1,4 @@
 
-.bar {
-  background-color: var(--bg-gray-color);
-  padding: 15px 0;
-}
 
 .bar span:last-child {
   color: var(--primary);
@@ -20,7 +16,7 @@
 }
 
 .return {
-  background-color: var(--bg-hd-color);
+  background-color: var(--bg-color);
 }
 
 .return h3 {

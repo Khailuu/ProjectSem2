@@ -18,7 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- Owl  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -44,21 +46,20 @@
 
   <body>
     <div class="overlay__menu"></div>
-    <header class="d-flex align-items-center">
+    <header id="site-header" class="d-flex align-items-center">
       <div class="container-fluid header__mobile">
         <div class="row align-items-center">
           <div class="col-3 nav-menu">
             <i class="fa-solid fa-bars-staggered"></i>
           </div>
           <div class="col-3 header__logo">
-            <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            <a href="#">
+              <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            </a>
           </div>
 
           <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
             <ul class="sub-menu">
-              <li>
-                <a class="active" href="">Home</a>
-              </li>
               <li id="btn__product">
                 <a class="d-none d-xl-inline" href="">
                   <span>products</span>
@@ -90,7 +91,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">collection</a>
+                <a href="">trends</a>
               </li>
               <li>
                 <a href="">giftset</a>
@@ -145,12 +146,13 @@
             </ul>
           </div>
           <div class="col-3 header__link">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="header__account d-inline">
+              <i class="fa-solid fa-user d-none d-xl-inline"></i>
             <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
-              >Login</span
+              >Account</span
             >
-            <span class="d-none d-xl-inline">/</span>
-            <span href="" class="d-none d-xl-inline">Signup</span>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
             <div class="mobile-position DarkandLight d-inline-block">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">
@@ -351,8 +353,6 @@
         </div>
       </div>
     </section>
-    
-
     <!-- Product  -->
     <section class="products section__padding">
       <div class="container">
@@ -521,6 +521,117 @@
         </div>
       </div>
     </section>
+    <!-- Feedback  -->
+    <section class="feedback section__padding">
+      <div class="container">
+        <div class="feedback__content">
+          <div class="title">
+            <h2>What People Say</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mx-auto">
+              <div class="feedback__bottom">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="feedback__info">
+                      <div class="feedback__img">
+                        <img src="./imgs/team3.jpg" alt="" />
+                      </div>
+                      <div class="feedback__comment">
+                        <span>
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        <p>
+                          This furniture product is truly impressive! The exquisite design, high-quality materials perfectly meet my needs and aesthetic preferences. Perfect!
+                        </p>
+                        <div class="feedback__name">
+                          <h4>Isabella Mia</h4>
+                          <p>Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="feedback__info">
+                      <div class="feedback__img">
+                        <img src="./imgs/team4.jpg" alt="" />
+                      </div>
+                      <div class="feedback__comment">
+                        <span>
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        <p>
+                          The quality surpasses expectations, every meticulous detail shows dedication. Comfort and luxury blend seamlessly, and I am extremely pleased with this investment.
+                        </p>
+                        <div class="feedback__name">
+                          <h4>Benjamin Lucas</h4>
+                          <p>Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="feedback__info">
+                      <div class="feedback__img">
+                        <img src="./imgs/team5.jpg" alt="" />
+                      </div>
+                      <div class="feedback__comment">
+                        <span>
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        <p>
+                          This furniture item is not just a decoration but also an art piece. I appreciate the creativity in design and the excellent comfort it provides. Outstanding!
+                        </p>
+                        <div class="feedback__name">
+                          <h4>Oliver Braley</h4>
+                          <p>Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="feedback__info">
+                      <div class="feedback__img">
+                        <img src="./imgs/team6.jpg" alt="" />
+                      </div>
+                      <div class="feedback__comment">
+                        <span>
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        <p>
+                          Not only visually appealing but also incredibly practical. The flexibility in usage and practicality of the product truly deserve praise. A worthwhile investment!
+                        </p>
+                        <div class="feedback__name">
+                          <h4>William James</h4>
+                          <p>Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comunity  -->
+    <section class="community section__padding">
+      <div class="container">
+        <div class="community__content text-center title mx-auto">
+          <h2>Ready to design a more beautiful home?</h2>
+          <p>
+            Feel free to share your creative concepts, and we'll collaborate with you to turn those ideas into a stunning reality.
+          </p>
+          <div class="community__button">
+            <a href="">
+              <button class="button__fill">Get Started</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer  -->
     <footer class="section__padding">
       <div class="container">
         <div class="footer__content">
@@ -615,9 +726,7 @@
                   </ul>
                 </div>
                 <div class="col-xl-4">
-                  <h2 class="btn-footer">
-                    join the us
-                  </h2>
+                  <h2 class="btn-footer">join the us</h2>
                   <div class="footer__mail">
                     <input type="mail" placeholder="email" required />
                     <i class="fa-regular fa-paper-plane"></i>
@@ -633,11 +742,32 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap-4.4.1.js"></script>
+    <!-- Owl carousel  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1200: {
+            items: 2,
+          },
+        },
+      });
+    </script>
     <!-- main js -->
     <script src="./js/main.js"></script>
   </body>

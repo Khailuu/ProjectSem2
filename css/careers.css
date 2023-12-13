@@ -1,7 +1,4 @@
-.bar {
-  background-color: var(--bg-gray-color);
-  padding: 15px 0;
-}
+
 
 .bar span:last-child {
   color: var(--primary);
@@ -20,7 +17,7 @@
 
 /* Purpose  */
 .purpose {
-  background-color: var(--bg-hd-color);
+  background-color: var(--bg-color);
 }
 
 .purpose .title h2 {
@@ -107,7 +104,7 @@
 
 /* Family  */
 .family {
-    background-color: var(--bg-hd-color);
+    background-color: var(--bg-color);
 }
 
 .family img {

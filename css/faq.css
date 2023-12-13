@@ -1,7 +1,4 @@
-.bar {
-    background-color: var(--bg-gray-color);
-    padding: 15px 0;
-}
+
 
 .bar span:last-child {
     color: var(--primary);
@@ -19,7 +16,7 @@
 }
 
 .faq {
-    background-color: var(--bg-hd-color);
+    background-color: var(--bg-color);
 }
 
 .faq.section__padding {
