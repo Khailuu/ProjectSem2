@@ -45,11 +45,11 @@
   </head>
 
   <body>
-       <!-- Messenger Plugin chat Code -->
-       <div id="fb-root"></div>
-  
-       <!-- Your Plugin chat code -->
-       <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
     <div class="overlay__menu"></div>
     <header id="site-header" class="d-flex align-items-center">
       <div class="container-fluid header__mobile">
@@ -749,9 +749,7 @@
           </div>
         </div>
       </div>
-   
     </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -784,7 +782,24 @@
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
-   
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
     <!-- main js -->
     <script src="./js/main.js"></script>
   </body>
