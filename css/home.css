@@ -277,39 +277,30 @@
 /* Feedback */
 .feedback {
   /* background: var(--light-bg-color) */
-  /* background: linear-gradient(
+  background: linear-gradient(
       to right,
       var(--light-bg-color),
       rgba(0,0,0,0.5)
     ),
-    url(../imgs/feeedback.jpg); */
-    background: url(../imgs/feeedback.jpg);
+    url(../imgs/feeedback.jpg);
+    /* background: url(../imgs/feeedback.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   position: relative;
-backdrop-filter: brightness(40%);
 }
 
 
 .feedback::before {
-  position: absolute;
+  /* position: absolute;
   content:"";
   top:0;
   right: 0;
   left: 0;
   bottom: 0;
   background-color: var(--bg-feedback);
-  z-index: 0;
-}
-
-.feedback h2 {
-  position: absolute;
-  z-index: 1;
-  top: 48px;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: 0; */
 }
 
 .feedback .feedback__content .feedback__bottom .feedback__info {
@@ -447,5 +438,11 @@ backdrop-filter: brightness(40%);
     text-decoration: none;
     transition: all 0.5s;
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .community .title h2{
+    width: 80%;
   }
 }

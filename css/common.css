@@ -165,7 +165,6 @@ header ul.sub-menu > li {
 }
 
 header ul.sub-menu > li:last-child {
-  margin-right: 0;
 }
 
 header ul li a:hover {
@@ -832,6 +831,10 @@ footer .footer__link li:hover a {
     transition: height all 0.3s, opacity all 0.3s;
   }
   /* Footer  */
+footer.section__padding {
+  padding-top: 48px;
+}
+
   footer .footer__content .footer__link {
     display: none;
   }
