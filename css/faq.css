@@ -86,7 +86,7 @@
   height: 9px;
 }
 
-.faq .question__right ul li i::before {
+.faq .question__right ul li  i::before {
   transform: translate(2px, 0) rotate(45deg);
 }
 

@@ -45,6 +45,11 @@
   </head>
 
   <body>
+       <!-- Messenger Plugin chat Code -->
+       <div id="fb-root"></div>
+  
+       <!-- Your Plugin chat code -->
+       <div id="fb-customer-chat" class="fb-customerchat"></div>
     <div class="overlay__menu"></div>
     <header id="site-header" class="d-flex align-items-center">
       <div class="container-fluid header__mobile">
@@ -105,7 +110,7 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
-              <i class="fa-solid fa-user d-none d-md-inline d-sm-inline"></i>
+                <i class="fa-solid fa-user d-none d-md-inline d-sm-inline"></i>
                 <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
@@ -140,9 +145,9 @@
           <div class="col-3 header__link">
             <div class="header__account d-inline">
               <i class="fa-solid fa-user d-none d-xl-inline"></i>
-            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
-              >Account</span
-            >
+              <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+                >Account</span
+              >
             </div>
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="mobile-position DarkandLight d-inline-block">
@@ -534,7 +539,9 @@
                           <i class="fa-solid fa-quote-left"></i>
                         </span>
                         <p>
-                          This furniture product is truly impressive! The exquisite design, high-quality materials perfectly meet my needs and aesthetic preferences. Perfect!
+                          This furniture product is truly impressive! The
+                          exquisite design, high-quality materials perfectly
+                          meet my needs and aesthetic preferences. Perfect!
                         </p>
                         <div class="feedback__name">
                           <h4>Isabella Mia</h4>
@@ -553,7 +560,10 @@
                           <i class="fa-solid fa-quote-left"></i>
                         </span>
                         <p>
-                          The quality surpasses expectations, every meticulous detail shows dedication. Comfort and luxury blend seamlessly, and I am extremely pleased with this investment.
+                          The quality surpasses expectations, every meticulous
+                          detail shows dedication. Comfort and luxury blend
+                          seamlessly, and I am extremely pleased with this
+                          investment.
                         </p>
                         <div class="feedback__name">
                           <h4>Benjamin Lucas</h4>
@@ -572,7 +582,9 @@
                           <i class="fa-solid fa-quote-left"></i>
                         </span>
                         <p>
-                          This furniture item is not just a decoration but also an art piece. I appreciate the creativity in design and the excellent comfort it provides. Outstanding!
+                          This furniture item is not just a decoration but also
+                          an art piece. I appreciate the creativity in design
+                          and the excellent comfort it provides. Outstanding!
                         </p>
                         <div class="feedback__name">
                           <h4>Oliver Braley</h4>
@@ -591,7 +603,10 @@
                           <i class="fa-solid fa-quote-left"></i>
                         </span>
                         <p>
-                          Not only visually appealing but also incredibly practical. The flexibility in usage and practicality of the product truly deserve praise. A worthwhile investment!
+                          Not only visually appealing but also incredibly
+                          practical. The flexibility in usage and practicality
+                          of the product truly deserve praise. A worthwhile
+                          investment!
                         </p>
                         <div class="feedback__name">
                           <h4>William James</h4>
@@ -613,7 +628,8 @@
         <div class="community__content text-center title mx-auto">
           <h2>Ready to design a more beautiful home?</h2>
           <p>
-            Feel free to share your creative concepts, and we'll collaborate with you to turn those ideas into a stunning reality.
+            Feel free to share your creative concepts, and we'll collaborate
+            with you to turn those ideas into a stunning reality.
           </p>
           <div class="community__button">
             <a href="">
@@ -733,7 +749,9 @@
           </div>
         </div>
       </div>
+   
     </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -759,6 +777,31 @@
           },
         },
       });
+    </script>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "122093380484021008");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v18.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
     </script>
     <!-- main js -->
     <script src="./js/main.js"></script>

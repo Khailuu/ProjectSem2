@@ -279,7 +279,7 @@
   /* background: var(--light-bg-color) */
   background: linear-gradient(
       to right,
-      var(--light-bg-color),
+      rgba(225,225,225,0.5),
       rgba(0,0,0,0.5)
     ),
     url(../imgs/feeedback.jpg);
