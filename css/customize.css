@@ -33,10 +33,6 @@
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-iframe {
-    bottom: 80px;
-    right: 14px
-}
 
 body,
 html {
