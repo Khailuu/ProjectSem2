@@ -396,6 +396,14 @@
 }
 
 @media screen and (min-width: 991px) {
+  .colection .colection__content .colection__img:hover::before {
+    left: 125%;
+  }
+  
+  .colection .colection__content .colection__img:hover h3 a {
+    color: var(--primary);
+  }
+  
 
   .colection .colection__img:hover .portfolio__overlay {
     opacity: 1;
