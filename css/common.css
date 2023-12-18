@@ -90,8 +90,8 @@ header .search-right .popup form input[type="search"] {
   width: 100%;
   border: 1px solid var(--border-color);
   border-radius: 0;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
+  border-bottom-left-radius: var(--curve);
+  border-top-left-radius: var(--curve);
   border-right: none;
 }
 
@@ -107,8 +107,8 @@ header .search-right .popup form button {
   padding: 0 25px;
   border-left: none;
   border-radius: initial;
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-bottom-right-radius: var(--curve);
+  border-top-right-radius: var(--curve);
 }
 
 header .search-right .popup .close {
@@ -559,7 +559,7 @@ footer .footer__link li a {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 28px;
   z-index: 99;
   border: none;
   outline: none;
@@ -637,6 +637,8 @@ footer .footer__link li a {
   footer .footer__link li:hover a {
     text-decoration: none;
     color: var(--primary);
+    width: 100%;
+    display: inline-block;
   }
 
 }
@@ -926,6 +928,16 @@ footer .footer__link li a {
 @media screen and (max-width: 575px) {
   header .header__mobile {
     width: 100%;
+  }
+  header .search-right .popup form input[type="search"] {
+    border-bottom-right-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+  }
+  header .search-right .popup form button  {
+    width: 100%;
+    margin-top: 15px;
+    border-bottom-left-radius: var(--curve);
+    border-top-left-radius: var(--curve);
   }
 }
 

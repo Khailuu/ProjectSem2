@@ -11,10 +11,6 @@
     transition: all .3s;
 }
 
-.bar span:first-child a:hover {
-  color: var(--primary);
-}
-
 .faq {
     background-color: var(--bg-color);
 }
@@ -40,9 +36,8 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.faq .question__left img:hover {
-  transform: var(--transformY);
-  transition: 0.3s ease-in-out;
+.faq .question__left img {
+  transform: translateY(5px)
 }
 
 .faq .question__right ul {
@@ -54,7 +49,7 @@
   position: relative;
   padding: 25px 50px 25px 20px;
   border: 1px solid var(--text-color);
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
   border-radius: var(--curve);
   background: var(--bg-color);
 }
@@ -71,12 +66,12 @@
 
 .faq .question__right ul li i {
   position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
+  margin-top: 10px;
   right: 25px;
   top: 16px;
+  color: var(--title-color)
 }
-
+/* 
 .faq .question__right ul li i::before,
 .faq .question__right ul li i::after {
   content: "";
@@ -92,7 +87,7 @@
 
 .faq .question__right ul li i::after {
   transform: translate(-2px, 0) rotate(-45deg);
-}
+} */
 
 .faq .question__right .content {
   /* display: none;
@@ -112,14 +107,15 @@
   margin-top: 14px;
 }
 
-
+.faq .question__right ul li {
+  overflow: hidden;
+}
 
 .faq .question__right ul li p {
   color: var(--text-color);
   font-size: 16px;
   line-height: 24.5px;
   position: relative;
-  overflow: hidden;
   z-index: 2;
   margin-bottom: 0;
 
@@ -141,8 +137,16 @@
   
 }
 
-.faq .question__right i {
+/* .faq .question__right i {
     transition: transform 0.1s ease-in-out;
+} */
+
+.fa-chevron-down {
+  transition: transform 0.3s ease-in-out;
+}
+.faq .question__right ul li i.active {
+  transform: rotate(180deg);
+  color: #fff;
 }
 
 .faq .question__right input[type="checkbox"].active ~ i {
@@ -162,4 +166,14 @@
   .faq .question__left img:hover {
     transform: translateY(-5px);
   }
+
+.faq .question__left img:hover {
+  transform: var(--transformY);
+  transition: 0.3s ease-in-out;
+}
+
+.bar span:first-child a:hover {
+  color: var(--primary);
+}
+
 }

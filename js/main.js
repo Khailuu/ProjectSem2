@@ -60,14 +60,12 @@ btnFooters.forEach((btnFooter, index) => {
     const currentFooterLink = footerLinks[index];
     const currentIcon = icons[index];
 
-    
     footerLinks.forEach((link, i) => {
       if (i !== index && link.classList.contains("active")) {
         link.classList.remove("active");
       }
     });
 
-    
     currentFooterLink.classList.toggle("active");
 
     // Rotate icons
@@ -191,9 +189,13 @@ getEle(".overlay__menu").onclick = () => {
   wrapper.classList.remove("active-popup");
   menu.classList.remove("active");
 };
+
+// FAQs
+
 const checks = getEleAll(".checkbox");
 const image = getEle(".faq__img");
 const contents = getEleAll(".content");
+const iconFaqs = getEleAll(".iconfaq");
 checks.forEach((check, index) => {
   check.onclick = () => {
     const currentContent = contents[index];
@@ -204,12 +206,19 @@ checks.forEach((check, index) => {
         image.src = "../imgs/faqs.jpg";
       }
     });
-
     currentContent.classList.toggle("active");
+    iconFaqs.forEach((icon, i) => {
+      if (i === index) {
+        console.log(index, i);
+        icon.classList.toggle("active");
+      } else {
+        icon.classList.remove("active");
+      }
+    });
 
     window.scrollTo({
       top: 0,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
 
     if (currentContent.classList.contains("active")) {
@@ -233,10 +242,8 @@ checks.forEach((check, index) => {
     } else {
       image.src = "./imgs/faqs.jpg";
     }
-
   };
 });
-
 
 $(window).on("scroll", function () {
   var scroll = $(window).scrollTop();
@@ -273,8 +280,29 @@ bg__products.forEach((bg__product, index) => {
       if (i !== index && overlay.classList.contains("active")) {
         overlay.classList.remove("active");
       }
-    })
+    });
     currentOverlay.classList.toggle("active");
-  }
-})
-// Chatbot 
+  };
+});
+// Chatbot
+
+var chatbox = document.getElementById("fb-customer-chat");
+chatbox.setAttribute("page_id", "122093380484021008");
+chatbox.setAttribute("attribution", "biz_inbox");
+
+window.fbAsyncInit = function () {
+  FB.init({
+    xfbml: true,
+    version: "v18.0",
+  });
+};
+
+(function (d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");

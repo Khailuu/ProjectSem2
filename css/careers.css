@@ -1,5 +1,3 @@
-
-
 .bar span:last-child {
   color: var(--primary);
 }
@@ -9,10 +7,6 @@
   color: var(--title-color);
   text-decoration: none;
   transition: all 0.3s;
-}
-
-.bar span:first-child a:hover {
-  color: var(--primary);
 }
 
 /* Purpose  */
@@ -62,7 +56,7 @@
 .opportunity .opportunity__content p {
   color: var(--title-color);
   margin-bottom: 0;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .opportunity .title h2 {
@@ -77,11 +71,7 @@
   height: 50px;
   line-height: 50px;
   margin-bottom: 30px;
-  transition:  all .3s;
-}
-
-.opportunity .opportunity__content .opportunity__item .bg__item:hover {
-    border-color: var(--primary);
+  transition: all 0.3s;
 }
 
 .opportunity .opportunity__content .opportunity__item .bg__item a {
@@ -91,70 +81,76 @@
   text-decoration: none;
 }
 
-.opportunity .opportunity__content .opportunity__item .bg__item a:hover p,
-.opportunity .opportunity__content .opportunity__item .bg__item a:hover i {
-    color: var(--primary);
-}
-
 .opportunity .opportunity__content .opportunity__item i {
   color: var(--title-color);
   text-align: right;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 /* Family  */
 .family {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .family img {
-    border-radius: var(--curve);
+  border-radius: var(--curve);
 }
 
 .family .title h2 {
-    text-align: left;
+  text-align: left;
 }
 
-.family  p{
-    color: var(--text-color);
+.family p {
+  color: var(--text-color);
 }
 
 /* Working  */
 
 .working {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
 }
 
 .working .title h2 {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 .working img {
-    min-height: 128px !important;
-    margin: 0 auto;
-    margin-bottom: 26px;
-    width: 110px !important;
-
+  min-height: 128px !important;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  width: 110px !important;
 }
 
 .working p {
-    color: var(--text-color);
-    text-align: center;
-    padding: 0 15px
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 15px;
 }
 
 /* Responsive  */
 @media screen and (min-width: 992px) {
+  .bar span:first-child a:hover {
+    color: var(--primary);
+  }
+
+  .opportunity .opportunity__content .opportunity__item .bg__item:hover {
+    border-color: var(--primary);
+  }
+  
+  .opportunity .opportunity__content .opportunity__item .bg__item a:hover p,
+  .opportunity .opportunity__content .opportunity__item .bg__item a:hover i {
+    color: var(--primary);
+  }
   .purpose img {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .purpose img:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
   }
 
   .family img {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .family img:hover {
@@ -163,27 +159,26 @@
 }
 
 @media screen and (max-width: 991px) {
-    .purpose .title h2 {
-        text-align: center;
-    }
+  .purpose .title h2 {
+    text-align: center;
+  }
 
-    .purpose__up {
-        margin-bottom: 26px;
-    }
-    .purpose i {
-        right: 14px;
-    }
+  .purpose__up {
+    margin-bottom: 26px;
+  }
+  .purpose i {
+    right: 14px;
+  }
 
-    /* .family */
-    .family .title h2 {
-        margin-top: 26px;
-        text-align: center;
-    }
-
+  /* .family */
+  .family .title h2 {
+    margin-top: 26px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    .title h2 {
-        font-size: 40px;
-    }
+  .title h2 {
+    font-size: 40px;
+  }
 }

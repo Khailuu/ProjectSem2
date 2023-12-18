@@ -11,9 +11,6 @@
   transition: all 0.3s;
 }
 
-.bar span:first-child a:hover {
-  color: var(--primary);
-}
 
 .return {
   background-color: var(--bg-color);
@@ -34,4 +31,11 @@
 .return ul {
     transform: translateX(30px);
     max-width: 79%;
+}
+
+@media screen and (min-width: 992px) {
+
+.bar span:first-child a:hover {
+  color: var(--primary);
+}
 }
