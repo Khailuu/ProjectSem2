@@ -208,7 +208,7 @@ header .header__link span {
 }
 
 header .header__link a:first-of-type {
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 header nav input {

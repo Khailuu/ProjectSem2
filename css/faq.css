@@ -32,9 +32,9 @@
 
 .faq .question__left img {
   border-radius: var(--curve);
-  transition: 0.3s ease-in-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
 
 .faq .question__left img {
   transform: translateY(5px)
@@ -154,8 +154,14 @@
 }
 
 @media screen and (max-width: 991px) {
+    .faq.section__padding {
+      padding-top: 24px;
+    }
     .faq .question__right {
         padding-left: 15px;
+    }
+    .faq .question__left {
+      margin-top: 0;
     }
 }
 

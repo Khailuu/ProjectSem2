@@ -159,6 +159,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .purpose.section__padding {
+    padding-top: 24px;
+  }
+
   .purpose .title h2 {
     text-align: center;
   }
