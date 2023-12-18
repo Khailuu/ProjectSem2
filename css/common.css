@@ -656,7 +656,7 @@ footer .footer__link li a {
     position: relative;
   }
 
-  header .sub-menu li:first-child:hover .menu__product {
+  header .sub-menu li:nth-child(2):hover .menu__product {
     display: flex;
   }
 

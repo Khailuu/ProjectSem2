@@ -21,7 +21,7 @@
 
 .faq .question__right,
 .faq .question__left {
-  margin-top: 3rem;
+
   position: relative;
 }
 
@@ -146,7 +146,7 @@
 }
 .faq .question__right ul li i.active {
   transform: rotate(180deg);
-  color: #fff;
+  color: var(--title-color);
 }
 
 .faq .question__right input[type="checkbox"].active ~ i {
@@ -162,6 +162,9 @@
     }
     .faq .question__left {
       margin-top: 0;
+    }
+    .faq .question__right{
+      margin-top: 48px;
     }
 }
 
