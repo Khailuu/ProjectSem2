@@ -195,6 +195,10 @@ header .header__link i {
   cursor: pointer;
 }
 
+header .header__link a {
+  text-decoration: none;
+}
+
 header .header__link span {
   cursor: pointer;
   color: var(--title-color);
@@ -581,6 +585,10 @@ footer .footer__link li a {
   header ul li a:hover {
     color: var(--primary);
     cursor: pointer;
+  }
+  
+  header .header__link a:hover i {
+    color: var(--primary);
   }
 
   header ul li a:hover {

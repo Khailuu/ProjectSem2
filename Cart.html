@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Cozy</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/bootstrap-4.4.1.css" />
+    <link rel="stylesheet" href="../CSS/css/all.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./CSS/customize.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <link rel="stylesheet" href="./CSS/Cart.css" />
+  </head>
+  <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div class="overlay__menu"></div>
+    <header id="site-header" class="d-flex align-items-center">
+      <div class="container-fluid header__mobile">
+        <div class="row align-items-center">
+          <div class="col-3 nav-menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="col-3 header__logo">
+            <a href="./index.html">
+              <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            </a>
+          </div>
+
+          <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
+            <ul class="sub-menu">
+              <li class="d-xl-none d-block">
+                <a href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li id="btn__product">
+                <a class="d-none d-xl-inline" href="">
+                  <span>products</span>
+                </a>
+                <span class="d-xl-none">products</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="menu__product">
+                  <li>
+                    <a href=""> living room </a>
+                  </li>
+                  <li>
+                    <a href=""> dining room </a>
+                  </li>
+                  <li>
+                    <a href=""> kitchen room </a>
+                  </li>
+                  <li>
+                    <a href=""> bedding room </a>
+                  </li>
+                  <li>
+                    <a href=""> bath room </a>
+                  </li>
+                  <li>
+                    <a href=""> outdoor </a>
+                  </li>
+                  <li>
+                    <a href=""> lighting </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">trends</a>
+              </li>
+              <li>
+                <a href="">giftset</a>
+              </li>
+              <li>
+                <a href="">sale</a>
+              </li>
+              <li>
+                <a href="">contact us</a>
+              </li>
+              <li
+                class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+              >
+                <span
+                  href=""
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                  >Login</span
+                >
+                <span
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+                  >/</span
+                >
+                <span
+                  href=""
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+                  >Signup</span
+                >
+              </li>
+              <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+                <div class="search-right">
+                  <span
+                    ><a href="#search" class="search-search" title="search">
+                      <i class="fa-solid fa-magnifying-glass"></i> </a
+                  ></span>
+                  <div id="search" class="pop-overlay">
+                    <div class="popup">
+                      <form action="" method="GET" class="search-box d-sm-flex">
+                        <input
+                          type="search"
+                          placeholder="Enter Keyword"
+                          name="s"
+                          required="required"
+                          autofocus=""
+                        />
+                        <button type="submit" class="btn">Search</button>
+                      </form>
+                      <a class="close" href="#close">×</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 header__link">
+            <div class="header__account d-inline">
+              <i class="fa-solid fa-user d-none d-xl-inline"></i>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Account</span
+            >
+            </div>
+            <a href="./Cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <div class="mobile-position DarkandLight d-inline-block">
+              <nav class="navigation">
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch mb-0" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode-container">
+                      <i class="fa-solid fa-moon gg-moon"></i>
+                      <i class="fa-solid fa-sun gg-sun"></i>
+                    </div>
+                  </label>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+    <!-- Wrapper  -->
+    <section id="popUp">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label for="click-checkbox">
+                <input type="checkbox" id="click-checkbox" /><span
+                  id="checkbox"
+                >
+                  Remember me
+                </span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <div class="login__social mt-3">
+              <div class="row">
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+                <div class="col-2">
+                  <span style="color: #fff">Or</span>
+                </div>
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-register">
+              <p>
+                Don't Have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label for="conditions">
+                <input type="checkbox" id="conditions" /><span id="checkbox">
+                  I agree to the terms and conditions
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <div class="login-register">
+              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Content -->
+    <!-- address bar -->
+    <section class="bar">
+      <div class="container">
+        <span><a href="./index.html">HOME</a></span>
+        <span>/</span>
+        <span>CART</span>
+      </div>
+    </section>
+    <div class="cart_section">
+      <div class="container container1">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="cart_container">
+              <div class="cart_title">YOUR CART</div>
+              <div class="cart_items">
+                <ul class="cart_list">
+                  <li class="cart_item clearfix">
+                    <div class="titlebox">
+                      <input type="checkbox" class="mr-2" name="" id="" />
+                      <label for=""></label>
+                      <div class="titlebox">
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name=""
+                          class="mr-2"
+                        />
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                    <div class="cart_item_image">
+                      <img src="./imgs/pr1.jpg" alt="" />
+                    </div>
+                    <div class="cart_item_info d-flex flex-md-row">
+                      <div class="cart_item_name cart_info_col">
+                        <div class="cart_item_title">Name:</div>
+                        <div class="cart_item_text">Vertigo Pendant Light</div>
+                      </div>
+                      <div class="cart_item_color cart_info_col">
+                        <div class="cart_item_title">Color:</div>
+                        <div class="cart_item_text">Black</div>
+                      </div>
+                      <div class="cart_item_quantity cart_info_col">
+                        <div class="cart_item_title">Quantity:</div>
+                        <div class="cart_item_text">1</div>
+                      </div>
+                      <div class="cart_item_price cart_info_col">
+                        <div class="cart_item_title">Price:</div>
+                        <div class="cart_item_text">$1,405.00</div>
+                      </div>
+                      <div class="cart_item_total cart_info_col">
+                        <div class="cart_item_title">Total:</div>
+                        <div class="cart_item_text">$1,405.00</div>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="cart_item clearfix">
+                    <div class="titlebox">
+                      <input type="checkbox" class="mr-2" name="" id="" />
+                      <label for=""></label>
+                      <div class="titlebox">
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name=""
+                          class="mr-2"
+                        />
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                    <div class="cart_item_image">
+                      <img src="./imgs/prd2.jpg" alt="" />
+                    </div>
+                    <div class="cart_item_info d-flex flex-md-row">
+                      <div class="cart_item_name cart_info_col">
+                        <div class="cart_item_title">Name:</div>
+                        <div class="cart_item_text">Swirl Pendant x Light</div>
+                      </div>
+                      <div class="cart_item_color cart_info_col">
+                        <div class="cart_item_title">Color:</div>
+                        <div class="cart_item_text">Yellow</div>
+                      </div>
+                      <div class="cart_item_quantity cart_info_col">
+                        <div class="cart_item_title">Quantity:</div>
+                        <div class="cart_item_text">1</div>
+                      </div>
+                      <div class="cart_item_price cart_info_col">
+                        <div class="cart_item_title">Price:</div>
+                        <div class="cart_item_text">$980.00</div>
+                      </div>
+                      <div class="cart_item_total cart_info_col">
+                        <div class="cart_item_title">Total:</div>
+                        <div class="cart_item_text">$980.00</div>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="cart_item clearfix">
+                    <div class="titlebox">
+                      <input type="checkbox" class="mr-2" name="" id="" />
+                      <label for=""></label>
+                      <div class="titlebox">
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name=""
+                          class="mr-2"
+                        />
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                    <div class="cart_item_image">
+                      <img src="./imgs/prd3.jpg" alt="" />
+                    </div>
+                    <div class="cart_item_info d-flex flex-md-row">
+                      <div class="cart_item_name cart_info_col">
+                        <div class="cart_item_title">Name:</div>
+                        <div class="cart_item_text">Octo Pendant x Light</div>
+                      </div>
+                      <div class="cart_item_color cart_info_col">
+                        <div class="cart_item_title">Color:</div>
+                        <div class="cart_item_text">Yellow</div>
+                      </div>
+                      <div class="cart_item_quantity cart_info_col">
+                        <div class="cart_item_title">Quantity:</div>
+                        <div class="cart_item_text">1</div>
+                      </div>
+                      <div class="cart_item_price cart_info_col">
+                        <div class="cart_item_title">Price:</div>
+                        <div class="cart_item_text">$1,408.00</div>
+                      </div>
+                      <div class="cart_item_total cart_info_col">
+                        <div class="cart_item_title">Total:</div>
+                        <div class="cart_item_text">$1,408.00</div>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="cart_item clearfix">
+                    <div class="titlebox">
+                      <input type="checkbox" class="mr-2" name="" id="" />
+                      <label for=""></label>
+                      <div class="titlebox">
+                        <input type="checkbox" name="" class="mr-2" />
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                    <div class="cart_item_image">
+                      <img src="./imgs/prd4.jpg" alt="" />
+                    </div>
+                    <div class="cart_item_info d-flex flex-md-row">
+                      <div class="cart_item_name cart_info_col">
+                        <div class="cart_item_title">Name:</div>
+                        <div class="cart_item_text">Norman Pendant Light</div>
+                      </div>
+                      <div class="cart_item_color cart_info_col">
+                        <div class="cart_item_title">Color:</div>
+                        <div class="cart_item_text">White</div>
+                      </div>
+                      <div class="cart_item_quantity cart_info_col">
+                        <div class="cart_item_title">Quantity:</div>
+                        <div class="cart_item_text">1</div>
+                      </div>
+                      <div class="cart_item_price cart_info_col">
+                        <div class="cart_item_title">Price:</div>
+                        <div class="cart_item_text">$114.98</div>
+                      </div>
+                      <div class="cart_item_total cart_info_col">
+                        <div class="cart_item_title">Total:</div>
+                        <div class="cart_item_text">$114.98</div>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="cart_item clearfix">
+                    <div class="titlebox">
+                      <input type="checkbox" class="mr-2" name="" id="" />
+                      <label for=""></label>
+                      <div class="titlebox">
+                        <input type="checkbox" name="" class="mr-2" />
+                        <span class="checkmark"></span>
+                      </div>
+                    </div>
+                    <div class="cart_item_image">
+                      <img src="./imgs/prd5.jpg" alt="" />
+                    </div>
+                    <div class="cart_item_info d-flex flex-md-row">
+                      <div class="cart_item_name cart_info_col">
+                        <div class="cart_item_title">Name:</div>
+                        <div class="cart_item_text">Ribbon Pendant Light</div>
+                      </div>
+                      <div class="cart_item_color cart_info_col">
+                        <div class="cart_item_title">Color:</div>
+                        <div class="cart_item_text">White</div>
+                      </div>
+                      <div class="cart_item_quantity cart_info_col">
+                        <div class="cart_item_title">Quantity:</div>
+                        <div class="cart_item_text">1</div>
+                      </div>
+                      <div class="cart_item_price cart_info_col">
+                        <div class="cart_item_title">Price:</div>
+                        <div class="cart_item_text">$112.00</div>
+                      </div>
+                      <div class="cart_item_total cart_info_col">
+                        <div class="cart_item_title">Total:</div>
+                        <div class="cart_item_text">$112.00</div>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                </ul>
+              </div>
+              <div class="order_total">
+                <div class="order_total_content text-md-right">
+                  <div class="order_total_title">Order Total:</div>
+                  <div class="order_total_amount">$3,793.00</div>
+                </div>
+              </div>
+              <div class="buynowbox">
+                <a href="Checkout.html"
+                  ><button class="button__fill" type="submit">
+                    CHECK OUT
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Working  -->
+    <section class="working section__padding">
+      <div class="container">
+        <div class="title">
+          <h2>Why Shop With Us?</h2>
+        </div>
+        <div class="working__content owl-carousel owl-theme">
+          <div class="item">
+            <img src="./imgs/working1a.svg" alt="" />
+            <p>Best Seller</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working2a.svg" alt="" />
+            <p>Sustainable Brand</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working3a.svg" alt="" />
+            <p>Quick Ship</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working4a.svg" alt="" />
+            <p>Eco-Friendly</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working5a.svg" alt="" />
+            <p>Handmade</p>
+          </div>
+          <div class="item">
+            <img src="./imgs/working6a.svg" alt="" />
+            <p>Warranty Included</p>
+          </div>
+        </div>
+        <div class="working__btn text-center mt-3">
+          <button class="button__fill">Join Us Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section__padding">
+      <div class="container">
+        <div class="footer__content">
+          <div class="row">
+            <div class="col-xl-12 col-md-6 col-sm-6">
+              <div class="row row__up">
+                <div class="col-xl-4 mb-3">
+                  <h2 class="btn-footer">
+                    about us
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">Art & Culture</a>
+                    </li>
+                    <li>
+                      <a href="./careers.html">careers</a>
+                    </li>
+                    <li>
+                      <a href="./faq.html">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    showroom
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">location</a>
+                    </li>
+                    <li>
+                      <a href="">find nearest shop</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    blog
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">magazine</a>
+                    </li>
+                    <li>
+                      <a href="">editor's pick</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6 col-sm-6">
+              <div class="row">
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    return & cancellations
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="./return.html">returns</a>
+                    </li>
+                    <li>
+                      <a href="">cancellations</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    shipping & payment
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">shipping</a>
+                    </li>
+                    <li>
+                      <a href="">payment terms</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    join the us
+                    <i
+                      class="d-xl-none d-lg-none d-md-none d-sm-none d-xs-inline fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <div class="footer__mail">
+                    <input type="mail" placeholder="email" required />
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  <p>
+                    Sign up for our latest news & articles. We won’t give you
+                    spam mails.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="./JS/jquery-3.4.1.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap-4.4.1.js"></script>
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script src="./JS/main.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: false,
+        autoplay: true,
+        // autoplayTimeout: 3000,
+        smartSpeed: 800,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          500: {
+            items: 2,
+          },
+          784: {
+            items: 3,
+          },
+          1215: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

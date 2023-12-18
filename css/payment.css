@@ -1,0 +1,223 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    color: var(--primary);
+}
+body{
+  background-color: var(--light-bg-color);
+}
+b{
+    color: var(--title-color);
+}
+hr{
+  background-color: var(--title-color);
+  opacity: 20%;
+}
+.img{
+  padding: 10px;
+}
+
+.fa-brands{
+  color: var(--title-color);
+}
+.title1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.titlebox{
+    display: flex;
+    align-items: flex-start;
+}
+.titlebox h6{
+    padding-left: 8px;
+}
+.bar span:nth-child(6),
+.bar span:nth-child(4) {
+  color: var(--title-color) !important;
+}
+
+.bar span:nth-child(3) a,
+.bar span:nth-child(5) a,
+.bar span:nth-child(3),
+.bar span:nth-child(5) {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.bar span:nth-child(3) a:hover,
+.bar span:nth-child(5) a:hover {
+  color: var(--primary);
+}
+/* Customize the label (the titlebox) */
+.titlebox {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .titlebox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: solid 1pt var(--primary);
+    background-color: var(--bg-hd-color);
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .titlebox:hover input ~ .checkmark {
+    background-color: var(--bg-hd-color);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .titlebox input:checked ~ .checkmark {
+    background-color: var(--primary);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .titlebox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .titlebox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.paymentbox{
+    margin-top: 46px;
+    margin-bottom: 46px;
+    margin-right: 0;
+    margin-left: 0;
+}  
+.ordersummary{
+    background-color: var(--bg-gray-color);
+    border-radius: var(--curve);
+    padding: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+    box-shadow: var(--card-box-shadow);
+    border: var(--border-color-light);
+    
+}
+.Pay_infor{
+    background-color: var(--bg-gray-color);
+    border-radius: var(--curve);
+    padding: 10px;
+    padding-bottom: 10px;
+    box-shadow: var(--card-box-shadow);
+    border: var(--border-color-light);
+    margin-bottom: 46px;
+}
+.title1{
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.provisional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+}
+.img-fluid{
+    border-radius: var(--curve);
+    box-shadow: var(--card-box-shadow);
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total b{
+    font-size: 25px;
+    color: var(--title-color);
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+/* Working  */
+
+.working {
+  background-color: var(--light-bg-color);
+}
+
+.working .title h2 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.working img {
+  min-height: 128px !important;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  width: 110px !important;
+
+}
+
+.working p {
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 15px
+}
+/* XL */
+@media (min-width:1200px) {
+
+}
+/* LG */
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+/* MD */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+/* SM */
+@media (min-width:576px) and (max-width:767px) {
+
+}
+/* XS */
+@media (max-width:575px) {
+.box{
+  padding: 0;
+}
+
+}

@@ -1,0 +1,346 @@
+body {
+  background-color: var(--light-bg-color);
+}
+.container1 {
+  background-color: var(--bg-gray-color);
+  border-radius: var(--curve);
+}
+.cart_section {
+  padding: 48px;
+}
+.cart_title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 30px;
+  color: var(--primary);
+}
+hr {
+  background-color: var(--text-color);
+  opacity: 20%;
+}
+ul {
+  list-style-type: none;
+}
+.cart_items {
+  margin-top: 8px;
+}
+.cart_list {
+  border: solid 1px var(--border-color-light);
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--light-bg-color);
+  border-radius: var(--curve);
+}
+.cart_item {
+  width: 100%;
+  padding: 15px;
+}
+.cart_item_image {
+  width: 133px;
+}
+.cart_item_image img {
+  max-width: 100%;
+  border-radius: var(--curve);
+}
+.cart_item_info {
+  width: calc(100% - 133px);
+  padding-top: 18px;
+}
+.cart_item_name {
+  margin-left: 15px;
+}
+.cart_item_title {
+  font-size: 14px;
+  color: var(--primary);
+  text-align: center;
+  font-weight: bold;
+}
+.cart_item_text {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  color: var(--title-color);
+}
+.cart_item_text span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -o-transform: translateY(4px);
+  transform: translateY(4px);
+}
+.cart_item_price {
+  text-align: right;
+}
+.cart_item_total {
+  text-align: right;
+}
+.order_total {
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  border: solid 1px var(--border-color-light);
+  box-shadow: var(--card-box-shadow);
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: var(--light-bg-color);
+  border-radius: var(--curve);
+}
+.order_total_title {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--primary);
+  line-height: 60px;
+}
+.order_total_amount {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 26px;
+  line-height: 60px;
+  color: var(--title-color);
+  font-weight: bold;
+  float: right;
+}
+.buynowbox {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 800px;
+}
+/* Working  */
+
+.working {
+  background-color: var(--light-bg-color);
+}
+
+.working .title h2 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.working img {
+  min-height: 128px !important;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  width: 110px !important;
+
+}
+
+.working p {
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 15px
+}
+
+@media screen and (min-width: 768px) {
+  .cart_item {
+    display: flex;
+  }
+  .cart_item_info {
+    justify-content: space-around;
+  }
+  .cart_item_title {
+    font-size: 16px;
+    color: var(--primary);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cart_item_text {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  color: var(--title-color);
+}
+}
+
+
+@media screen and (max-width: 767px) {
+  .cart_item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart_item_info {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .cart_item_info .cart_item_name {
+    margin-left: 0;
+  }
+  .cart_item_image {
+    width: 100%;
+  }
+  .cart_item_image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .col-lg-10 {
+    width: 100%;
+  }
+  .cart_item {
+    flex-direction: row;
+  }
+  .cart_item_title{
+    margin-right: 8px;
+  }
+
+  .cart_item_title,
+  .cart_item_text{
+    text-align: left;
+    margin-top: 0;
+  }
+  .cart_item_info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+    margin-left: 15px;
+  }
+  .cart_item_color,
+  .cart_item_quantity,
+  .cart_item_price,
+  .cart_item_total,
+  .cart_item_name {
+    display: flex;
+    align-items: center;
+    
+  }
+  .cart_section
+   {
+    padding: 24px 15px;
+   }
+   .buynowbox {
+    float: left;
+    padding: 0;
+    width: 100%;
+   }
+   .buynowbox .button__fill {
+    width: 100%;
+   }
+}
+/* Customize the label (the titlebox) */
+.titlebox {
+  display: flex;
+  position: relative;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the browser's default checkbox */
+.titlebox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: solid 1pt var(--primary);
+  background-color: var(--bg-hd-color);
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.titlebox:hover input ~ .checkmark {
+  background-color: var(--bg-hd-color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.titlebox input:checked ~ .checkmark {
+  background-color: var(--primary);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.titlebox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.titlebox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px ) {
+ .cart_item input {
+  margin-right: 15px !important;
+ }
+ .col-lg-10 {
+  width: 100%;
+}
+.cart_item {
+  flex-direction: row;
+}
+.cart_item_title{
+  margin-right: 8px;
+}
+
+.cart_item_title,
+.cart_item_text{
+  text-align: left;
+  margin-top: 0;
+}
+.cart_item_info {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+  margin-left: 15px;
+}
+.cart_item_color,
+.cart_item_quantity,
+.cart_item_price,
+.cart_item_total,
+.cart_item_name {
+  display: flex;
+  align-items: center;
+  
+}
+.cart_section
+ {
+  padding: 24px 15px;
+ }
+ .buynowbox {
+  float: left;
+  padding: 0;
+  width: 100%;
+ }
+ .buynowbox .button__fill {
+  width: 100%;
+ }
+
+}

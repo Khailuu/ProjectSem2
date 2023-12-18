@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Cozy</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/bootstrap-4.4.1.css" />
+    <link rel="stylesheet" href="./CSS/css/all.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/customize.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/Detail.css" />
+  </head>
+  <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div class="overlay__menu"></div>
+    <header id="site-header" class="d-flex align-items-center">
+      <div class="container-fluid header__mobile">
+        <div class="row align-items-center">
+          <div class="col-3 nav-menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="col-3 header__logo">
+            <a href="./index.html">
+              <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+            </a>
+          </div>
+
+          <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
+            <ul class="sub-menu">
+              <li class="d-xl-none d-block">
+                <a href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li id="btn__product">
+                <a class="d-none d-xl-inline" href="">
+                  <span>products</span>
+                </a>
+                <span class="d-xl-none">products</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="menu__product">
+                  <li>
+                    <a href=""> living room </a>
+                  </li>
+                  <li>
+                    <a href=""> dining room </a>
+                  </li>
+                  <li>
+                    <a href=""> kitchen room </a>
+                  </li>
+                  <li>
+                    <a href=""> bedding room </a>
+                  </li>
+                  <li>
+                    <a href=""> bath room </a>
+                  </li>
+                  <li>
+                    <a href=""> outdoor </a>
+                  </li>
+                  <li>
+                    <a href=""> lighting </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">trends</a>
+              </li>
+              <li>
+                <a href="">giftset</a>
+              </li>
+              <li>
+                <a href="">sale</a>
+              </li>
+              <li>
+                <a href="">contact us</a>
+              </li>
+              <li
+                class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+              >
+                <span
+                  href=""
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                  >Login</span
+                >
+                <span
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+                  >/</span
+                >
+                <span
+                  href=""
+                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+                  >Signup</span
+                >
+              </li>
+              <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+                <div class="search-right">
+                  <span
+                    ><a href="#search" class="search-search" title="search">
+                      <i class="fa-solid fa-magnifying-glass"></i> </a
+                  ></span>
+                  <div id="search" class="pop-overlay">
+                    <div class="popup">
+                      <form action="" method="GET" class="search-box d-sm-flex">
+                        <input
+                          type="search"
+                          placeholder="Enter Keyword"
+                          name="s"
+                          required="required"
+                          autofocus=""
+                        />
+                        <button type="submit" class="btn">Search</button>
+                      </form>
+                      <a class="close" href="#close">×</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 header__link">
+            <div class="header__account d-inline">
+              <i class="fa-solid fa-user d-none d-xl-inline"></i>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Account</span
+            >
+            </div>
+            <a href="./Cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <div class="mobile-position DarkandLight d-inline-block">
+              <nav class="navigation">
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch mb-0" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode-container">
+                      <i class="fa-solid fa-moon gg-moon"></i>
+                      <i class="fa-solid fa-sun gg-sun"></i>
+                    </div>
+                  </label>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- button to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+    <!-- Wrapper  -->
+    <section id="popUp">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label for="click-checkbox">
+                <input type="checkbox" id="click-checkbox" /><span
+                  id="checkbox"
+                >
+                  Remember me
+                </span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <div class="login__social mt-3">
+              <div class="row">
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+                <div class="col-2">
+                  <span style="color: #fff">Or</span>
+                </div>
+                <div class="col-5">
+                  <hr style="background-color: #fff" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button>
+                    <i class="fa-brands fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-register">
+              <p>
+                Don't Have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-key"></i>
+              </span>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label for="conditions">
+                <input type="checkbox" id="conditions" /><span id="checkbox">
+                  I agree to the terms and conditions
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <div class="login-register">
+              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Content -->
+    <!-- address bar -->
+    <section class="bar">
+      <div class="container">
+        <span><a href="">HOME</a></span>
+        <span>/</span>
+        <span><a href="product.html">PRODUCTS</a></span>
+        <span>/</span>
+        <span>Vertigo Pendant Light</span>
+      </div>
+    </section>
+    <div class="container" id="content">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-md-12 sol-sm-12 col-12" id="imgbox">
+          <div class="row">
+            <div
+              class="col-xl-2 order-xl-0 col-lg-2 order-lg-0 col-md-2 order-md-0 col-sm-12 order-sm-1 col-12 order-1"
+              id="smallimgbox"
+            >
+              <img src="./imgs/pr1.jpg" alt="" class="img-fluid" />
+              <img src="./imgs/pr2.jpg" alt="" class="img-fluid" />
+              <img src="./imgs/pr3.jpg" alt="" class="img-fluid" />
+              <img
+                src="./imgs/pr4.jpg"
+                alt=""
+                class="img-fluid d-sm-none d-md-block"
+              />
+              <img
+                src="./imgs/pr5.jpg"
+                alt=""
+                class="img-fluid d-none d-sm-block"
+              />
+              <img
+                src="./imgs/pr6.jpg"
+                alt=""
+                class="img-fluid d-none d-sm-block"
+              />
+            </div>
+            <div
+              class="col-xl-10 order-xl-1 col-lg-10 order-lg-1 col-md-10 order-md-1 col-sm-12 order-sm-0 col-12 order-0"
+              id="bigimgbox"
+            >
+              <img src="./imgs/pr1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12" id="detail">
+          <div class="productname">
+            <h2>Vertigo Pendant Light</h2>
+            <p>SKU:L0021310</p>
+            <div class="ratings-section">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+          <div class="productprice">
+            <h2>$1,405.00</h2>
+          </div>
+          <div class="selectsize">
+            <h5>Color</h5>
+            <label class="orange">
+              <input
+                type="radio"
+                name="color"
+                value="orange"
+                checked="checked"
+              />
+              <div class="layer"></div>
+              <div class="button"><span></span></div>
+            </label>
+
+            <label class="amber">
+              <input type="radio" name="color" value="amber" />
+              <div class="layer"></div>
+              <div class="button"><span></span></div>
+            </label>
+
+            <label class="lime">
+              <input type="radio" name="color" value="lime" />
+              <div class="layer"></div>
+              <div class="button"><span></span></div>
+            </label>
+
+            <label class="teal">
+              <input type="radio" name="color" value="teal" />
+              <div class="layer"></div>
+              <div class="button"><span></span></div>
+            </label>
+          </div>
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus" /><input
+              type="number"
+              step="1"
+              min="1"
+              max=""
+              name="quantity"
+              value="1"
+              title="Qty"
+              class="input-text qty text"
+              size="4"
+              pattern=""
+              inputmode=""
+            /><input type="button" value="+" class="plus" />
+          </div>
+          <div class="btnbox">
+            <div class="addtocartbox">
+              <a href="Cart.html"
+                ><button class="button__stroke" type="submit">
+                  ADD TO CART
+                </button></a
+              >
+            </div>
+            <div class="buynowbox">
+              <a href="Cart.html"
+                ><button class="button__fill" type="submit">BUY NOW</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-12">
+          <div class="introduction">
+            <h4>PRODUCT INTRODUCTION</h4>
+            <p>
+              Vertigo Pendant Light is a unique and impressive pendant light
+              product from the brand Petite Friture. Designed by Constance
+              Guisset, Vertigo Pendant Light has a light and harmonious shape,
+              like a wide-brimmed hat flying in the air. This pendant light is
+              made of ultra-light fiberglass, covered by soft polyurethane
+              fibers, creating a sturdy and flexible structure. When hanging
+              from the ceiling, Vertigo Pendant Light creates unique shadows on
+              the wall, creating a cozy and romantic space. Vertigo Pendant
+              Light comes in various colors and sizes to suit different interior
+              styles. Vertigo Pendant Light is a high-class and luxurious
+              pendant light product that will highlight your living space.
+            </p>
+            <div class="row intcontent">
+              <div class="col-xl-8 col-lg-8 col-12 ct1">
+                <h5>Unique And Impressive Design</h5>
+                <p>
+                  It has a unique and impressive design that is inspired by a
+                  wide-brimmed hat flying in the air. It is a work of art that
+                  can enhance the beauty of any space.
+                </p>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-12">
+                <img
+                  src="./imgs/pr7.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-xl-4 col-lg-4 col-12">
+                <img
+                  src="./imgs/pr8.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-xl-8 col-lg-8 col-12 ct2">
+                <h5>Ultra-Light Fiberglass And Soft Polyurethane Fibers</h5>
+                <p>
+                  It is made of ultra-light fiberglass and soft polyurethane
+                  fibers that create a sturdy and flexible structure. It can
+                  sway gently with the air movement, creating a dynamic and
+                  playful effect.
+                </p>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-12 ct3">
+                <h5>Unique Shadows On The Wall</h5>
+                <p>
+                  It creates unique shadows on the wall when hanging from the
+                  ceiling, creating a cozy and romantic atmosphere. It can also
+                  diffuse a soft and warm light that is pleasant to the eyes.
+                </p>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-12">
+                <img
+                  src="./imgs/pr9.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-xl-4 col-lg-4 col-12">
+                <img
+                  src="./imgs/pr10.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-xl-8 col-lg-8 col-12 ct4">
+                <h5>Various Colors And Sizes</h5>
+                <p>
+                  It creates unique shadows on the wall when hanging from the
+                  ceiling, creating a cozy and romantic atmosphere. It can also
+                  diffuse a soft and warm light that is pleasant to the eyes.
+                </p>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-12">
+                <img
+                  src="./imgs/pr11.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-xl-8 col-lg-8 col-12 ct5">
+                <h5>Constance Guisset</h5>
+                <p>
+                  It is designed by Constance Guisset, a famous French designer
+                  who has won many awards for her design. Vertigo Pendant Light
+                  is one of the most popular products of Petite Friture, a
+                  company that specializes in furniture and lighting.
+                </p>
+              </div>
+              <div class="col-12">
+                <img
+                  src="./imgs/pr12.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="col-12" style="text-align: center">
+                <h5>Vertigo Pendant Light</h5>
+                <p>
+                  A highly technical piece of sophisticated design, the Vertigo
+                  Pendant Light from Petite Friture is ready to bring a striking
+                  silhouette to your well-appointed home.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-12">
+          <div class="details">
+            <h4>DETAILS</h4>
+            <ul>
+              Highlights:
+              <li>Made in France</li>
+              <li>Ultralight structure can rotate slowly with air currents.</li>
+              <li>
+                Part of the permanent collections at multiple design museums
+                including the MoMA in NYC
+              </li>
+              <li>Winner SIT Furniture Design Award - Pendant Lighting 2020</li>
+            </ul>
+            <hr />
+            <ul>
+              Dimensions:
+              <li>Small: Overall: 43.3 in W x 43.3 in D x 5.9 in H</li>
+              <li>Medium: Overall: 55.1 in W x 55.1 in D x 5.9 in H</li>
+              <li>Large: Overall: 78.7 in W x 78.7 in D x 6.7 in H</li>
+            </ul>
+            <hr />
+            <ul>
+              Materials:
+              <li>Polyurethane, steel, fiberglass, mesh textile.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 order-xl-0 col-lg-7 order-xl-0 col-12 order-1">
+          <form action="">
+            <h4>Customer Review</h4>
+            <h5>Your Review</h5>
+            <p>
+              Your email will not be displayed publicly. Required fields are
+              marked *
+            </p>
+            <h6>Your Comment</h6>
+            <textarea
+              name="comment"
+              id="commentid"
+              class="form-control"
+              placeholder="Write Your Comment Here!"
+              style="resize: none"
+            ></textarea>
+            <div class="row">
+              <div class="col-5" style="padding-top: 8px">
+                <h6>Your Name</h6>
+                <input
+                  type="text"
+                  name="Name"
+                  value=""
+                  placeholder=""
+                  id="userid"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-7" style="padding-top: 8px">
+                <h6>Your Email</h6>
+                <input type="email" name="" id="email" class="form-control" />
+              </div>
+            </div>
+            <div class="buynowbox">
+              <button class="button__fill" type="submit" style="width: 100%">
+                SEND NOW
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="col-xl-5 order-xl-1 col-lg-5 order-lg-1 col-12 order-0 starcol"
+        >
+          <div class="col-12">
+            <div class="starrate">
+              <h1>5</h1>
+              <div class="ratings-section">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="side">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>5</div>
+              </div>
+              <div class="side">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="feedback">
+        <div class="container">
+          <div class="row bigcmtbox">
+            <div class="col-12 commentbox">
+              <div>
+                <div class="one">
+                  <b>Anna</b>
+                  <div>
+                    <span class="sub">Submitted</span>
+                    <span class="time">1 days ago</span>
+                  </div>
+                </div>
+                <div class="ratings-section">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p>
+                  Vertigo pendant light is a unique and impressive product by
+                  designer Constance Guisset. This is a hanging lamp with a
+                  gentle and harmonious shape, creating the feeling of flying in
+                  the air. Vertigo pendant light is not only a lighting item,
+                  but also a beautiful and delicate work of art.
+                </p>
+              </div>
+              <div
+                class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4"
+                style="padding: 0"
+              >
+                <img src="./imgs/comment1.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-12 commentbox">
+              <div>
+                <div class="one">
+                  <b>David</b>
+                  <div>
+                    <span class="sub">Submitted</span>
+                    <span class="time">2 days ago</span>
+                  </div>
+                </div>
+                <div class="ratings-section">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p>
+                  I really like the way Vertigo pendant light reflects light and
+                  creates unique shadows on the wall. This is an interesting and
+                  romantic effect, bringing a cozy and luxurious living space.
+                  Vertigo pendant light also rotate gently with the airflow in
+                  the room, creating dynamism and vitality.
+                </p>
+              </div>
+              <div
+                class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4"
+                style="padding: 0"
+              >
+                <img src="./imgs/comment2.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-12 commentbox">
+              <div>
+                <div class="one">
+                  <b>Karl</b>
+                  <div>
+                    <span class="sub">Submitted</span>
+                    <span class="time">3 days ago</span>
+                  </div>
+                </div>
+                <div class="ratings-section">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p>
+                  Vertigo pendant light has many different colors and sizes for
+                  you to choose from. I like black the most, because it creates
+                  a strong contrast with the color of the interior. I also like
+                  the large size, as it creates a dramatic focal point in the
+                  room. Vertigo pendant light is suitable for many different
+                  design styles, from modern to classic.
+                </p>
+              </div>
+              <div
+                class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4"
+                style="padding: 0"
+              >
+                <img src="./imgs/comment3.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-12 commentbox">
+              <div>
+                <div class="one">
+                  <b>Carla</b>
+                  <div>
+                    <span class="sub">Submitted</span>
+                    <span class="time">4 days ago</span>
+                  </div>
+                </div>
+                <div class="ratings-section">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p>
+                  Vertigo pendant light is a high quality and durable product.
+                  It is made from fiberglass and polyurethane, a material that
+                  is light and soft. It is also upholstered in velvet, a smooth
+                  and luxurious fabric. Vertigo pendant light is easy to install
+                  and clean, just remove and wash gently with warm water and
+                  soap.
+                </p>
+              </div>
+              <div
+                class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4"
+                style="padding: 0"
+              >
+                <img src="./imgs/comment4.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-12 commentbox">
+              <div>
+                <div class="one">
+                  <b>Ashley</b>
+                  <div>
+                    <span class="sub">Submitted</span>
+                    <span class="time">5 days ago</span>
+                  </div>
+                </div>
+                <div class="ratings-section">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <p>
+                  I am very satisfied with the Vertigo pendant light and
+                  recommend purchasing it. This is a valuable and classy
+                  product, loved and recognized by many people. It has been
+                  displayed at many famous museums and exhibitions, such as
+                  Moma, CAP and MAD. It has also received many design awards,
+                  such as the Grand Prix du Design de la ville de Paris, Audi
+                  Talent Awards and SIT Furniture Design Award. Vertigo pendant
+                  light is a product not to be missed if you want to decorate
+                  your home.
+                </p>
+              </div>
+              <div
+                class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4"
+                style="padding: 0"
+              >
+                <img src="./imgs/comment5.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- MAY WE SUGGEST -->
+    <div class="container">
+      <h4>MAY WE SUGGEST</h4>
+      <div class="row owl-carousel owl-theme">
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-1.jpg" alt="" /></div>
+            <div><p>Vertigo Pendant Light</p></div>
+            <div><b>PETITE FRITURE</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-2.jpg" alt="" /></div>
+            <div><p>Laverd R11S.1S1M Round Pendant Light</p></div>
+            <div><b>ESTILUZ</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-3.jpg" alt="" /></div>
+            <div><p>Mizu Square Cluster Pendant Light</p></div>
+            <div><b>TERZANI</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-4.jpg" alt="" /></div>
+            <div><p>Tresor Pendant Light</p></div>
+            <div><b>TERZANI</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-5.jpg" alt="" /></div>
+            <div><p>Stream Linear Pendant Light</p></div>
+            <div><b>TERZANI</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-6.jpg" alt="" /></div>
+            <div><p>Circular Five Ring Pendant Light</p></div>
+            <div><b>BOVER</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-7.jpg" alt="" /></div>
+            <div><p>Multiple Skybang Pendant Light</p></div>
+            <div><b>STICKBULB</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-8.jpg" alt="" /></div>
+            <div>
+              <p>Constellation Galaxy Matrix Arrow LED Pendant Light</p>
+            </div>
+            <div><b>SONNEMAN</b></div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="productcard">
+            <div><img src="./imgs/pd-light-9.jpg" alt="" /></div>
+            <div><p>PH Artichoke Pendant Light</p></div>
+            <div><b>LOUIS POULSEN</b></div>
+          </div>
+        </div>
+      </div>
+      <!--product-->
+    </div>
+    <!-- footer -->
+    <footer class="section__padding">
+      <div class="container">
+        <div class="footer__content">
+          <div class="row">
+            <div class="col-xl-12 col-md-6 col-sm-6">
+              <div class="row row__up">
+                <div class="col-xl-4 mb-3">
+                  <h2 class="btn-footer">
+                    about us
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">Art & Culture</a>
+                    </li>
+                    <li>
+                      <a href="./careers.html">careers</a>
+                    </li>
+                    <li>
+                      <a href="./faq.html">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    showroom
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">location</a>
+                    </li>
+                    <li>
+                      <a href="">find nearest shop</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    blog
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">magazine</a>
+                    </li>
+                    <li>
+                      <a href="">editor's pick</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6 col-sm-6">
+              <div class="row">
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    return & cancellations
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="./return.html">returns</a>
+                    </li>
+                    <li>
+                      <a href="">cancellations</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    shipping & payment
+                    <i
+                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <ul class="footer__link">
+                    <li>
+                      <a href="">shipping</a>
+                    </li>
+                    <li>
+                      <a href="">payment terms</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xl-4">
+                  <h2 class="btn-footer">
+                    join the us
+                    <i
+                      class="d-xl-none d-lg-none d-md-none d-sm-none d-xs-inline fa-solid fa-angle-down"
+                    ></i>
+                  </h2>
+                  <div class="footer__mail">
+                    <input type="mail" placeholder="email" required />
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  <p>
+                    Sign up for our latest news & articles. We won’t give you
+                    spam mails.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- javaScript -->
+    <script src="./JS/jquery-3.4.1.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap-4.4.1.js"></script>
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script>
+      // Click doi hinh
+      $("#smallimgbox img").click(function () {
+        var linkimg = $(this).attr("src");
+
+        $("#bigimgbox img").fadeOut(250, function () {
+          $("#bigimgbox img").attr("src", linkimg);
+          $("#bigimgbox img").fadeIn(250);
+        });
+      });
+      function wcqib_refresh_quantity_increments() {
+        jQuery(
+          "div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)"
+        ).each(function (a, b) {
+          var c = jQuery(b);
+          c.addClass("buttons_added"),
+            c
+              .children()
+              .first()
+              .before('<input type="button" value="-" class="minus" />'),
+            c
+              .children()
+              .last()
+              .after('<input type="button" value="+" class="plus" />');
+        });
+      }
+      String.prototype.getDecimals ||
+        (String.prototype.getDecimals = function () {
+          var a = this,
+            b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+          return b
+            ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0))
+            : 0;
+        }),
+        jQuery(document).ready(function () {
+          wcqib_refresh_quantity_increments();
+        }),
+        jQuery(document).on("updated_wc_div", function () {
+          wcqib_refresh_quantity_increments();
+        }),
+        jQuery(document).on("click", ".plus, .minus", function () {
+          var a = jQuery(this).closest(".quantity").find(".qty"),
+            b = parseFloat(a.val()),
+            c = parseFloat(a.attr("max")),
+            d = parseFloat(a.attr("min")),
+            e = a.attr("step");
+          (b && "" !== b && "NaN" !== b) || (b = 0),
+            ("" !== c && "NaN" !== c) || (c = ""),
+            ("" !== d && "NaN" !== d) || (d = 0),
+            ("any" !== e &&
+              "" !== e &&
+              void 0 !== e &&
+              "NaN" !== parseFloat(e)) ||
+              (e = 1),
+            jQuery(this).is(".plus")
+              ? c && b >= c
+                ? a.val(c)
+                : a.val((b + parseFloat(e)).toFixed(e.getDecimals()))
+              : d && b <= d
+              ? a.val(d)
+              : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())),
+            a.trigger("change");
+        });
+      //owl-carousel
+      $(".owl-carousel").owlCarousel({
+        items: 9,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+          0: { items: 1 },
+          420: { items: 2 },
+          576: { items: 2 },
+          768: { items: 4 },
+          992: { items: 5 },
+          1200: { items: 5 },
+        },
+      });
+    </script>
+    <script src="./JS/main.js"></script>
+
+  </body>
+</html>

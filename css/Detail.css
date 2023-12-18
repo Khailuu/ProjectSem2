@@ -1,0 +1,437 @@
+body{
+background-color: var(--light-bg-color);
+color: var(--text-color);
+}
+h1, h2, h3, h4 ,h5 ,h6{
+    font-weight: bold;
+    color: var(--primary);
+}
+.img-fluid{
+    border-radius: var(--curve);
+    margin-bottom: 15px;
+    box-shadow: var(--card-box-shadow);
+}
+.owl-carousel{
+  margin-bottom: 46px;
+  margin-top: 20px;
+}
+
+.productcard img{
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+.productcard p{
+  height: 16px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+.productcard b{
+  color: var(--primary);
+}
+#content{
+    margin-top: 30px;
+}
+
+.productname h2{
+    font-weight: bold;
+    color: var(--primary);
+}
+.productname p{
+    margin-bottom: 8px;
+    font-weight: thin;
+}
+.productprice h2{
+    font-weight: bold;
+    color: var(--title-color);
+}
+.checked {
+    color: orange;
+  }
+.introduction h4{
+    font-weight: bold;
+    color: var(--primary);
+}
+.intcontent h5{
+    font-weight: bold;
+    color: var(--primary);
+}
+.details{
+    position: sticky;
+    top:120px;  
+    background-color: var(--bg-gray-color);
+    border-radius: var(--curve);
+    padding: 12px;
+    box-shadow: var(--card-box-shadow);
+}
+.details h4{
+    font-weight: bold;
+    color: var(--primary);
+}
+.details ul{
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--title-color);
+}
+.details ul li{
+    font-weight: normal;
+    font-size: 16px;
+}
+.btnbox{
+  display: flex;
+}
+.btnbox button{
+  margin-right: 15px;
+}
+
+/* -- quantity box -- */
+
+.quantity {
+ display: inline-block; 
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+.quantity .input-text.qty {
+ width: 100px;
+ height: 50px;
+ padding: 0 5px;
+ text-align: center;
+ background-color: var(--light-bg-color);
+ border: 1px solid var(--primary);
+ color: var(--title-color);
+}
+
+.quantity.buttons_added {
+ text-align: left;
+ position: relative;
+ white-space: nowrap;
+ vertical-align: top; 
+}
+
+.quantity.buttons_added input {
+ display: inline-block;
+ margin: 0;
+ vertical-align: top;
+ box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+ padding: 7px 10px 8px;
+ height: 50px;
+ background-color: var(--light-bg-color);
+ border: 1px solid var(--primary);
+ cursor:pointer;
+color: var(--title-color);
+}
+ 
+
+.quantity.buttons_added .minus {
+border-right: 0; 
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+
+.quantity.buttons_added .plus {
+border-left: 0;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+ background: rgba(0, 0, 0, 0.2); }
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ margin: 0; }
+ 
+ .quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+ outline: none; }
+
+
+.addtocartbox{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.buynowbox{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.ct1,.ct2,.ct3,.ct4,.ct5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.selectsize input {
+    display: none;
+  }
+  
+  .button {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .button span {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background: #eeeeee;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: ease .3s;
+  }
+  
+  .button span:hover {
+    padding: 10px;
+  }
+  
+  .orange .button span {
+    background: black;
+  }
+  
+  .amber .button span {
+    background: white;
+  }
+  
+  .lime .button span {
+    background: rgb(255, 196, 0);
+  }
+  
+  .teal .button span {
+    background: navy;
+  }
+  
+  
+  .layer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: ease .3s;
+    z-index: -1;
+  }
+  
+  .orange input:checked ~ .layer {
+    border: solid 1pt var(--primary);
+    border-radius: var(--curve);
+  }
+  
+  .amber input:checked ~ .layer {
+    border: solid 1pt var(--primary);
+    border-radius: var(--curve);
+  }
+  
+  .lime input:checked ~ .layer {
+    border: solid 1pt var(--primary);
+    border-radius: var(--curve);
+  }
+  
+  .teal input:checked ~ .layer {
+    border: solid 1pt var(--primary);
+    border-radius: var(--curve);
+  }
+.starcol{
+    margin-bottom: 46px;
+}
+.starrate{
+    text-align: center;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+}
+/* Three column layout */
+.side {
+    float: left;
+    width: 26%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+    width: 4%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .bar span:nth-child(3),
+.bar span:nth-child(4) {
+
+  color: var(--title-color) !important;
+}
+
+.bar span:nth-child(3) a,
+.bar span:nth-child(3) {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.bar span:nth-child(3) a:hover {
+  color: var(--primary);
+}
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: var(--curve);
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 100%; height: 18px;border-radius: var(--curve); background-color: var(--primary);}
+  .bar-4 {width: 0%; height: 18px; background-color: var(--primary);}
+  .bar-3 {width: 0%; height: 18px; background-color: var(--primary);}
+  .bar-2 {width: 0%; height: 18px; background-color: var(--primary);}
+  .bar-1 {width: 0%; height: 18px; background-color: var(--primary);}
+  
+  /* cmtbox */
+.feedback{
+    margin-top: 20px;
+}
+.commentbox{
+    padding: 0;
+    margin-bottom: 20px;
+}
+.commentbox b{
+    color: var(--title-color);
+    font-size: 20px;
+}
+.bigcmtbox{
+    margin-bottom: 26px;
+}
+.subb{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.sub{
+    font-weight: bold;
+    color: var(--title-color);
+}
+/* XL */
+@media (min-width:1200px) {
+    #smallimgbox img{
+        margin-bottom: 10px;
+    }
+    .addtocart:hover{
+        background-color: #f8121a;
+        transition: all ease 0.5s;
+        outline: none;
+    }
+}
+/* LG */
+@media (min-width:992px) and (max-width:1199px) {
+    #smallimgbox img{
+        margin-bottom: 10px;
+    }
+    .addtocart:hover{
+        background-color: #f8121a;
+        transition: all ease 0.5s;
+        outline: none;
+    }
+}
+/* MD */
+@media (min-width:768px) and (max-width:991px) {
+    #smallimgbox img{
+        margin-bottom: 10px;
+    }
+    #imgbox{
+        margin-bottom: 20px;
+    }
+    .side {
+        float: left;
+        width: 18%;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      
+      .middle {
+        float: left;
+        width: 78%;
+        margin-top: 10px;
+      }
+      
+      /* Place text to the right */
+      .right {
+        text-align: right;
+        width: 4%;
+      }
+}
+.checked {
+    color: orange;
+  }
+/* SM */
+@media (min-width:576px) and (max-width:767px) {
+    #imgbox{
+        margin-bottom: 20px;
+    }
+    #smallimgbox{
+        display: flex;
+        justify-content: center;
+    }
+    #smallimgbox img{
+        width: 85px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #bigimgbox{
+        margin-bottom: 10px;
+    }
+}   
+/* XS */
+@media (max-width:575px) {
+    #imgbox{
+        margin-bottom: 20px;
+    }
+    #smallimgbox{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    #smallimgbox img{
+        width: 85px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #bigimgbox{
+        margin-bottom: 10px;
+    }
+}
