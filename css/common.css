@@ -12,11 +12,7 @@
 .bar span:nth-child(2) {
   color: var(--title-color);
   text-decoration: none;
-  transition: all .3s;
-}
-
-.bar span:first-child a:hover {
-color: var(--primary);
+  transition: all 0.3s;
 }
 
 /* Header  */
@@ -29,7 +25,7 @@ header {
   height: 90px;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 header .search-right {
@@ -167,11 +163,6 @@ header ul.sub-menu > li {
 header ul.sub-menu > li:last-child {
 }
 
-header ul li a:hover {
-  color: var(--primary);
-  cursor: pointer;
-}
-
 header ul li a {
   display: block;
 }
@@ -186,11 +177,6 @@ header ul li a {
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s;
-}
-
-header ul li a:hover {
-  text-decoration: none;
-  color: var(--primary);
 }
 
 header ul li a i {
@@ -209,25 +195,12 @@ header .header__link i {
   cursor: pointer;
 }
 
-header .header__link > i:hover {
-  color: var(--primary);
-}
-
 header .header__link span {
   cursor: pointer;
   color: var(--title-color);
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s;
-}
-
-header .header__link .header__account:hover i,
-header .header__link .header__account:hover span {
-  color: var(--primary)
-}
-
-header .header__link span:hover {
-  color: var(--primary);
 }
 
 header .header__link a:first-of-type {
@@ -243,6 +216,10 @@ header.nav-fixed {
   height: 70px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+header ul.menu__product li {
+  width: 100%;
 }
 
 header ul.menu__product li a {
@@ -283,10 +260,6 @@ input:checked + .mode-container i.gg-moon {
 /* popup Login  */
 /* .wrapper button */
 
-.wrapper button:hover {
-  background-color: #ccc0;
-  color: #ff6e65;
-}
 .wrapper button:focus {
   box-shadow: none;
   outline: none;
@@ -432,10 +405,7 @@ input:checked + .mode-container i.gg-moon {
   text-decoration: none;
   transition: all 0.5s;
 }
-.wrapper .remember-forgot a:hover {
-  color: #1ee697;
-  transition: all 0.5s;
-}
+
 .wrapper .btn-submit {
   width: 100%;
   height: 45px;
@@ -446,12 +416,7 @@ input:checked + .mode-container i.gg-moon {
   transition: all 0.5s;
   font-size: 20px;
 }
-.wrapper .btn-submit:hover {
-  background: #000;
-  color: var(--primary);
-  transition: all 0.5s;
-  font-size: 25px;
-}
+
 .wrapper .login-register {
   font-size: 0.9em;
   color: var(--primary);
@@ -463,13 +428,6 @@ input:checked + .mode-container i.gg-moon {
   text-decoration: none;
   margin-left: 5px;
   transition: all 0.5s;
-}
-.wrapper .login-register a:hover {
-  text-decoration: underline;
-  transition: all 0.5s;
-}
-.wrapper #checkbox:hover {
-  cursor: pointer;
 }
 
 .wrapper .login__social span {
@@ -486,9 +444,7 @@ input:checked + .mode-container i.gg-moon {
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
 }
-#customBtn:hover {
-  cursor: pointer;
-}
+
 span.label {
   font-family: serif;
   font-weight: normal;
@@ -518,11 +474,6 @@ span.buttonText {
   border-radius: var(--curve);
   border-color: transparent;
   transition: all 0.3s;
-}
-
-.wrapper .login__social button:hover {
-  background-color: var(--bg-color);
-  color: var(--primary);
 }
 
 .wrapper .login__social .row__bottom span {
@@ -603,11 +554,6 @@ footer .footer__link li a {
   transition: all 0.5s;
 }
 
-footer .footer__link li:hover a {
-  text-decoration: none;
-  color: var(--primary);
-}
-
 /* btn-toptop */
 #myBtn {
   display: none;
@@ -626,8 +572,75 @@ footer .footer__link li:hover a {
   width: 50px;
 }
 
-
 /* Responsive */
+@media screen and (min-width: 992px) {
+  .bar span:first-child a:hover {
+    color: var(--primary);
+  }
+
+  header ul li a:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+
+  header ul li a:hover {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  header .header__link > i:hover {
+    color: var(--primary);
+  }
+  header .header__link .header__account:hover i,
+  header .header__link .header__account:hover span {
+    color: var(--primary);
+  }
+
+  header ul.sub-menu > li:hover > a {
+    color: var(--primary);
+  }
+
+  header .menu__product li:hover a {
+    color: var(--primary);
+  }
+
+  header .header__link span:hover {
+    color: var(--primary);
+  }
+  .wrapper button:hover {
+    background-color: #ccc0;
+    color: #ff6e65;
+  }
+  .wrapper .remember-forgot a:hover {
+    color: #1ee697;
+    transition: all 0.5s;
+  }
+  .wrapper .btn-submit:hover {
+    background: #000;
+    color: var(--primary);
+    transition: all 0.5s;
+    font-size: 25px;
+  }
+  .wrapper .login-register a:hover {
+    text-decoration: underline;
+    transition: all 0.5s;
+  }
+  .wrapper #checkbox:hover {
+    cursor: pointer;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  .wrapper .login__social button:hover {
+    background-color: var(--bg-color);
+    color: var(--primary);
+  }
+  footer .footer__link li:hover a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+}
+
 @media screen and (min-width: 1200px) {
   header .sub-menu li {
     position: relative;
@@ -668,6 +681,7 @@ footer .footer__link li:hover a {
   header .menu__product a:hover {
     color: var(--primary);
   }
+
 
   .colection .colection__content img {
     min-height: 350px;
@@ -722,9 +736,6 @@ footer .footer__link li:hover a {
     cursor: pointer;
   }
 
-  header .menu__product li:hover a {
-    color: var(--primary);
-  }
 
   header .menu__product.active {
     display: block;
@@ -779,9 +790,7 @@ footer .footer__link li:hover a {
     display: block;
   }
 
-  header ul.sub-menu > li:hover > a {
-    color: var(--primary);
-  }
+ 
 
   header ul.menu__product li {
     margin-bottom: 16px !important;
@@ -831,9 +840,9 @@ footer .footer__link li:hover a {
     transition: height all 0.3s, opacity all 0.3s;
   }
   /* Footer  */
-footer.section__padding {
-  padding-top: 48px;
-}
+  footer.section__padding {
+    padding-top: 48px;
+  }
 
   footer .footer__content .footer__link {
     display: none;
@@ -906,6 +915,11 @@ footer.section__padding {
 
   footer p {
     font-size: 14px;
+  }
+
+  a:hover {
+    color: var(--title-color);
+    text-decoration: none;
   }
 }
 

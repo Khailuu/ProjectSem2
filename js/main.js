@@ -263,5 +263,18 @@ $(document).on("ready", function () {
   });
 });
 
+const bg__products = getEleAll(".bg__product");
+const overlays = getEleAll(".product__overlay");
 
+bg__products.forEach((bg__product, index) => {
+  bg__product.onclick = () => {
+    const currentOverlay = overlays[index];
+    overlays.forEach((overlay, i) => {
+      if (i !== index && overlay.classList.contains("active")) {
+        overlay.classList.remove("active");
+      }
+    })
+    currentOverlay.classList.toggle("active");
+  }
+})
 // Chatbot 
