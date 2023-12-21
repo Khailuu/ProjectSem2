@@ -41,7 +41,7 @@ b{
 .BillingDetails{
     background-color: var(--bg-gray-color);
     border-radius: var(--curve);
-    padding: 10px;
+    padding: 25px;
     padding-bottom: 10px;
     box-shadow: var(--card-box-shadow);
     border: var(--border-color-light);
@@ -55,13 +55,13 @@ label{
     color: var(--title-color);
 }
 .orderbtn{
-    padding-top: 10PX;
+    padding-top: 25px;
     padding-bottom: 10PX;
 }
 .yourorder{
     background-color: var(--bg-gray-color);
     border-radius: var(--curve);
-    padding: 10px;
+    padding: 25px;
     padding-bottom: 10px;
     height: fit-content;
     box-shadow: var(--card-box-shadow);

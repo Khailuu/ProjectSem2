@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Profile</title>
+
+  <!----------------------- FONT --------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./font-awesome/css/all.min.css" />
+
+  <!------------------------ CSS ------------------------->
+  <link rel="stylesheet" href="./css/bootstrap-4.4.1.css" />
+  <link rel="stylesheet" href="./css/customize.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/profile.css" />
+
+</head>
+
+<body>
+   <!-- Messenger Plugin chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Plugin chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat"></div>
+   <div class="overlay__menu"></div>
+   <header id="site-header" class="d-flex align-items-center">
+    <div class="container-fluid header__mobile">
+      <div class="row align-items-center">
+        <div class="col-3 nav-menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="col-3 header__logo">
+          <a href="./index.html">
+            <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+          </a>
+        </div>
+
+        <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
+          <ul class="sub-menu">
+            <li class="d-xl-none d-block">
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li id="btn__product">
+              <a class="d-none d-xl-inline" href="./product.html">
+                <span>products</span>
+              </a>
+              <span class="d-xl-none">products</span>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="menu__product">
+                <li>
+                  <a href=""> Styling </a>
+                </li>
+                <li>
+                  <a href=""> living room </a>
+                </li>
+                <li>
+                  <a href=""> dining room </a>
+                </li>
+                <li>
+                  <a href=""> kitchen room </a>
+                </li>
+                <li>
+                  <a href=""> bedding room </a>
+                </li>
+                <li>
+                  <a href=""> bath room </a>
+                </li>
+                <li>
+                  <a href=""> outdoor </a>
+                </li>
+                <li>
+                  <a href=""> lighting </a>
+                </li>
+                <li>
+                  <a href="./product.html"> All products </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./trends.html">trends</a>
+            </li>
+            <li>
+              <a href="./gift.html">giftset</a>
+            </li>
+            <li>
+              <a href="./sale.html">sale</a>
+            </li>
+            <li>
+              <a href="">contact us</a>
+            </li>
+            <li
+              class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+            >
+              <i class="fa-solid fa-user d-inline d-xl-none"></i>
+              <span
+                href=""
+                class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                >Account</span
+              >
+            </li>
+            <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+              <div class="search-right">
+                <span
+                  ><a href="#search" class="search-search" title="search">
+                    <i class="fa-solid fa-magnifying-glass"></i> </a
+                ></span>
+                <div id="search" class="pop-overlay">
+                  <div class="popup">
+                    <form action="" method="GET" class="search-box d-sm-flex">
+                      <input
+                        type="search"
+                        placeholder="Enter Keyword"
+                        name="s"
+                        required="required"
+                        autofocus=""
+                      />
+                      <button type="submit" class="btn">Search</button>
+                    </form>
+                    <a class="close" href="#close">×</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 header__link">
+          <div class="header__account d-inline">
+            <i class="fa-solid fa-user d-none d-xl-inline"></i>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Account</span
+            >
+          </div>
+          <a href="./Cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div class="mobile-position DarkandLight d-inline-block">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch mb-0" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="fa-solid fa-moon gg-moon"></i>
+                    <i class="fa-solid fa-sun gg-sun"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- button to top  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </button>
+  <!-- Wrapper  -->
+  <section id="popUp">
+    <div class="wrapper">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input id="username" type="eamil" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input id="password" type="password" required />
+            <label for="">Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label for="click-checkbox">
+              <input type="checkbox" id="click-checkbox" /><span
+                id="checkbox"
+              >
+                Remember me
+              </span>
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+          <div class="login__social mt-3">
+            <div class="row">
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+              <div class="col-2">
+                <span style="color: #fff">Or</span>
+              </div>
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+            </div>
+            <div class="row row__bottom">
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-google"></i>
+                  <span>Google</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-register">
+            <p>
+              Don't Have an account?<a class="register-link" href="#"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input class="input-signup-username" type="eamil" required />
+            <label for="">Username</label>
+          </div>
+          <!-- <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="eamil" required />
+            <label for="">Email</label>
+          </div> -->
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input class="input-signup-password" type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="conditions">
+              <input type="checkbox" id="conditions" /><span id="checkbox">
+                I agree to the terms and conditions
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit signup__signInButton">Register</button>
+          <div class="login-register">
+            <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Toast message  -->
+  <section class="message">
+    <div class="message__err">
+      <h2>Login Error</h2>
+      <p>Please check your username or password</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="message__suc">
+      <h2>Login Success</h2>
+      <p>Please wait a minute</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+  </section>
+  <!----------------BAR----------------------->
+  <section class="bar">
+    <div class="container">
+      <span><a href="./index.html">HOME</a></span>
+      <span>/</span>
+      <span>PROFILE</span>
+    </div>
+  </section>
+
+  <!----------------BAR----------------------->
+
+
+  <section class="section__padding" style="background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12">
+          <div class="title">
+            <h2>Let's elevate your everyday</h2>
+          </div>
+        </div>
+        <div
+          class="col-xl-5 col-lg-5 col-md-7 col-sm-9 col-9 text_profile offset-md-3 offset-xl-0 offset-lg-0 offset-xs-3 offset-3">
+          <h6>COZY Funiture is a full-service store design company, run by 4 members represented by Mr.Khai and more
+            than 50+ employees, headquartered in Ho Chi Minh City.<br>
+            We provide customers nationwide with a variety of turnkey services, including full interior design services
+            for renovation projects, new construction as well as style selection and creation.<br>
+            The foundation of our work is a thorough and time-tested process that considers every detail of your
+            thoughtfully managed and cohesive home. </h6>
+        </div>
+      </div>
+
+      <hr class="hr_product mx-auto col-12">
+
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center;">
+          <a href=""><button class="btn rounded-lg"
+              style="border: solid 1px var(--primary); height: 50px; width: 160px; padding: 0;">
+              <h3 style="font-size: 14px !important; padding: 0; justify-content: center; color: var(--primary);">
+                HOW WE DO IT</h3>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- /////////////////////TRAN NGHIA -->
+  <section class="section__padding padding_box_profile" style="padding-top: 0; background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title_designer" style="padding-bottom: 48px;">
+            <h2>Designer <br class="d-sm-none d-xs-block"> TRAN NGHIA</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 avt_profile">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12">
+                <img src="./imgs/background_nghia.jpg" alt="" style="box-shadow: var(--card-box-shadow);"
+                  class="img-fluid">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12">
+                <div class="sub_trannghia" style="margin-top: 30px;">
+                  <h3> Mr.TRAN NGHIA </h3>
+                  <i class="fa-regular fa-badge-check fa-lg"
+                    style=" color: #ff5c00; outline: none; width: 20px; height: 20px;"></i>
+                  <h3 style="color: #ff5c00;"> Co-Leader</h3>
+                </div>
+                <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
+                <div class="about_trannghia">
+                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
+                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
+                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                    TRAN NGHIA's uplifting and accessible design philosophy has transformed countless homes around the
+                    world through her design work, home collections, books, television shows and media
+                    appearances.<br><br>
+                    TRAN NGHIA has become one of the most famous interior designers in the world and is on the ELLE
+                    DÉCOR “A-List”.<br><br>
+                    “My job as a designer is to be able to tell my clients' stories through the things they choose for
+                    their homes. What they saw, who they loved and where they hope to go next.” - TRAN NGHIA </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="title_designer designer_trannghia"
+              style="padding-top:48px;background-color: var(--bg-gray-color);box-shadow: var(--card-hover-box-shadow); border-radius: 8px; height: 100%;">
+              <h2 style="font-size: 36px; margin: 0;">Interior Design Portfolio</h2>
+              <p
+                style="text-align: center; margin-top: 20px; margin-bottom: 0;padding: 0 10px 0 10px; color: var(--title-color);">
+                From traditional to modern interior design and coastal to French styles, our diverse luxury home
+                portfolio is your source of inspiration.
+              </p>
+              <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6 ">
+                          <img src="./imgs/img_profile_1.jpg" alt="" class="img-fluid d-none d-md-block" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                          <img src="./imgs/img_profile_1.1.jpg" alt="" class="img-fluid d-md-none" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            VINHOME VILLA RESIDENCE
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            The bold interior decoration of this villa residence shows off a fine mix of edgy and chic
+                            cohesiveness that truly makes
+                            it one of a kind.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_2.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            REFINED LUXURY
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            TRAN NGHIA's sophisticated style comes to life with vibrant colors and casual luxury.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 box_img_profile">
+        <div class="col-12">
+          <div class="row img_profile image-container" style="margin-top: 48px;">
+            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <div class="text-container">
+              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
+                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
+                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row " style="margin-top: 25px;">
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" style="margin-top: 30px;">
+            <div class="img_profile 2 img-hide-nghia">
+              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
+            <div class="col-6 img_profile2 img-hide-nghia" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-nghia" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-nghia" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-nghia" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button_trannghia"
+      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
+      VIEW MORE
+    </button>
+    </div>
+  </section>
+
+  <section class="section__padding padding_box_profile" style="padding-top: 0; background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title_designer" style="padding-bottom: 48px;">
+            <h2>Designer <br class="d-sm-none d-xs-block"> KHAI LUU</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 avt_profile">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12">
+                <img src="./imgs/background_khai.jpg" alt="" style="box-shadow: var(--card-box-shadow);"
+                  class="img-fluid">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12">
+                <div class="sub_trannghia" style="margin-top: 30px;">
+                  <h3> Mr.KHAI LUU </h3>
+                  <i class="fa-regular fa-badge-check fa-lg"
+                    style=" color: #ff5c00; outline: none; width: 20px; height: 20px;"></i>
+                  <h3 style="color: #ff5c00;">Leader</h3>
+                </div>
+                <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
+                <div class="about_trannghia">
+                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
+                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
+                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                    Award winning Interior Designer. I have had the great honor of being named to the AD100,
+                    Architectural Digest's annual compendium of the world's top designers and Elle Décor's A-List. <br>
+                    <br>
+                    Clients: Will Ferrell, Octavia Spencer, Sam Rockwell. <br> <br>
+                    My creative process begins by listening to my clients then contemplating how design can make their
+                    lives more beautiful. The beauty is in the details: lightness, flexibility, and cleanliness.
+                    <br><br>
+                    As an interior designer, I believe I have a responsibility to inform my work with integrity. That
+                    means respecting the environment in every sense of the word: using craftsmen whose work is true to
+                    their art forms, working with sustainable materials, using vintage furnishings, and choosing
+                    products that are honestly produced and made.<br><br>
+                    Work has been published in AD, Veranda, Elle Decor, Luxe, House Beautiful, The New York Times, and
+                    NY Spaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="title_designer designer_trannghia"
+              style="padding-top:48px;background-color: var(--bg-gray-color);box-shadow: var(--card-hover-box-shadow); border-radius: 8px; height: 100%;">
+              <h2 style="font-size: 36px; margin: 0;">Interior Design Portfolio</h2>
+              <p
+                style="text-align: center; margin-top: 20px; margin-bottom: 0;padding: 0 10px 0 10px; color: var(--title-color);">
+                From traditional to modern interior design and coastal to French styles, our diverse luxury home
+                portfolio is your source of inspiration.
+              </p>
+              <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
+                          <img src="./imgs/img_profile_9.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            STYLE ESTATE WITH A MODERN EDGE
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            Steel windows encase a beautiful Mr.Khai Luu style home with stunning grounds with
+                            incredible indoor & outdoor living areas for entertaining family and friends.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_10.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            MODERN HOMESTAY LUXURY HOME DESIGN </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            KHAI LUU's designer showcase home features a Homestay Modern style with a European twist.
+                            This home brings the luxurious Homestay to life.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 box_img_profile">
+        <div class="col-12">
+          <div class="row img_profile image-container" style="margin-top: 48px;">
+            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <div class="text-container">
+              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
+                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
+                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row " style="margin-top: 25px;">
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" style="margin-top: 30px;">
+            <div class="img_profile 2 img-hide-khai">
+              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
+            <div class="col-6 img_profile2 img-hide-khai" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-khai" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-khai" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-khai" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button_khailuu"
+      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
+      VIEW MORE
+    </button>
+    </div>
+  </section>
+
+  <section class="section__padding padding_box_profile" style="padding-top: 0; background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title_designer" style="padding-bottom: 48px;">
+            <h2>Designer <br class="d-sm-none d-xs-block"> DUY HOANG</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 avt_profile">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12">
+                <img src="./imgs/background_hoang.jpg" alt="" style="box-shadow: var(--card-box-shadow);"
+                  class="img-fluid">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12">
+                <div class="sub_trannghia" style="margin-top: 30px;">
+                  <h3> Mr.DUY HOANG </h3>
+                  <i class="fa-regular fa-badge-check fa-lg"
+                    style=" color: #ff5c00; outline: none; width: 20px; height: 20px;"></i>
+                  <h3 style="color: #ff5c00;"> Co-Leader</h3>
+                </div>
+                <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
+                <div class="about_trannghia">
+                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
+                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
+                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                    Recognized as one of this era's most prominent talents, Ryan has become the go-to designer for
+                    discerning clientele and celebrities alike, who revere his raw yet refined sensibilities. He stands
+                    out for his fluency in vintage Hollywood styles; his flawless choices in furniture; and his epic use
+                    of stone surfaces for bars, vanities, kitchens, and shower enclosures. <br><br>
+                    His bold work and stylings have been featured in Elle Decor, Architectural Digest, Vogue, Interiors
+                    California, House Beautiful, Robb Report, Traditional Home, and Modern Luxury, among other top tier
+                    outlets.<br><br>
+                    Today he is the vanguard of a new wave of millennial designers and has become a social media
+                    sensation. His popular Instagram account has over 160,000 followers from all around the world, who
+                    are obsessed with his design acumen, relentless work ethic, and hilarious commentary—and are equally
+                    as inspired by him.<br><br>
+                    “My approach to design is all about feeling. Creativity comes from the heart, it's intuitive. I
+                    create spaces that are pouring with self-expression, and that's the the identifiable Ryan Saghian
+                    experience.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="title_designer designer_trannghia"
+              style="padding-top:48px;background-color: var(--bg-gray-color);box-shadow: var(--card-hover-box-shadow); border-radius: 8px; height: 100%;">
+              <h2 style="font-size: 36px; margin: 0;">Interior Design Portfolio</h2>
+              <p
+                style="text-align: center; margin-top: 20px; margin-bottom: 0;padding: 0 10px 0 10px; color: var(--title-color);">
+                From traditional to modern interior design and coastal to French styles, our diverse luxury home
+                portfolio is your source of inspiration.
+              </p>
+              <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
+                          <img src="./imgs/img_profile_17.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            STUNNING CUSTOM ITALIAN KITCHEN
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            This fully custom Italian kitchen design features Officine Gullo hood, range, and cabinetry
+                            as well as custom lighting and a backlit fireplace.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_18.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            EUROPEAN BEACH HOME
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            European-style home design fills this luxury beach view house with mesmerizing views and sun
+                            kissed rooms.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 d-none d-lg-block">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_19.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            MODERN COASTAL FARMHOUSE
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            Modern coastal farmhouse décor brings the luxurious lifestyle of indoor-outdoor living to
+                            life in this beautiful beach abode.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 box_img_profile">
+        <div class="col-12">
+          <div class="row img_profile image-container" style="margin-top: 48px;">
+            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <div class="text-container">
+              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
+                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
+                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row " style="margin-top: 25px;">
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" style="margin-top: 30px;">
+            <div class="img_profile 2 img-hide-hoang">
+              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
+            <div class="col-6 img_profile2 img-hide-hoang" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-hoang" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-hoang" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-hoang" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button_duyhoang"
+      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
+      VIEW MORE
+    </button>
+    </div>
+  </section>
+
+  <section class="section__padding" style="padding-top: 0; background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title_designer" style="padding-bottom: 48px;">
+            <h2>Designer <br class="d-sm-none d-xs-block"> XUAN QUY</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 avt_profile">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12">
+                <img src="./imgs/background_quy.jpg" alt="" style="box-shadow: var(--card-box-shadow);"
+                  class="img-fluid">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12">
+                <div class="sub_trannghia" style="margin-top: 30px;">
+                  <h3> Mrs.XUAN QUY </h3>
+                  <i class="fa-regular fa-badge-check fa-lg"
+                    style=" color: #ff5c00; outline: none; width: 20px; height: 20px;"></i>
+                  <h3 style="color: #ff5c00;"> Co-Leader</h3>
+                </div>
+                <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
+                <div class="about_trannghia">
+                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
+                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
+                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                    Mrs.Xuan Quy is recognized as an influential voice in the interior design industry.
+                    <br><br>
+                    Featured in Arch Digest, Elle, and more.
+                    <br><br>
+                    A high-end residential and commercial interior designer to a long list of
+                    high profile clientele worldwide. She's know for her innovative, colorful and inspiring designs. She
+                    is also a product developer and designer, launching a furniture, rug and jewelry collection
+                    2020/2021.<br><BR>
+
+                    Mrs.Xuan Quy is warm, friendly, easy to talk to and always eager to help others!<br><br>
+                    “I can't wait to connect and help!”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="title_designer designer_trannghia"
+              style="padding-top:48px;background-color: var(--bg-gray-color);box-shadow: var(--card-hover-box-shadow); border-radius: 8px; height: 100%;">
+              <h2 style="font-size: 36px; margin: 0;">Interior Design Portfolio</h2>
+              <p
+                style="text-align: center; margin-top: 20px; margin-bottom: 0;padding: 0 10px 0 10px; color: var(--title-color);">
+                From traditional to modern interior design and coastal to French styles, our diverse luxury home
+                portfolio is your source of inspiration.
+              </p>
+              <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
+                          <img src="./imgs/img_profile_29.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            COASTAL ESTATE <br class="d-sm-none d-md-block">MEETS CONTEMPORARY BEAUTY
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            Situated in Tp.Vung Tau, this contemporary estate brings to life the essence of Vietnam
+                            luxury lifestyle by combining contemporary and coastal interior design elements.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_30.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            PERFECTION OF FRENCH STYLE IN VIETNAM
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            Ceiling to floor fabulously curated design captures the essence of luxury living.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 d-none d-lg-block">
+                      <div class="row custom_imgs_profile2">
+                        <div class="col-12">
+                          <img src="./imgs/img_profile_31.jpg" alt="" class="img-fluid"
+                            style="border-radius: 8px;box-shadow: var(--card-box-shadow);">
+                        </div>
+                        <div class="col-12">
+                          <p
+                            style="font-weight: bold; text-align: center; margin: auto; margin-top: 20px;  color: var(--title-color);">
+                            MODERN VILLA REAL ESTATE
+                          </p>
+                          <p style="text-align: center; margin: auto; margin-top: 20px; color: var(--title-color);">
+                            This luxury home boasts a perfect balance of modern style and sophistication.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 box_img_profile">
+        <div class="col-12">
+          <div class="row img_profile image-container" style="margin-top: 48px;">
+            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <div class="text-container">
+              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
+                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
+                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row " style="margin-top: 25px;">
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 img_profile2">
+            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" style="margin-top: 30px;">
+            <div class="img_profile 2 img-hide-quy">
+              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
+            <div class="col-6 img_profile2 img-hide-quy" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-quy" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-quy" style="padding-left: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 img_profile2 img-hide-quy" style="padding-right: 0;">
+              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button_xuanquy"
+      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
+      VIEW MORE
+    </button>
+    </div>
+  </section>
+  <!----------Footer------------------------------------>
+  <footer class="section__padding">
+    <div class="container">
+      <div class="footer__content">
+        <div class="row">
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row row__up">
+              <div class="col-xl-4 mb-3">
+                <h2 class="btn-footer">
+                  about us
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">Art & Culture</a>
+                  </li>
+                  <li>
+                    <a href="">care ers</a>
+                  </li>
+                  <li>
+                    <a href="./faq.html">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  showroom
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">location</a>
+                  </li>
+                  <li>
+                    <a href="">find nearest shop</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  blog
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">magazine</a>
+                  </li>
+                  <li>
+                    <a href="">editor's pick</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  return & cancellations
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">returns</a>
+                  </li>
+                  <li>
+                    <a href="">cancellations</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  shipping & payment
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">shipping</a>
+                  </li>
+                  <li>
+                    <a href="">payment terms</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  join the us
+                  <i class="d-xl-none d-lg-none d-md-none d-sm-none d-xs-inline fa-solid fa-angle-down"></i>
+                </h2>
+                <div class="footer__mail">
+                  <input type="mail" placeholder="email" required />
+                  <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <p>
+                  Sign up for our latest news & articles. We won't give you
+                  spam mails.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap-4.4.1.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <!-- product js -->
+  <script src="./js/profile.js"></script>
+  <!-- main js -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

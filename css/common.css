@@ -168,6 +168,7 @@ header ul li a {
 }
 header .sub-menu li i {
   color: var(--title-color);
+  font-size: 14px;
 }
 
 header ul li a {
@@ -287,7 +288,7 @@ input:checked + .mode-container i.gg-moon {
   height: 505px;
   border-radius: 8px;
   background: var(--bg-color);
-  border: 2px solid #eee;
+  border: 2px solid var(--border-color-light);
   /* backdrop-filter: blur(100px);
   --webkit-backdrop-filter: blur(100px);
   -moz-backdrop-filter: blur(100px);
@@ -483,6 +484,84 @@ span.buttonText {
 .wrapper .login__social .row__bottom span {
   color: #000 !important;
 }
+
+/* Toast  */
+.message__err {
+  position: fixed;
+  background-color: var(--bg-color);
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+  padding: 25px 50px 10px 25px;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);;
+  border-left: 15px solid var(--primary);
+  font-weight: bold;
+  /* border-top-left-radius: var(--curve);
+  border-bottom-left-radius: var(--curve); */
+  transform: translateX(100%);
+  transition: transform linear .5s;
+  width: 444px;
+}
+
+.message__err h2 {
+  color: var(--primary);
+  font-size: 26px;
+}
+
+.message__err p {
+  color: var(--title-color);
+}
+
+.message__err i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.message__err.active {
+  transform: translateX(-5%);
+}
+.message__suc {
+  position: fixed;
+  background-color: var(--bg-color);
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+  padding: 25px 50px 10px 25px;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);;
+  border-left: 15px solid #1ee697;
+  font-weight: bold;
+  /* border-top-left-radius: var(--curve);
+  border-bottom-left-radius: var(--curve); */
+  transform: translateX(100%);
+  transition: transform linear .5s;
+  width: 444px;
+}
+
+.message__suc h2 {
+  color: var(--primary);
+  font-size: 26px;
+}
+
+.message__suc p {
+  color: var(--title-color);
+}
+
+.message__suc i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.message__suc.active {
+  transform: translateX(-5%);
+}
+
+
 /* Footer  */
 footer {
   background-image: url(../imgs/footer.jpg);
@@ -919,6 +998,9 @@ footer .footer__link li a {
 }
 
 @media screen and (max-width: 991px) {
+  header .header__nav.active ul li:hover a {
+    color: var(--title-color);
+  }
   footer h2 {
     font-size: 20px;
   }
@@ -928,8 +1010,14 @@ footer .footer__link li a {
   }
 
   a:hover {
-    color: var(--title-color);
+    color: #fff;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer__content h2 {
+    font-size: 18px;
   }
 }
 

@@ -33,9 +33,22 @@
   box-sizing: border-box;
   letter-spacing: 1px;
 }
+@font-face {
+  font-family: bold-nunito;
+  src: url(./font/Nunito-Bold.eot);
+  src: url(./font/Nunito-Bold.ttf);
+  src: url(./font/Nunito-Bold.woff);
+}
+@font-face {
+  font-family: regular-nunito;
+  src: url(./font/Nunito-Regular.eot);
+  src: url(./font/Nunito-Regular.ttf);
+  src: url(./font/Nunito-Regular.woff);
+}
 
 body,
 html {
+
   font-family: "nunito", sans-serif;
   scroll-behavior: smooth;
 }

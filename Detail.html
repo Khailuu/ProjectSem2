@@ -34,7 +34,7 @@
               <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
             </a>
           </div>
-
+ 
           <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
             <ul class="sub-menu">
               <li class="d-xl-none d-block">
@@ -43,12 +43,15 @@
                 </a>
               </li>
               <li id="btn__product">
-                <a class="d-none d-xl-inline" href="">
+                <a class="d-none d-xl-inline" href="./product.html">
                   <span>products</span>
                 </a>
                 <span class="d-xl-none">products</span>
                 <i class="fa-solid fa-chevron-down"></i>
                 <ul class="menu__product">
+                  <li>
+                    <a href=""> Styling </a>
+                  </li>
                   <li>
                     <a href=""> living room </a>
                   </li>
@@ -70,16 +73,19 @@
                   <li>
                     <a href=""> lighting </a>
                   </li>
+                  <li>
+                    <a href="./product.html"> All products </a>
+                  </li>
                 </ul>
               </li>
               <li>
-                <a href="">trends</a>
+                <a href="./trends.html">trends</a>
               </li>
               <li>
-                <a href="">giftset</a>
+                <a href="./gift.html">giftset</a>
               </li>
               <li>
-                <a href="">sale</a>
+                <a href="./sale.html">sale</a>
               </li>
               <li>
                 <a href="">contact us</a>
@@ -87,19 +93,11 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
+                <i class="fa-solid fa-user d-inline d-xl-none"></i>
                 <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
-                  >Login</span
-                >
-                <span
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >/</span
-                >
-                <span
-                  href=""
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Signup</span
+                  >Account</span
                 >
               </li>
               <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
@@ -130,9 +128,9 @@
           <div class="col-3 header__link">
             <div class="header__account d-inline">
               <i class="fa-solid fa-user d-none d-xl-inline"></i>
-            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
-              >Account</span
-            >
+              <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+                >Account</span
+              >
             </div>
             <a href="./Cart.html">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -171,14 +169,14 @@
               <span class="icon">
                 <i class="fa-solid fa-envelope"></i>
               </span>
-              <input type="eamil" required />
+              <input id="username" type="eamil" required />
               <label for="">Email</label>
             </div>
             <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-key"></i>
               </span>
-              <input type="password" required />
+              <input id="password" type="password" required />
               <label for="">Password</label>
             </div>
 
@@ -192,7 +190,7 @@
               </label>
               <a href="#">Forgot Password?</a>
             </div>
-            <button type="submit" class="btn-submit">Login</button>
+            <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
             <div class="login__social mt-3">
               <div class="row">
                 <div class="col-5">
@@ -205,7 +203,7 @@
                   <hr style="background-color: #fff" />
                 </div>
               </div>
-              <div class="row">
+              <div class="row row__bottom">
                 <div class="col-6">
                   <button>
                     <i class="fa-brands fa-facebook"></i>
@@ -237,21 +235,21 @@
               <span class="icon">
                 <i class="fa-solid fa-user"></i>
               </span>
-              <input type="eamil" required />
+              <input class="input-signup-username" type="eamil" required />
               <label for="">Username</label>
             </div>
-            <div class="input-box">
+            <!-- <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-envelope"></i>
               </span>
               <input type="eamil" required />
               <label for="">Email</label>
-            </div>
+            </div> -->
             <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-key"></i>
               </span>
-              <input type="password" required />
+              <input class="input-signup-password" type="password" required />
               <label for="">Password</label>
             </div>
             <div class="remember-forgot">
@@ -261,12 +259,25 @@
                 </span>
               </label>
             </div>
-            <button type="submit" class="btn-submit">Register</button>
+            <button type="submit" class="btn-submit signup__signInButton">Register</button>
             <div class="login-register">
-              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+              <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
             </div>
           </form>
         </div>
+      </div>
+    </section>
+    <!-- Toast message  -->
+    <section class="message">
+      <div class="message__err">
+        <h2>Login Error</h2>
+        <p>Please check your username or password</p>
+        <i id="close__mess" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="message__suc">
+        <h2>Login Success</h2>
+        <p>Please wait a minute</p>
+        <i id="close__mess" class="fa-solid fa-xmark"></i>
       </div>
     </section>
     <!-- Content -->
@@ -853,68 +864,229 @@
       <h4>MAY WE SUGGEST</h4>
       <div class="row owl-carousel owl-theme">
         <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-1.jpg" alt="" /></div>
-            <div><p>Vertigo Pendant Light</p></div>
-            <div><b>PETITE FRITURE</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-2.jpg" alt="" /></div>
-            <div><p>Laverd R11S.1S1M Round Pendant Light</p></div>
-            <div><b>ESTILUZ</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-3.jpg" alt="" /></div>
-            <div><p>Mizu Square Cluster Pendant Light</p></div>
-            <div><b>TERZANI</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-4.jpg" alt="" /></div>
-            <div><p>Tresor Pendant Light</p></div>
-            <div><b>TERZANI</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-5.jpg" alt="" /></div>
-            <div><p>Stream Linear Pendant Light</p></div>
-            <div><b>TERZANI</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-6.jpg" alt="" /></div>
-            <div><p>Circular Five Ring Pendant Light</p></div>
-            <div><b>BOVER</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-7.jpg" alt="" /></div>
-            <div><p>Multiple Skybang Pendant Light</p></div>
-            <div><b>STICKBULB</b></div>
-          </div>
-        </div>
-        <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-8.jpg" alt="" /></div>
-            <div>
-              <p>Constellation Galaxy Matrix Arrow LED Pendant Light</p>
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
             </div>
-            <div><b>SONNEMAN</b></div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
           </div>
         </div>
         <div class="col-12 productbox">
-          <div class="productcard">
-            <div><img src="./imgs/pd-light-9.jpg" alt="" /></div>
-            <div><p>PH Artichoke Pendant Light</p></div>
-            <div><b>LOUIS POULSEN</b></div>
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 productbox">
+          <div class="bg__product">
+            <div class="product__img">
+              <div class="product__overlay">
+                <a href="">
+                  <button class="button__fill">Buy now</button>
+                </a>
+                <a href="./Detail.html">
+                  <button class="button__stroke">View detail</button>
+                </a>
+              </div>
+              <img src="./imgs/product1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="product__bottom">
+              <hr class="mb-0" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h3><a href=""> Hana Upholstered Dining Chair </a></h3>
+              <p>M0001</p>
+              <p>FROM 500$</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1108,17 +1280,18 @@
       $(".owl-carousel").owlCarousel({
         items: 9,
         loop: true,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsiveClass: true,
         responsive: {
           0: { items: 1 },
-          420: { items: 2 },
-          576: { items: 2 },
-          768: { items: 4 },
-          992: { items: 5 },
-          1200: { items: 5 },
+          420: { items: 1 },
+          576: { items: 1 },
+          768: { items: 2 },
+          992: { items: 3 },
+          1200: { items: 3 },
         },
       });
     </script>

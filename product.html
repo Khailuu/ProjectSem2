@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Product</title>
+
+  <!----------------------- FONT --------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./font-awesome/css/all.min.css" />
+
+  <!------------------------ CSS ------------------------->
+  <link rel="stylesheet" href="./css/bootstrap-4.4.1.css" />
+  <link rel="stylesheet" href="./css/customize.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+
+</head>
+
+<body>
+   <!-- Messenger Plugin chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Plugin chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat"></div>
+   <div class="overlay__menu"></div>
+   <header id="site-header" class="d-flex align-items-center">
+     <div class="container-fluid header__mobile">
+       <div class="row align-items-center">
+         <div class="col-3 nav-menu">
+           <i class="fa-solid fa-bars-staggered"></i>
+         </div>
+         <div class="col-3 header__logo">
+           <a href="./index.html">
+             <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+           </a>
+         </div>
+
+         <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
+           <ul class="sub-menu">
+             <li class="d-xl-none d-block">
+               <a href="./index.html">
+                 Home
+               </a>
+             </li>
+             <li id="btn__product">
+               <a class="d-none d-xl-inline" href="./product.html">
+                 <span>products</span>
+               </a>
+               <span class="d-xl-none">products</span>
+               <i class="fa-solid fa-chevron-down"></i>
+               <ul class="menu__product">
+                 <li>
+                   <a href=""> Styling </a>
+                 </li>
+                 <li>
+                   <a href=""> living room </a>
+                 </li>
+                 <li>
+                   <a href=""> dining room </a>
+                 </li>
+                 <li>
+                   <a href=""> kitchen room </a>
+                 </li>
+                 <li>
+                   <a href=""> bedding room </a>
+                 </li>
+                 <li>
+                   <a href=""> bath room </a>
+                 </li>
+                 <li>
+                   <a href=""> outdoor </a>
+                 </li>
+                 <li>
+                   <a href=""> lighting </a>
+                 </li>
+                 <li>
+                   <a href=""> All products </a>
+                 </li>
+               </ul>
+             </li>
+             <li>
+               <a href="./trends.html">trends</a>
+             </li>
+             <li>
+               <a href="./gift.html">giftset</a>
+             </li>
+             <li>
+               <a href="./sale.html">sale</a>
+             </li>
+             <li>
+               <a href="">contact us</a>
+             </li>
+             <li
+               class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+             >
+               <i class="fa-solid fa-user d-inline d-xl-none"></i>
+               <span
+                 href=""
+                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                 >Account</span
+               >
+             </li>
+             <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+               <div class="search-right">
+                 <span
+                   ><a href="#search" class="search-search" title="search">
+                     <i class="fa-solid fa-magnifying-glass"></i> </a
+                 ></span>
+                 <div id="search" class="pop-overlay">
+                   <div class="popup">
+                     <form action="" method="GET" class="search-box d-sm-flex">
+                       <input
+                         type="search"
+                         placeholder="Enter Keyword"
+                         name="s"
+                         required="required"
+                         autofocus=""
+                       />
+                       <button type="submit" class="btn">Search</button>
+                     </form>
+                     <a class="close" href="#close">×</a>
+                   </div>
+                 </div>
+               </div>
+             </li>
+           </ul>
+         </div>
+         <div class="col-3 header__link">
+           <div class="header__account d-inline">
+             <i class="fa-solid fa-user d-none d-xl-inline"></i>
+             <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+               >Account</span
+             >
+           </div>
+           <a href="./Cart.html">
+             <i class="fa-solid fa-cart-shopping"></i>
+           </a>
+           <div class="mobile-position DarkandLight d-inline-block">
+             <nav class="navigation">
+               <div class="theme-switch-wrapper">
+                 <label class="theme-switch mb-0" for="checkbox">
+                   <input type="checkbox" id="checkbox" />
+                   <div class="mode-container">
+                     <i class="fa-solid fa-moon gg-moon"></i>
+                     <i class="fa-solid fa-sun gg-sun"></i>
+                   </div>
+                 </label>
+               </div>
+             </nav>
+           </div>
+         </div>
+       </div>
+     </div>
+   </header>
+  <!-- button to top  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </button>
+  <!-- Wrapper  -->
+  <section id="popUp">
+    <div class="wrapper">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input id="username" type="eamil" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input id="password" type="password" required />
+            <label for="">Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label for="click-checkbox">
+              <input type="checkbox" id="click-checkbox" /><span
+                id="checkbox"
+              >
+                Remember me
+              </span>
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+          <div class="login__social mt-3">
+            <div class="row">
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+              <div class="col-2">
+                <span style="color: #fff">Or</span>
+              </div>
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+            </div>
+            <div class="row row__bottom">
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-google"></i>
+                  <span>Google</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-register">
+            <p>
+              Don't Have an account?<a class="register-link" href="#"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input class="input-signup-username" type="eamil" required />
+            <label for="">Username</label>
+          </div>
+          <!-- <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="eamil" required />
+            <label for="">Email</label>
+          </div> -->
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input class="input-signup-password" type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="conditions">
+              <input type="checkbox" id="conditions" /><span id="checkbox">
+                I agree to the terms and conditions
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit signup__signInButton">Register</button>
+          <div class="login-register">
+            <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Toast message  -->
+  <section class="message">
+    <div class="message__err">
+      <h2>Login Error</h2>
+      <p>Please check your username or password</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="message__suc">
+      <h2>Login Success</h2>
+      <p>Please wait a minute to go to Home</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+  </section>
+  <!----------------BAR----------------------->
+  <section class="bar">
+    <div class="container">
+      <span><a href="./index.html">HOME</a></span>
+      <span>/</span>
+      <span><a href="">PRODUCT</a></span>
+      <span>/</span>
+      <span>PENDANTS LIGHT</span>
+    </div>
+  </section>
+  <!----------------BAR----------------------->
+  <section class="section__padding">
+    <div class="container">
+      <div class="title">
+        <h2 class="mb-5">Modern Pedants</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 collection_box_product">
+          <a href=""><button>
+              <p>DRUM PENDANTS</p>
+            </button></a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 collection_box_product">
+          <a href=""><button>
+              <p>GLOBE PENDANTS</p>
+            </button></a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 collection_box_product">
+          <a href=""><button>
+              <p>MINI LIGHT PENDANTS</p>
+            </button></a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 collection_box_product">
+          <a href=""><button>
+              <p>MULTI LIGHT PENDANTS</p>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: var(--light-bg-color);">
+    <div class="container d-none d-md-block">
+      <span>
+        <hr class="hr_product" />
+      </span>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container-fluid style_product_sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-12 box_category_product">
+                <h3>CATEGORY<i class="fa-regular fa-chevron-up"></i></h3>
+                <div class="category_list">
+                  <ul>
+                    <li class="category"><a href="">Pendants</a></li>
+                    <li class="category"><a href="">Chandeliers </a></li>
+                    <li class="category"><a href="">Outdoor Pendants</a></li>
+                    <li class="category"><a href="">Outdoor Ceiling Lights </a></li>
+                    <li class="category hidden"><a href="">Semi Flush Mounts</a></li>
+                    <li class="category hidden"><a href="">Kids & Nursery Decor</a></li>
+                    <li class="category hidden"><a href="">Cordless Lamps</a></li>
+                    <li>
+                      <a href="#" class="see_more_product" id="toggle-category" style=" margin-top: 10px;">Show more
+                        <sup>+</sup>3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_features_product">
+                <h3>FEATURES<i class="fa-regular fa-chevron-up"></i></h3>
+                <div class="features_list">
+                  <ul>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_features1">
+                      <label class="custom-control-label" for="checkbox_features1">
+                        <h6 style="margin: 0; color: var(--title-color);">Eco Friendly</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_features2">
+                      <label class="custom-control-label" for="checkbox_features2">
+                        <h6 style="margin: 0; color: var(--title-color);">New</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_features3">
+                      <label class="custom-control-label" for="checkbox_features3">
+                        <h6 style="margin: 0; color: var(--title-color);">On Sales</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_features4">
+                      <label class="custom-control-label" for="checkbox_features4">
+                        <h6 style="margin: 0; color: var(--title-color);">Open Box</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_features5">
+                      <label class="custom-control-label" for="checkbox_features5">
+                        <h6 style="margin: 0; color: var(--title-color);">Quick Ship</h6>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_color_product">
+                <h3>COLOR<i class="fa-regular fa-chevron-up"></i></h3>
+                <div class="color_list">
+                  <ul>
+                    <li class="custom-control custom-checkbox color" id="list_color1">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color1">
+                      <label class="custom-control-label" for="checkbox_color1">
+                        <h6 style="margin: 0; color: var(--title-color);">Black</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color" id="list_color2">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color2">
+                      <label class="custom-control-label" for="checkbox_color2">
+                        <h6 style="margin: 0; color: var(--title-color);">Aqua</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color" id="list_color3">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color3">
+                      <label class="custom-control-label" for="checkbox_color3">
+                        <h6 style="margin: 0; color: var(--title-color);">Gold</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color" id="list_color4">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color4">
+                      <label class="custom-control-label" for="checkbox_color4">
+                        <h6 style="margin: 0; color: var(--title-color);">Sliver</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color" id="list_color5">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color5">
+                      <label class="custom-control-label" for="checkbox_color5">
+                        <h6 style="margin: 0; color: var(--title-color);">Brown</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color hidden" id="list_color6">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color6">
+                      <label class="custom-control-label" for="checkbox_color6">
+                        <h6 style="margin: 0; color: var(--title-color);">Red</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color hidden" id="list_color7">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color7">
+                      <label class="custom-control-label" for="checkbox_color7">
+                        <h6 style="margin: 0; color: var(--title-color);">Green</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color hidden" id="list_color8">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color8">
+                      <label class="custom-control-label" for="checkbox_color8">
+                        <h6 style="margin: 0; color: var(--title-color);">Blue</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox color hidden" id="list_color9">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_color9">
+                      <label class="custom-control-label" for="checkbox_color9">
+                        <h6 style="margin: 0; color: var(--title-color);">Orange</h6>
+                      </label>
+                    </li>
+                    <li>
+                      <a href="#" class="see_more_product" id="toggle-colors" style=" margin-top: 10px;">Show more
+                        <sup>+</sup>4</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_price_product">
+                <label for="price" class="col-12" style="padding: 0;">
+                  <h3>PRICE<i class="fa-regular fa-chevron-up"></i></h3>
+                </label>
+                <div class="input-range">
+                  <input type="range" class="custom-range" id="price-slider" min="0" max="99999" step="1" value="11111">
+                  <div class="col-12">
+                    <div class="row" style="padding: 0 10px 0 10px; margin-top: 10px;">
+                      <span>$</span>
+                      <div id="priceValue" style="color: var(--title-color);">11111</div>
+                    </div>
+                  </div>
+                  <h4 style="margin-top: 10px; font-size: 16px; font-weight: bold; color: var(--title-color);">Desired value:</h4>
+                  <input type="number" id="price-input" min="0" step="0.1" value="11111" max="99999">
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 button_product_card">
+                <button>
+                  <h1>APPLY</h1>
+                </button>
+                <button class="d-md-none advanced">
+                  <h1 style="font-size: 14px; line-height: 40px !important;">ADVANCED FILTERS</h1>
+                </button>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_brand_product">
+                <h3>BRAND<i class="fa-regular fa-chevron-down"></i></h3>
+                <div class="brand_list">
+                  <ul>
+                    <li class="custom-control custom-checkbox brand">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand1">
+                      <label class="custom-control-label" for="checkbox_brand1">
+                        <h6 style="margin: 0; color: var(--title-color);">Petite Friture</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox brand">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand2">
+                      <label class="custom-control-label" for="checkbox_brand2">
+                        <h6 style="margin: 0; color: var(--title-color);">Estiluz</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox brand">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand3">
+                      <label class="custom-control-label" for="checkbox_brand3">
+                        <h6 style="margin: 0; color: var(--title-color);">Bover</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox brand hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand4">
+                      <label class="custom-control-label" for="checkbox_brand4">
+                        <h6 style="margin: 0; color: var(--title-color);">Soneman</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox brand hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand5">
+                      <label class="custom-control-label" for="checkbox_brand5">
+                        <h6 style="margin: 0; color: var(--title-color);">Lavis</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox brand hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_brand6">
+                      <label class="custom-control-label" for="checkbox_brand6">
+                        <h6 style="margin: 0; color: var(--title-color);">Artek</h6>
+                      </label>
+                    </li>
+                    <li>
+                      <a href="#" class="see_more_product" id="toggle-brand" style="margin-top: 10px;">Show more
+                        <sup>+</sup>3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_shape_product">
+                <h3>SHAPE<i class="fa-regular fa-chevron-down"></i></h3>
+                <div class="shape_list">
+                  <ul>
+                    <li class="custom-control custom-checkbox shape">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape1">
+                      <label class="custom-control-label" for="checkbox_shape1">
+                        <h6 style="margin: 0; color: var(--title-color);">Abstract</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox shape">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape2">
+                      <label class="custom-control-label" for="checkbox_shape2">
+                        <h6 style="margin: 0; color: var(--title-color);">Bell </h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox shape">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape3">
+                      <label class="custom-control-label" for="checkbox_shape3">
+                        <h6 style="margin: 0; color: var(--title-color);">Bowl</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox shape hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape4">
+                      <label class="custom-control-label" for="checkbox_shape4">
+                        <h6 style="margin: 0; color: var(--title-color);">Candelabra</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox shape hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape5">
+                      <label class="custom-control-label" for="checkbox_shape5">
+                        <h6 style="margin: 0; color: var(--title-color);">Cylinde</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox shape hidden">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_shape6">
+                      <label class="custom-control-label" for="checkbox_shape6">
+                        <h6 style="margin: 0; color: var(--title-color);">Diamond</h6>
+                      </label>
+                    </li>
+                    <li>
+                      <a href="#" class="see_more_product" id="toggle-shape" style=" margin-top: 10px;">Show more
+                        <sup>+</sup>3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+
+            <div class="row">
+              <div class="col-12 box_designer_product">
+                <h3>DESIGNER<i class="fa-regular fa-chevron-down"></i></h3>
+                <div class="designer_list">
+                  <ul>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_designer1">
+                      <label class="custom-control-label" for="checkbox_designer1">
+                        <h6 style="margin: 0; color: var(--title-color);">Mr.Tran Nghia</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_designer2">
+                      <label class="custom-control-label" for="checkbox_designer2">
+                        <h6 style="margin: 0; color: var(--title-color);">Mr.Khai Luu</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_designer3">
+                      <label class="custom-control-label" for="checkbox_designer3">
+                        <h6 style="margin: 0; color: var(--title-color);">Mr.Duy Hoang</h6>
+                      </label>
+                    </li>
+                    <li class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="checkbox_designer4">
+                      <label class="custom-control-label" for="checkbox_designer4">
+                        <h6 style="margin: 0; color: var(--title-color);">Mrs.Xuan Quy</h6>
+                      </label>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="hr_product d-none d-md-block" />
+            <div class="row">
+              <div class="col-12 box_material_product">
+                <h3>MATERIAL<i class="fa-regular fa-chevron-down"></i></h3>
+                <div class="material_list">
+                  <ul>
+                    <li class="material "><a href="">Aluminum</a></li>
+                    <li class="material "><a href="">Blue </a></li>
+                    <li class="material "><a href="">Brass</a></li>
+                    <li class="material "><a href="">Brown</a></li>
+                    <li class="material hidden"><a href="">Ceramic</a></li>
+                    <li class="material hidden"><a href="">Coconut</a></li>
+                    <li class="material hidden"><a href="">Concrete</a></li>
+                    <li>
+                      <a href="#" class="see_more_product" id="toggle-material" style=" margin-top: 10px;">Show more
+                        <sup>+</sup>3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-8 col-md-8 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="toolbar">
+                  <h3>240 RESULTS</h3>
+                  <div class="row toolbar_page_sort">
+                    <button>
+                      <p>SHOW:24</p>
+                    </button>
+                    <button>
+                      <p>SORT BY:Best Selling</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="products__content">
+                <!-- Card Product -->
+                <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-1.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: rgb(255, 153, 0);"></span>
+                        <span style="background-color: rgb(11, 0, 128);"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: rgb(199, 90, 205);"></span>
+                        <span style="background-color: rgb(204, 255, 0);"></span>
+                        <h3>
+                          <a href="">Vertigo Pendant Light</a>
+                        </h3>
+                        <p>PETITE FRITURE</p>
+                        <p>FROM $1000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-2.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Laverd R11S.1S1M Round Pendant Light </a>
+                        </h3>
+                        <p>ESTILUZ</p>
+                        <p style="color: var(--primary); font-size: 14px;">ECO FRIENDLY</p>
+                        <p>FROM $900</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-3.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Mizu Square Cluster Pendant Light </a>
+                        </h3>
+                        <p>TERZANI</p>
+                        <p style="color: var(--primary); font-size: 14px;">ECO FRIENDLY, NEW</p>
+                        <p>FROM $11,000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-4.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Tresor Pendant Light</a>
+                        </h3>
+                        <p>TERZANI</p>
+                        <p>FROM $2000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-5.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Stream Linear Pendant Light </a>
+                        </h3>
+                        <p>TERZANI</p>
+                        <p>FROM $2500</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-6.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Circular Five Ring Pendant Lightr </a>
+                        </h3>
+                        <p>BOVER</p>
+                        <p>FROM $1200</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-7.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Multiple Skybang Pendant Light</a>
+                        </h3>
+                        <p>STICKBULB</p>
+                        <p>FROM $600</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-8.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Constellation Galaxy Matrix Arrow LED Pendant Light </a>
+                        </h3>
+                        <p>SONNEMAN</p>
+                        <p style="color: var(--primary); font-size: 14px;">ON SALE</p>
+                        <p>FROM $700</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-9.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> PH Artichoke Pendant Light </a>
+                        </h3>
+                        <p>LOUIS POULSEN</p>
+                        <p>FROM $999</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-10.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Panel Pendant Light</a>
+                        </h3>
+                        <p>INNERMOST</p>
+                        <p style="color: var(--primary); font-size: 14px;">ECO FRIENDLY, QUICK SHIP</p>
+                        <p>FROM $5,555</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-11.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Praha Sculpture Cluster Pendant Light </a>
+                        </h3>
+                        <p>LASVIT</p>
+                        <p>FROM $3,333</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-12.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> PH Septima Pendant Light </a>
+                        </h3>
+                        <p>LOUIS POULSEN</p>
+                        <p>FROM $1,230</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-13.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Layers C Pendant Light</a>
+                        </h3>
+                        <p>AXO LIGHTE</p>
+                        <p>FROM $2,111</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-14.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Epoque Pendant Light </a>
+                        </h3>
+                        <p>TERZANI</p>
+                        <p>FROM $4,111</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-15.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Puff Mega Pendant Light </a>
+                        </h3>
+                        <p>TOM DIXON</p>
+                        <p>FROM $2,205</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-16.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Seasons Oval Chandelier</a>
+                        </h3>
+                        <p>LLADRO</p>
+                        <p>FROM $1,425</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-17.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> OE Quasi Pendant Light </a>
+                        </h3>
+                        <p>LOUIS POULSEN</p>
+                        <p>FROM $230</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-18.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Ivy 8-Light Pendant Light </a>
+                        </h3>
+                        <p>CTO LIGHTING</p>
+                        <p>FROM $560</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-19.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">Eve Pendant Lightt</a>
+                        </h3>
+            
+                        <p>LASVIT</p>
+                        <p style="color: var(--primary);">SALE, ECO FRIENDLY</p>
+                        <p>FROM $10,500</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-20.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Suspenders Vertical Ring Matrix Multi Light Pendant Light With Crystal Ladder
+                            Luminaires </a>
+                        </h3>
+                        <p>SONNEMAN</p>
+                        <p>FROM $12,310</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-21.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Suspenders Gallery Multi Light Pendant Light </a>
+                        </h3>
+                        <p>SONNEMAN</p>
+                        <p>FROM $28,250</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-22.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href="">PH Artichoke Glass Pendant Light</a>
+                        </h3>
+                        <p>LOUIS POULSEN</p>
+                        <p>FROM $36,650</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-23.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> 0024XXL Pendant Light </a>
+                        </h3>
+                        <p>FONTANAARTE</p>
+                        <p>FROM $9,000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="bg__product">
+                      <div class="product__img">
+                        <div class="product__overlay">
+                          <a href="./Cart.html">
+                            <button class="button__fill">Buy now</button>
+                          </a>
+                          <a href="./Detail.html">
+                            <button class="button__stroke">
+                              View detail
+                            </button>
+                          </a>
+                        </div>
+                        <img src="./imgs/pd-light-24.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="product__bottom">
+                        <hr class="mb-0" />
+                        <span style="background-color: red;"></span>
+                        <span style="background-color: green;"></span>
+                        <!-- <span style="background-color: aqua;"></span>
+                        <span style="background-color: saddlebrown;"></span>
+                        <span style="background-color: white;"></span> -->
+                        <span style="background-color: slateblue;"></span>
+                        <span style="background-color: slategrey;"></span>
+                        <h3>
+                          <a href=""> Suspenders Horizontal Ring Matrix Multi Light Pendant Light With Crystal Ladder
+                            Luminaires </a>
+                        </h3>
+                        <p>SONNEMAN</p>
+                        <p>FROM $8,499</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="row toolbar_results">
+                      <ul style="display: flex;  justify-content: center; margin: auto; margin-bottom: 48px; margin-top: 18px;">
+                        <li style="margin: 0 10px;"><a href="" style="color: var(--primary);">1</a></li>
+                        <li style="margin: 0 10px;"><a href="">2</a></li>
+                        <li style="margin: 0 10px;"><a href="">3</a></li>
+                        <li style="margin: 0 10px;"><p style="color: var(--title-color);">...</p></li>
+                        <li style="margin: 0 10px;"><a href="">30</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!----------Footer------------------------------------>
+  <footer class="section__padding">
+    <div class="container">
+      <div class="footer__content">
+        <div class="row">
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row row__up">
+              <div class="col-xl-4 mb-3">
+                <h2 class="btn-footer">
+                  about us
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">Art & Culture</a>
+                  </li>
+                  <li>
+                    <a href="">care ers</a>
+                  </li>
+                  <li>
+                    <a href="./faq.html">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  showroom
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">location</a>
+                  </li>
+                  <li>
+                    <a href="">find nearest shop</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  blog
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">magazine</a>
+                  </li>
+                  <li>
+                    <a href="">editor's pick</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  return & cancellations
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">returns</a>
+                  </li>
+                  <li>
+                    <a href="">cancellations</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  shipping & payment
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">shipping</a>
+                  </li>
+                  <li>
+                    <a href="">payment terms</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  join the us
+                  <i class="d-xl-none d-lg-none d-md-none d-sm-none d-xs-inline fa-solid fa-angle-down"></i>
+                </h2>
+                <div class="footer__mail">
+                  <input type="mail" placeholder="email" required />
+                  <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <p>
+                  Sign up for our latest news & articles. We won't give you
+                  spam mails.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap-4.4.1.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <!-- product js -->
+  <script src="./js/product.js"></script>
+  <!-- main js -->
+  <script src="./js/login.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

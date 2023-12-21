@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Gift</title>
+
+  <!----------------------- FONT --------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./font-awesome/css/all.min.css" />
+
+  <!------------------------ CSS ------------------------->
+  <link rel="stylesheet" href="./css/bootstrap-4.4.1.css" />
+  <link rel="stylesheet" href="./css/customize.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/gift.css" />
+</head>
+
+<body>
+  <div class="overlay__menu"></div>
+  <header id="site-header" class="d-flex align-items-center">
+    <div class="container-fluid header__mobile">
+      <div class="row align-items-center">
+        <div class="col-3 nav-menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="col-3 header__logo">
+          <a href="./index.html">
+            <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
+          </a>
+        </div>
+
+        <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
+          <ul class="sub-menu">
+            <li class="d-xl-none d-block">
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li id="btn__product">
+              <a class="d-none d-xl-inline" href="./product.html">
+                <span>products</span>
+              </a>
+              <span class="d-xl-none">products</span>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="menu__product">
+                <li>
+                  <a href=""> Styling </a>
+                </li>
+                <li>
+                  <a href=""> living room </a>
+                </li>
+                <li>
+                  <a href=""> dining room </a>
+                </li>
+                <li>
+                  <a href=""> kitchen room </a>
+                </li>
+                <li>
+                  <a href=""> bedding room </a>
+                </li>
+                <li>
+                  <a href=""> bath room </a>
+                </li>
+                <li>
+                  <a href=""> outdoor </a>
+                </li>
+                <li>
+                  <a href=""> lighting </a>
+                </li>
+                <li>
+                  <a href="./product.html"> All products </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./trends.html">trends</a>
+            </li>
+            <li>
+              <a href="./gift.html">giftset</a>
+            </li>
+            <li>
+              <a href="./sale.html">sale</a>
+            </li>
+            <li>
+              <a href="">contact us</a>
+            </li>
+            <li
+              class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
+            >
+              <i class="fa-solid fa-user d-inline d-xl-none"></i>
+              <span
+                href=""
+                class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
+                >Account</span
+              >
+            </li>
+            <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
+              <div class="search-right">
+                <span
+                  ><a href="#search" class="search-search" title="search">
+                    <i class="fa-solid fa-magnifying-glass"></i> </a
+                ></span>
+                <div id="search" class="pop-overlay">
+                  <div class="popup">
+                    <form action="" method="GET" class="search-box d-sm-flex">
+                      <input
+                        type="search"
+                        placeholder="Enter Keyword"
+                        name="s"
+                        required="required"
+                        autofocus=""
+                      />
+                      <button type="submit" class="btn">Search</button>
+                    </form>
+                    <a class="close" href="#close">×</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 header__link">
+          <div class="header__account d-inline">
+            <i class="fa-solid fa-user d-none d-xl-inline"></i>
+            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+              >Account</span
+            >
+          </div>
+          <a href="./Cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div class="mobile-position DarkandLight d-inline-block">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch mb-0" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="fa-solid fa-moon gg-moon"></i>
+                    <i class="fa-solid fa-sun gg-sun"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- button to top  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </button>
+  <!-- Wrapper  -->
+  <section id="popUp">
+    <div class="wrapper">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input id="username" type="eamil" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input id="password" type="password" required />
+            <label for="">Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label for="click-checkbox">
+              <input type="checkbox" id="click-checkbox" /><span
+                id="checkbox"
+              >
+                Remember me
+              </span>
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+          <div class="login__social mt-3">
+            <div class="row">
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+              <div class="col-2">
+                <span style="color: #fff">Or</span>
+              </div>
+              <div class="col-5">
+                <hr style="background-color: #fff" />
+              </div>
+            </div>
+            <div class="row row__bottom">
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+              <div class="col-6">
+                <button>
+                  <i class="fa-brands fa-google"></i>
+                  <span>Google</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-register">
+            <p>
+              Don't Have an account?<a class="register-link" href="#"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input class="input-signup-username" type="eamil" required />
+            <label for="">Username</label>
+          </div>
+          <!-- <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="eamil" required />
+            <label for="">Email</label>
+          </div> -->
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input class="input-signup-password" type="password" required />
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="conditions">
+              <input type="checkbox" id="conditions" /><span id="checkbox">
+                I agree to the terms and conditions
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit signup__signInButton">Register</button>
+          <div class="login-register">
+            <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Toast message  -->
+  <section class="message">
+    <div class="message__err">
+      <h2>Login Error</h2>
+      <p>Please check your username or password</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="message__suc">
+      <h2>Login Success</h2>
+      <p>Please wait a minute</p>
+      <i id="close__mess" class="fa-solid fa-xmark"></i>
+    </div>
+  </section>
+  <!----------------BAR----------------------->
+  <section class="bar">
+    <div class="container">
+      <span><a href="./index.html">HOME</a></span>
+      <span>/</span>
+      <span>GIFT</span>
+    </div>
+  </section>
+
+  <!----------------BAR----------------------->
+  <section class="section__padding pt-0" style="background-color: var(--bg-hd-color);padding-bottom: 0;">
+    <div class="container-fluid" style="background-image: url(./imgs/bg_gift.jpg); background-size: cover;
+      height: 350px; background-position: center center;
+      background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <h2 style="padding-top: 250px;">MODERN GIFT GUIDE</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section__padding" style="padding-top: 25px; padding-bottom: 0 ; background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 padding_box2">
+          <a href="" style="text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./imgs/img_gift_1.jpg" alt="" class="img-fluid"
+              style="box-shadow: var(--card-box-shadow); border-radius: var(--curve);">
+            <p style="font-weight: bold; margin-top: 10px; color: var(--title-color);">GIFTS FOR MEN</p></a>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 padding_box2">
+          <a href="" style="text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./imgs/img_gift_1.jpg" alt="" class="img-fluid"
+              style="box-shadow: var(--card-box-shadow); border-radius: var(--curve);">
+            <p style="font-weight: bold; margin-top: 10px;color: var(--title-color);">GIFTS FOR WOMEN</p></a>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 padding_box2">
+          <a href="" style="text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./imgs/img_gift_1.jpg" alt="" class="img-fluid"
+              style="box-shadow: var(--card-box-shadow); border-radius: var(--curve);">
+            <p style="font-weight: bold; margin-top: 10px;color: var(--title-color);">GIFTS FOR THE HOST</p></a>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 padding_box2">
+          <a href="" style="text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./imgs/img_gift_1.jpg" alt="" class="img-fluid"
+              style="box-shadow: var(--card-box-shadow); border-radius: var(--curve);">
+            <p style="font-weight: bold; margin-top: 10px;color: var(--title-color);">UNIQUE GIFTS UNDER $200</p></a>
+          </div>
+        </div>
+        <div class="col-12 padding_box2">
+          <a href="" style="text-align: center;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./imgs/img_gift_5.jpg" alt="" class="img-fluid"
+              style="box-shadow: var(--card-box-shadow); border-radius: var(--curve);">
+            <p style="font-weight: bold; margin-top: 10px;color: var(--title-color);">SHOP ALL GIFT</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__padding box_padding" style="background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title">
+            <h2>Gifts For Men</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_1.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>PUPPY</h3>
+                <p style="color: var(--title-color);">For the man who has everything, this abstract dog makes a
+                  sculptural statement as a playful decor piece or chic, small stool.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_2.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>WHISKEY BOTTLE</h3>
+                <p style="color: var(--title-color);">Give him the gift of the perfect pour with a handcrafted crystal decanter and matching wood tray, ready to serve in style.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12 ">
+              <img src="./imgs/gift_3.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>MODEL TWO DIGITAL SPEAKER</h3>
+                <p style="color: var(--title-color);">Expertly crafted and smart-enabled, this vintage-style speaker combines good looks and modern technology for the gift of high-quality entertainment.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_4.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>VINTAGE BLUETOOTH RADIO</h3>
+                <p style="color: var(--title-color);">Rebuilt by hand with modern technology like high-fidelity sound and Bluetooth connectivity, this one-of-a-kind radio is an audiophile's dream.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center;">
+          <button
+            style="width: 160px; height: 50px; background-color: var(--primary); color: #fff; border-radius: var(--curve); margin: auto; margin-top: 48px; border: none;"
+            class="button_sale">VIEW GIFTS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__padding box_padding" style="background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title">
+            <h2>Gifts For Women</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_5.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>WICK PORTABLE LAMP</h3>
+                <p style="color: var(--title-color);">Old world inspiration with new world tech, this portable lamp mimics genuine candlelight, perfect for late night reading or meditating.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_6.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>LOVE TRINKET TRAY</h3>
+                <p style="color: var(--title-color);">A chic spot to toss keys, lipstick, or spare change, this heart-shaped trinket tray is a thoughtful expression of l'amour.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12 ">
+              <img src="./imgs/gift_7.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>BREAST FRIEND VASE</h3>
+                <p style="color: var(--title-color);">Give the gift of natural beauty with this playful, handcrafted ceramic bust, the perfect base to a striking floral centerpiece.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_8.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>IKEBANA VASE</h3>
+                <p style="color: var(--title-color);">Masterfully crafted from handblown glass, this vase doubles as a striking design object, beautiful even when empty.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center;">
+          <button
+            style="width: 160px; height: 50px; background-color: var(--primary); color: #fff; border-radius: var(--curve); margin: auto; margin-top: 48px; border: none;"
+            class="button_sale">VIEW GIFTS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__padding box_padding" style="background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title">
+            <h2>Gifts For The Host</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_9.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>STAG COCKTAIL NAPKIN SETY</h3>
+                <p style="color: var(--title-color);">Gift the host with the most this hand-printed napkin set, boasting a unique silhouette on heirloom-quality linen.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_10.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>MADRID LACQUER TRAY</h3>
+                <p style="color: var(--title-color);">Give the gift of bold style with this chic lacquered tray, ready to serve up mouthwatering martinis and noteworthy nibbles.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12 ">
+              <img src="./imgs/gift_11.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>LITTLE WOMEN DUO VASE</h3>
+                <p style="color: var(--title-color);">Sculptural vases double as statement-making art pieces ready to wow with their intricate curves and handcrafted form.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_12.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>STAX 4 IN A ROW</h3>
+                <p style="color: var(--title-color);">Equally expressive as decor or playful pastime, this classic game gets a modern upgrade inviting friendly competition to any gathering.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center;">
+          <button
+            style="width: 160px; height: 50px; background-color: var(--primary); color: #fff; border-radius: var(--curve); margin: auto; margin-top: 48px; border: none;"
+            class="button_sale">VIEW GIFTS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__padding box_padding" style="background-color: var(--bg-hd-color);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title">
+            <h2>Unique Gifts Under $200</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_13.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>KNOT CUSHION</h3>
+                <p style="color: var(--title-color);">For those who keep cozy, this woven cushion is handcrafted for a dynamic accent piece that is equal parts comfortable and eye-catching.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_14.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>HOST LIQUEUR GLASSES</h3>
+                <p style="color: var(--title-color);">Toast to another great year with these delicately mouth-blown glasses, perfect for elevating dinner parties and intimate gatherings alike.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12 ">
+              <img src="./imgs/gift_15.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>BURLESQUE BURGUNDY GLASS</h3>
+                <p style="color: var(--title-color);">Handmade in Italy, this bold wine glass makes a statement with bright colors — ready to hold a healthy pour of their favorite vintage.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-6">
+          <a href="">
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-12">
+              <img src="./imgs/gift_16.jpg" alt="" class="img-fluid"
+                style="box-shadow: var(--card-box-shadow);border-radius: var(--curve)">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-12 box_gift">
+              <div style="display: flex; flex-direction: column;" class="content_img_sale">
+                <h3>MODEL ONE TABLE RADIO</h3>
+                <p style="color: var(--title-color);">For the vintage lover, this handmade radio boasts retro vibes outfitted with premium acoustics and modern bluetooth technology.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center;">
+          <button
+            style="width: 160px; height: 50px; background-color: var(--primary); color: #fff; border-radius: var(--curve); margin: auto; margin-top: 48px; border: none;"
+            class="button_sale">VIEW GIFTS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!----------Footer------------------------------------>
+  <footer class="section__padding">
+    <div class="container">
+      <div class="footer__content">
+        <div class="row">
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row row__up">
+              <div class="col-xl-4 mb-3">
+                <h2 class="btn-footer">
+                  about us
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">Art & Culture</a>
+                  </li>
+                  <li>
+                    <a href="">care ers</a>
+                  </li>
+                  <li>
+                    <a href="./faq.html">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  showroom
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">location</a>
+                  </li>
+                  <li>
+                    <a href="">find nearest shop</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  blog
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">magazine</a>
+                  </li>
+                  <li>
+                    <a href="">editor's pick</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  return & cancellations
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">returns</a>
+                  </li>
+                  <li>
+                    <a href="">cancellations</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  shipping & payment
+                  <i class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">shipping</a>
+                  </li>
+                  <li>
+                    <a href="">payment terms</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  join the us
+                  <i class="d-xl-none d-lg-none d-md-none d-sm-none d-xs-inline fa-solid fa-angle-down"></i>
+                </h2>
+                <div class="footer__mail">
+                  <input type="mail" placeholder="email" required />
+                  <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <p>
+                  Sign up for our latest news & articles. We won't give you
+                  spam mails.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap-4.4.1.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <!-- product js -->
+
+  <!-- main js -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

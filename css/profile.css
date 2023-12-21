@@ -1,0 +1,500 @@
+* {
+  list-style-type: none;
+}
+
+html {
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: var(--title-color);
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: var(--card-box-shadow);
+}
+
+h6 {
+  margin: 0;
+  color: var(--title-color);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 0 10px 0 10px;
+}
+
+hr.hr_product {
+  margin: 30px 0;
+  border: solid 1px var(--primary) !important;
+  width: 350px;
+}
+
+.title h2 {
+  margin: 0;
+  text-align: right;
+}
+
+.text_profile {
+  margin-top: 82px;
+}
+
+.avt_profile img {
+  border-radius: 8px;
+}
+
+.designer_trannghia img {
+  margin: auto;
+  margin-top: 48px;
+}
+
+.designer-name {
+  display: inline-block;
+}
+
+.title_designer h2 {
+  margin: 0;
+  font-size: 48px;
+  color: var(--primary);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.sub_trannghia {
+  display: flex;
+  margin-top: 30px;
+  align-items: baseline;
+}
+.sub_trannghia h3{
+  font-size: 24px;
+  padding: 0;
+}
+.sub_trannghia i{
+  margin: 0 15px ;
+}
+
+.title_designer.designer_trannghia {
+  border: 1px solid var(--border-color-light);
+}
+/* ----------Cua Nghia-------------- */
+@media screen and (min-width:1200px) {
+  .image-container {
+    
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .zoom-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .text-container {
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .sub_text{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .image-container:hover .zoom-image {
+    transform: scale(1.1);
+  }
+  
+  .image-container:hover .text-container {
+    height: 40%;
+  }
+  
+  .image-container:hover .text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .image-container:hover .sub_text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .image-container {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .zoom-image {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .text-container {
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .sub_text{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .image-container:hover .zoom-image {
+    transform: scale(1.2);
+  }
+  
+  .image-container:hover .text-container {
+    height: 100%;
+  }
+  
+  .image-container:hover .text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .image-container:hover .sub_text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  h6 {
+    padding: 0 !important;
+  }
+
+  .sub_trannghia i {
+    margin: 0px 6px !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+  .image-container {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .zoom-image {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .text-container {
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .sub_text{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .image-container:hover .zoom-image {
+    transform: scale(1.2);
+  }
+  
+  .image-container:hover .text-container {
+    height: 100%;
+  }
+  
+  .image-container:hover .text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .image-container:hover .sub_text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .title h2 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  .text_profile {
+    padding-top: 10px !important;
+    margin-top: 0 !important;
+  }
+  .sub_trannghia i {
+    margin: 0 10px !important;
+}
+  .about_trannghia p {
+    margin-bottom: 48px !important;
+    padding: 10px 20px 0 10px !important;
+  }
+
+  .custom_imgs_profile {
+    margin-left: 0;
+  }
+
+  .custom_imgs_profile2 {
+    margin-right: 0;
+  }
+
+  .title_designer h2 {
+    font-size: 40px !important;
+  }
+  .sub_trannghia {
+    margin-top: 0px !important;
+}
+
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+  .title h2 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+  .text_profile {
+    padding-top: 10px !important;
+    margin-top: 0 !important;
+  }
+
+  .about_trannghia p {
+    margin-bottom: 32px !important;
+    padding: 10px 20px 0 20px !important;
+  }
+  .title_designer{
+    padding-bottom: 32px !important;
+  }
+  .title_designer h2{
+    font-size: 40px !important;
+  }
+  .sub_trannghia{
+    width: 80% !important;
+  }
+  .designer_trannghia{
+    padding-top: 32px !important;
+  }
+  .box_sub_img_fortfolio{
+    padding-left: 0 !important;
+  }
+  .custom_imgs_profile img{
+    margin-top: 32px !important;
+  }
+  .box_sub_img_fortfolio p:first-child{
+    margin-top: 32px !important;
+    text-align: left !important;
+  }
+  .box_sub_img_fortfolio p:nth-child(2){
+    margin-top: 20px !important;
+    text-align: left !important;
+  }
+  .custom_imgs_profile2 p:first-child{
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+  .custom_imgs_profile{
+    margin-left: 0;
+  }
+  .custom_imgs_profile2{
+    margin-bottom: 0 !important;
+    margin-top: 32px !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .custom_imgs_profile2 img{
+    margin-top: 0 !important;
+  }
+  .custom_imgs_profile2 p:nth-child(2){
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+  .designer_trannghia button{
+    margin-top: 32px !important;
+    margin-bottom: 32px !important; 
+  }
+  .designer_trannghia{
+    padding-bottom: 0 !important;
+  }
+  hr.hr_product {
+    width: 60% !important;
+  }
+  .designer_trannghia h2{
+    text-align: left !important;
+    padding-left: 15px !important;
+  }
+    .designer_trannghia p{
+      text-align: left !important;
+      padding-left: 15px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+  .title h2 {
+    font-size: 36px !important;
+    text-align: center !important;
+  }
+  .text_profile {
+    padding-top: 10px !important;
+    margin-top: 0 !important;
+  }
+
+  .about_trannghia p {
+    margin-bottom: 32px !important;
+    padding: 10px 20px 0 20px !important;
+  }
+  .title_designer{
+    padding-bottom: 32px !important;
+  }
+  .title_designer h2{
+    font-size: 36px !important;
+  }
+  .sub_trannghia{
+    width: 80% !important;
+  }
+  .designer_trannghia{
+    padding-top: 32px !important;
+  }
+  .box_sub_img_fortfolio{
+    padding-left: 0 !important;
+  }
+  .custom_imgs_profile img{
+    margin-top: 32px !important;
+  }
+  .box_sub_img_fortfolio p:first-child{
+    margin-top: 32px !important;
+    text-align: left !important;
+  }
+  .box_sub_img_fortfolio p:nth-child(2){
+    margin-top: 20px !important;
+    text-align: left !important;
+  }
+  .custom_imgs_profile2 p:first-child{
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+  .custom_imgs_profile{
+    margin-left: 0;
+  }
+  .custom_imgs_profile2{
+    margin-bottom: 0 !important;
+    margin-top: 32px !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .custom_imgs_profile2 img{
+    margin-top: 0 !important;
+  }
+  .custom_imgs_profile2 p:nth-child(2){
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+  .designer_trannghia button{
+    margin-top: 32px !important;
+    margin-bottom: 32px !important; 
+  }
+  .designer_trannghia{
+    padding-bottom: 0 !important;
+  }
+  hr.hr_product {
+    width: 60% !important;
+  }
+  .designer_trannghia h2{
+    text-align: left !important;
+    padding-left: 15px !important;
+  }
+    .designer_trannghia p{
+      text-align: left !important;
+      padding-left: 15px !important;
+    }
+  
+}
+@media screen and (max-width:430px) {
+  .sub_trannghia {
+    width: 100% !important;
+  } 
+  .sub_trannghia i {
+    margin: 0px 6px !important;
+}
+.designer_trannghia h2{
+  text-align: left !important;
+  padding-left: 10px !important;
+}
+  .designer_trannghia p{
+    text-align: left !important;
+    padding-left: 10px !important;
+  }
+}
+.button_trannghia:focus-visible{
+  outline: none !important;
+  box-shadow: none;
+}
+.button_trannghia:focus{
+  outline: none !important;
+  box-shadow: none;
+}

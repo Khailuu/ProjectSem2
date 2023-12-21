@@ -32,7 +32,7 @@
               <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
             </a>
           </div>
-
+ 
           <div class="col-xl-6 col-md-12 col-sm-12 col-xs-12 header__nav">
             <ul class="sub-menu">
               <li class="d-xl-none d-block">
@@ -41,12 +41,15 @@
                 </a>
               </li>
               <li id="btn__product">
-                <a class="d-none d-xl-inline" href="">
+                <a class="d-none d-xl-inline" href="./product.html">
                   <span>products</span>
                 </a>
                 <span class="d-xl-none">products</span>
                 <i class="fa-solid fa-chevron-down"></i>
                 <ul class="menu__product">
+                  <li>
+                    <a href=""> Styling </a>
+                  </li>
                   <li>
                     <a href=""> living room </a>
                   </li>
@@ -68,16 +71,19 @@
                   <li>
                     <a href=""> lighting </a>
                   </li>
+                  <li>
+                    <a href="./product.html"> All products </a>
+                  </li>
                 </ul>
               </li>
               <li>
-                <a href="">trends</a>
+                <a href="./trends.html">trends</a>
               </li>
               <li>
-                <a href="">giftset</a>
+                <a href="./gift.html">giftset</a>
               </li>
               <li>
-                <a href="">sale</a>
+                <a href="./sale.html">sale</a>
               </li>
               <li>
                 <a href="">contact us</a>
@@ -85,19 +91,11 @@
               <li
                 class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
               >
+                <i class="fa-solid fa-user d-inline d-xl-none"></i>
                 <span
                   href=""
                   class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline btnLogin-popup rotate Upper"
-                  >Login</span
-                >
-                <span
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >/</span
-                >
-                <span
-                  href=""
-                  class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
-                  >Signup</span
+                  >Account</span
                 >
               </li>
               <li class="d-lg-inline d-md-inline d-sm-inline d-xs-inline">
@@ -128,9 +126,9 @@
           <div class="col-3 header__link">
             <div class="header__account d-inline">
               <i class="fa-solid fa-user d-none d-xl-inline"></i>
-            <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
-              >Account</span
-            >
+              <span class="d-none d-xl-inline btnLogin-popup-1 rotate Upper"
+                >Account</span
+              >
             </div>
             <a href="./Cart.html">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -169,14 +167,14 @@
               <span class="icon">
                 <i class="fa-solid fa-envelope"></i>
               </span>
-              <input type="eamil" required />
+              <input id="username" type="eamil" required />
               <label for="">Email</label>
             </div>
             <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-key"></i>
               </span>
-              <input type="password" required />
+              <input id="password" type="password" required />
               <label for="">Password</label>
             </div>
 
@@ -190,7 +188,7 @@
               </label>
               <a href="#">Forgot Password?</a>
             </div>
-            <button type="submit" class="btn-submit">Login</button>
+            <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
             <div class="login__social mt-3">
               <div class="row">
                 <div class="col-5">
@@ -203,7 +201,7 @@
                   <hr style="background-color: #fff" />
                 </div>
               </div>
-              <div class="row">
+              <div class="row row__bottom">
                 <div class="col-6">
                   <button>
                     <i class="fa-brands fa-facebook"></i>
@@ -235,21 +233,21 @@
               <span class="icon">
                 <i class="fa-solid fa-user"></i>
               </span>
-              <input type="eamil" required />
+              <input class="input-signup-username" type="eamil" required />
               <label for="">Username</label>
             </div>
-            <div class="input-box">
+            <!-- <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-envelope"></i>
               </span>
               <input type="eamil" required />
               <label for="">Email</label>
-            </div>
+            </div> -->
             <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-key"></i>
               </span>
-              <input type="password" required />
+              <input class="input-signup-password" type="password" required />
               <label for="">Password</label>
             </div>
             <div class="remember-forgot">
@@ -259,12 +257,25 @@
                 </span>
               </label>
             </div>
-            <button type="submit" class="btn-submit">Register</button>
+            <button type="submit" class="btn-submit signup__signInButton">Register</button>
             <div class="login-register">
-              <p>An have an account?<a class="login-link" href="#">Login</a></p>
+              <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
             </div>
           </form>
         </div>
+      </div>
+    </section>
+    <!-- Toast message  -->
+    <section class="message">
+      <div class="message__err">
+        <h2>Login Error</h2>
+        <p>Please check your username or password</p>
+        <i id="close__mess" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="message__suc">
+        <h2>Login Success</h2>
+        <p>Please wait a minute</p>
+        <i id="close__mess" class="fa-solid fa-xmark"></i>
       </div>
     </section>
     <!-- Content -->
