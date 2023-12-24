@@ -1,0 +1,45 @@
+.showroom {
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.showroom p {
+    color: var(--text-color);
+}
+
+/* Store  */
+.store {
+    background-color: var(--light-bg-color);
+}
+
+.store .title p {
+    text-align: center;
+
+}
+
+.store p {
+    color: var(--text-color);
+    transition: all .3s;
+}
+
+.store h3 {
+    color: var(--title-color);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.store a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .store a:hover p {
+        color: var(--primary)
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* .store__item .row {
+        flex-direction: column;
+    } */
+}

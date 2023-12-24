@@ -16,6 +16,10 @@ h3 {
   color: var(--title-color);
 }
 
+header img {
+  box-shadow: none;
+}
+
 img {
   border-radius: 8px;
   box-shadow: var(--card-box-shadow);

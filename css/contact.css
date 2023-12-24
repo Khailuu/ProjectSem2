@@ -1,0 +1,36 @@
+.form-row {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+}
+.form-group {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 40px;
+}
+.form-row .form-group {
+    padding-left: 0;
+    padding-right: 0;
+    flex: 0 0 40%;
+}
+.form-row .form-group:last-child {
+    padding-right: 0;
+}
+.form-control {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0
+}
+.btn-primary{
+    padding: 10px 20px;
+    background-color: #ff5c00;
+    border-radius: 8px;
+    border-color: #ff5c00;
+}   

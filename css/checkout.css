@@ -25,6 +25,16 @@ b{
   color: var(--title-color) !important;
 }
 
+.BillingDetails .billing__box {
+    margin-top: 8px;
+}
+
+.BillingDetails .billing__box  input {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+}
+
 .bar span:nth-child(3) a,
 .bar span:nth-child(5) a,
 .bar span:nth-child(3),

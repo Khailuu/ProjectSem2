@@ -89,7 +89,7 @@ img {
 }
 
 .button__fill {
-  background-color: #ff5e00e8;
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
@@ -97,12 +97,13 @@ img {
   line-height: 50px;
   border-radius: var(--curve);
   width: 160px;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  background-size: 200%;
 }
 
 .button__stroke {
   background-color: transparent;
-  color: #ff5c00;
+  color: #fff;
   text-transform: uppercase;
   font-size: 16px;
   border: 1px solid #ff5c00;
@@ -139,10 +140,13 @@ img {
   text-transform: uppercase;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 @media screen and (min-width: 992px) {
   .button__fill:hover {
-    border: 1px solid #ff5c00;
-    background-color: #ff5c00;
+    background-position: right center;
   }
 
   .button__stroke:hover {

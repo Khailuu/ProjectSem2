@@ -306,3 +306,20 @@ window.fbAsyncInit = function () {
   js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
   fjs.parentNode.insertBefore(js, fjs);
 })(document, "script", "facebook-jssdk");
+
+
+// Light 
+// var pos = document.documentElement
+// pos.addEventListener('mousemove', e => {
+//   pos.style.setProperty('--x', e.clientX + 'px');
+//   pos.style.setProperty('--y', e.clientY + 'px');
+// })
+
+document.getElementById('next').onclick = function(){
+  let lists = document.querySelectorAll('.item__banner');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+  let lists = document.querySelectorAll('.item__banner');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
