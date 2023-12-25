@@ -37,8 +37,7 @@ b{
 
 .bar span:nth-child(3) a,
 .bar span:nth-child(5) a,
-.bar span:nth-child(3),
-.bar span:nth-child(5) {
+.bar span:nth-child(3){
   color: var(--title-color);
   text-decoration: none;
   transition: all .3s;
@@ -54,7 +53,7 @@ b{
     padding: 25px;
     padding-bottom: 10px;
     box-shadow: var(--card-box-shadow);
-    border: var(--border-color-light);
+    border: solid 1px var(--border-color-light);
     margin-bottom: 46px;
 }
 input{
@@ -75,7 +74,7 @@ label{
     padding-bottom: 10px;
     height: fit-content;
     box-shadow: var(--card-box-shadow);
-    border: var(--border-color-light);
+    border: solid 1px var(--border-color-light);
     margin-bottom: 46px;
 }
 .voucher label{
@@ -155,7 +154,10 @@ label{
 }
 /* MD */
 @media (min-width:768px) and (max-width:991px) {
-
+    .bar span:nth-child(3) a:hover,
+    .bar span:nth-child(5) a:hover {
+      color: var(--title-color);
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -169,10 +171,18 @@ label{
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
+    .bar span:nth-child(3) a:hover,
+    .bar span:nth-child(5) a:hover {
+      color: var(--title-color);
+    }
 
 }
 /* XS */
 @media (max-width:575px) {
+    .bar span:nth-child(3) a:hover,
+    .bar span:nth-child(5) a:hover {
+      color: var(--title-color);
+    }
 .box{
   padding: 0;
 }

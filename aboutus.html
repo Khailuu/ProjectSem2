@@ -50,7 +50,7 @@
             <i class="fa-solid fa-bars-staggered"></i>
           </div>
           <div class="col-3 header__logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
             </a>
           </div>
@@ -208,9 +208,9 @@
                   Remember me
                 </span>
               </label>
-              <a href="#">Forgot Password?</a>
+              <a class="fotgot__link" href="#">Forgot Password?</a>
             </div>
-            <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+            <button id="login__signInButton" type="submit" class="btn-submit button__fill">Login</button>
             <div class="login__social mt-3">
               <div class="row">
                 <div class="col-5">
@@ -225,13 +225,13 @@
               </div>
               <div class="row row__bottom">
                 <div class="col-6">
-                  <button>
+                  <button class="">
                     <i class="fa-brands fa-facebook"></i>
                     <span>Facebook</span>
                   </button>
                 </div>
                 <div class="col-6">
-                  <button>
+                  <button class="">
                     <i class="fa-brands fa-google"></i>
                     <span>Google</span>
                   </button>
@@ -258,13 +258,13 @@
               <input class="input-signup-username" type="eamil" required />
               <label for="">Username</label>
             </div>
-            <!-- <div class="input-box">
+            <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-envelope"></i>
               </span>
               <input type="eamil" required />
               <label for="">Email</label>
-            </div> -->
+            </div>
             <div class="input-box">
               <span class="icon">
                 <i class="fa-solid fa-key"></i>
@@ -279,9 +279,26 @@
                 </span>
               </label>
             </div>
-            <button type="submit" class="btn-submit signup__signInButton">Register</button>
+            <button type="submit" class="btn-submit signup__signInButton button__fill">Register</button>
             <div class="login-register">
-              <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+              <p>Already have account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box forgot">
+          <h2>Forgot Password</h2>
+          <form action="#">
+           
+            <div class="input-box">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input type="eamil" required />
+              <label for="">Email</label>
+              <button type="submit" class="btn-submit signup__signInButton button__fill mt-3">Send Email</button>
+            </div>
+            <div class="login-register">
+              <p>Already have account?<a class="signup__signInButton login-link2" href="#">Login</a></p>
             </div>
           </form>
         </div>
@@ -309,6 +326,9 @@
         <span>About Us</span>
       </div>
     </section>
+
+    <!-- Banner  -->
+    <section class="banner"></section>
     <!-- About  -->
     <section class="about section__padding">
         <div class="container">
@@ -317,7 +337,7 @@
                     <div class="title">
                         <h2>About Us</h2>
                         <p>For questions and comments regarding your order or shopping experience, </p>
-                        <p>As a privately held, family-owned company spanning three generations, we realize success isn’t achieved in silos. It comes from the collective talents of each of our valued teammates. That’s why when the Wanek family founded Ashely in 1945, it was built upon a strong foundation that included hard work, an unwavering commitment to excellence and a passion for innovation. Our humble roots, steeped in service to our clients, customers and more than 35,000 teammates across the globe have helped us become the largest manufacturer of furniture in the world and largest retail furniture store brand in North America.</p>
+                        <p class="text__about">As a privately held, family-owned company spanning three generations, we realize success isn’t achieved in silos. It comes from the collective talents of each of our valued teammates. That’s why when the Wanek family founded Ashely in 1945, it was built upon a strong foundation that included hard work, an unwavering commitment to excellence and a passion for innovation. Our humble roots, steeped in service to our clients, customers and more than 35,000 teammates across the globe have helped us become the largest manufacturer of furniture in the world and largest retail furniture store brand in North America.</p>
                         <p>We know none of the success we’ve achieved would be possible without the dedication and tenacity of all our valued team members, who we consider to be an extension of our own family. As we work together to continuously improve our collective goal of being the best furniture company in the world, we invite you to become part of the family so we can win together.</p>
                     </div>
                 </div>
@@ -356,7 +376,7 @@
                   <h3>INDUSTRY LEADING PROCESS FOR A SEAMLESS PROJECT</h3>
                   <p>Over the course of our years in business, we have developed an efficient 12-step process that is the cornerstone of our work. We value our clients' time and investment and prioritize connection and transparency throughout each project. Each phase is an intentional step toward your home's highest potential.</p>
                   <h3>Project phase one: Design</h3>
-                  <p>Every project begins with a one-on-one consultation. Once our initial proposal is approved, contracts are signed, retainer is paid, and client homework is complete, we are able to turn our focus to visualizing and curating each element. We will schedule a Discovery Meeting, wherein we will take on-site measurements and photos. Next, we will begin sourcing visual inspiration and piecing together concepts. As our initial plans take form, we will compile material samples, drawings, and furnishings in a visual and tactile presentation that will help you get a real sense of how your new home will feel and function.</p>
+                  <p class="text__about">Every project begins with a one-on-one consultation. Once our initial proposal is approved, contracts are signed, retainer is paid, and client homework is complete, we are able to turn our focus to visualizing and curating each element. We will schedule a Discovery Meeting, wherein we will take on-site measurements and photos. Next, we will begin sourcing visual inspiration and piecing together concepts. As our initial plans take form, we will compile material samples, drawings, and furnishings in a visual and tactile presentation that will help you get a real sense of how your new home will feel and function.</p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                   <img class="img-fluid" src="./imgs/abtus_4.jpg" alt="">
@@ -370,7 +390,7 @@
                 <h3>Project phase two: Ordering</h3>
                 <p>When the design of your home is finalized, we move on to sourcing the materials, textiles, design elements, fixtures and furnishings we've selected. This phase goes beyond ordering as our Procurement Manager, Lisa, tracks lead times, coordinates deliveries with our receiving warehouse, ensures each item is inspected, and schedules assembly of any furnishings ahead of installation. At this point in the process, we take a step back to review your budget and offer you updates so that you know what to expect in terms of total investment.</p>
                 <h3>Project phase three: Installation</h3>
-                <p>This is the phase when your home finally comes to life! Once construction is complete, we walk through your new—or newly renovated—home together and take note of any tasks that remain. Next, we schedule an installation day for our team to deliver your furnishings, place them, and style them perfectly. Once we are finished, we welcome you home and have a final walkthrough to get your feedback. After we remedy any outstanding issues, we close out the project with a final budget meeting. Afterward, we celebrate a successful project and send you home to enjoy your new haven with a care and maintenance guide.</p>
+                <p class="text__about">This is the phase when your home finally comes to life! Once construction is complete, we walk through your new—or newly renovated—home together and take note of any tasks that remain. Next, we schedule an installation day for our team to deliver your furnishings, place them, and style them perfectly. Once we are finished, we welcome you home and have a final walkthrough to get your feedback. After we remedy any outstanding issues, we close out the project with a final budget meeting. Afterward, we celebrate a successful project and send you home to enjoy your new haven with a care and maintenance guide.</p>
               </div>
             </div>
         </div>
@@ -405,7 +425,7 @@
                 </div>
                 <div class="col-xl-4">
                   <h2 class="btn-footer">
-                    <a href="./aboutus.html">
+                    <a href="./showroom.html">
                       Showroom
                     </a>
                     <i
@@ -423,7 +443,7 @@
                 </div>
                 <div class="col-xl-4">
                   <h2 class="btn-footer">
-                    <a href="./aboutus.html">
+                    <a href="#">
                       Blog
                     </a>
                     <i
@@ -456,7 +476,7 @@
               <div class="row">
                 <div class="col-xl-4">
                   <h2 class="btn-footer">
-                    <a href="./aboutus.html">
+                    <a href="./return.html">
                       Return and Cancellation
                     </a>
                     <i
@@ -474,7 +494,7 @@
                 </div>
                 <div class="col-xl-4">
                   <h2 class="btn-footer">
-                    <a href="./aboutus.html">
+                    <a href="#">
                       Shipping and Payment
                     </a>
                     <i
@@ -483,10 +503,10 @@
                   </h2>
                   <ul class="footer__link">
                     <li>
-                      <a href="">shipping</a>
+                      <a href="#">shipping</a>
                     </li>
                     <li>
-                      <a href="">payment terms</a>
+                      <a href="./Payment.html">payment terms</a>
                     </li>
                     <div class="payment__logo d-flex d-none d-xl-flex d-lg-none d-sm-none d-md-none">
                       <div class="bg__logo">
@@ -533,31 +553,31 @@
           >
             <ul class="social d-flex ml-auto justify-content-center justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end">
               <li>
-                <a href="https://www.facebook.com/w3layouts/">
+                <a href="">
                   <i class="fa-brands fa-facebook-f"></i
                 ></a>
               </li>
 
               <li>
-                <a href="https://in.linkedin.com/company/w3layouts">
+                <a href="">
                   <i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
 
               <li>
-                <a href="https://twitter.com/W3layouts">
+                <a href="">
                   <i class="fa-brands fa-twitter" aria-hidden="true"></i
                 ></a>
               </li>
 
               <li>
-                <a href="https://google.com/W3layouts">
+                <a href="">
                   <i class="fa-brands fa-google-plus-g"></i
                 ></a>
               </li>
 
               <li>
-                <a href="https://github.com/W3layouts">
+                <a href="">
                   <i class="fa-brands fa-github"></i
                 ></a>
               </li>
@@ -566,6 +586,7 @@
         </div>
       </div>
     </footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.4.1.min.js"></script>

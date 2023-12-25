@@ -11,11 +11,7 @@ h3 {
   margin: 0;
   color: var(--title-color);
 }
-a:hover{
-  transition: all ease 0.5s;
-  color: var(--primary);
-  text-decoration: none;
-}
+
 hr.hr_product {
   margin: 0 !important;
   border: solid 1px var(--primary) !important;
@@ -41,9 +37,7 @@ a{
   transition: all .3s;
 }
 
-.bar span:nth-child(3) a:hover {
-  color: var(--primary);
-}
+
 
 .category_list ul,
 .features_list ul,
@@ -57,15 +51,7 @@ a{
   margin: 0;
 }
 
-.category_list a:hover,
-.features_list a:hover,
-.color_list a:hover,
-.brand_list a:hover,
-.shape_list a:hover,
-.designer_list a:hover,
-.material_list a:hover {
-  text-decoration: none;
-}
+
 
 .category_list ul li,
 .features_list ul li,
@@ -89,16 +75,7 @@ a{
   color: var(--title-color);
 }
 
-#toggle-brand:hover,
-#toggle-category:hover,
-#toggle-colors:hover,
-#toggle-material:hover,
-#toggle-designer:hover,
-#toggle-features:hover,
-#toggle-shape:hover{
-  color: #ff5c00 !important;
-  transition: all ease 0.5s;
-}
+
 
 #toggle-brand,
 #toggle-category,
@@ -130,7 +107,7 @@ a{
   width: 100%;
   border-radius: 8px;
   margin: 30px 0;
-  background-color: var(--primary);
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
   border: none;
   line-height: 50px;
 }
@@ -183,11 +160,6 @@ a{
 .products {
   background-color: var(--light-bg-color);
 }
-
-.products.section__padding {}
-
-.products .products__content .col-4 {}
-
 .products .products__content .bg__product {
   height: 100%;
   padding: 15px;
@@ -199,13 +171,7 @@ a{
   cursor: pointer;
 }
 
-.products .products__content .bg__product:hover {
-  transform: translateY(-0.5rem);
-}
 
-.products .products__content .bg__product:hover a {
-  color: var(--primary);
-}
 
 .products .products__content .product__img {
   position: relative;
@@ -250,9 +216,7 @@ a{
   transition: all 0.5s;
 }
 
-.products .products__content .product__bottom h3 a:hover {
-  color: var(--primary);
-}
+
 
 .products .products__content .product__bottom p:first-of-type {
   text-transform: capitalize;
@@ -279,9 +243,7 @@ a{
   opacity: 0;
 }
 
-.products .products__content .product__img:hover .product__overlay {
-  opacity: 1;
-}
+
 
 .products .button {
   margin-top: 18px;
@@ -294,7 +256,7 @@ a{
 
 /* // */
 .button__fill {
-  line-height: 40px !important;
+  line-height: 50px !important;
   text-transform: uppercase;
   font-size: 14px;
   border: 1px solid transparent;
@@ -309,11 +271,11 @@ a{
 
 .button__stroke {
   background-color: transparent;
-  color: #ff5c00;
+  color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   border: 1px solid #ff5c00;
-  line-height: 40px;
+  line-height: 50px;
   border-radius: var(--curve);
   width: 140px;
   transition: all .5s;
@@ -338,9 +300,11 @@ a{
 }
 
 .button_product_card button:nth-child(2) {
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%) !important;
   margin-top: 0 !important;
   margin-bottom: 15px;
-  height: 40px !important;
+  height: 50px !important;
+  transition: all 0.5s;
 }
 
 /* style checkbox */
@@ -513,7 +477,51 @@ button:focus-visible{
 @media screen and (min-width: 768px) and (max-width:992px) {
 
 }
-
+@media screen and (min-width:768px){
+  a:hover{
+    transition: all ease 0.5s;
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .bar span:nth-child(3) a:hover {
+    color: var(--primary);
+  }
+  .category_list a:hover,
+  .features_list a:hover,
+  .color_list a:hover,
+  .brand_list a:hover,
+  .shape_list a:hover,
+  .designer_list a:hover,
+  .material_list a:hover {
+    text-decoration: none;
+  }
+  #toggle-brand:hover,
+  #toggle-category:hover,
+  #toggle-colors:hover,
+  #toggle-material:hover,
+  #toggle-designer:hover,
+  #toggle-features:hover,
+  #toggle-shape:hover{
+    color: #ff5c00 !important;
+    transition: all ease 0.5s;
+  }
+}
+@media screen and (min-width:992px  ) {
+  .products .products__content .bg__product:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .products .products__content .bg__product:hover a {
+    color: var(--primary);
+  }
+  .products .products__content .product__bottom h3 a:hover {
+    color: var(--primary);
+  }
+  .products .products__content .product__img:hover .product__overlay {
+    opacity: 1;
+  }
+  
+}
 @media screen and (min-width:576px) and (max-width:767px) {
   .toolbar_results ul{
     margin-top: 10px !important;

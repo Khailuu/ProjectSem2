@@ -21,20 +21,20 @@
 </head>
 
 <body>
-   <!-- Messenger Plugin chat Code -->
-   <div id="fb-root"></div>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
 
-   <!-- Your Plugin chat code -->
-   <div id="fb-customer-chat" class="fb-customerchat"></div>
-   <div class="overlay__menu"></div>
-   <header id="site-header" class="d-flex align-items-center">
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <div class="overlay__menu"></div>
+  <header id="site-header" class="d-flex align-items-center">
     <div class="container-fluid header__mobile">
       <div class="row align-items-center">
         <div class="col-3 nav-menu">
           <i class="fa-solid fa-bars-staggered"></i>
         </div>
         <div class="col-3 header__logo">
-          <a href="./index.html">
+          <a href="#">
             <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
           </a>
         </div>
@@ -92,7 +92,7 @@
               <a href="./sale.html">sale</a>
             </li>
             <li>
-              <a href="">contact us</a>
+              <a href="./contact.html">contact us</a>
             </li>
             <li
               class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
@@ -192,9 +192,9 @@
                 Remember me
               </span>
             </label>
-            <a href="#">Forgot Password?</a>
+            <a class="fotgot__link" href="#">Forgot Password?</a>
           </div>
-          <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+          <button id="login__signInButton" type="submit" class="btn-submit button__fill">Login</button>
           <div class="login__social mt-3">
             <div class="row">
               <div class="col-5">
@@ -209,13 +209,13 @@
             </div>
             <div class="row row__bottom">
               <div class="col-6">
-                <button>
+                <button class="">
                   <i class="fa-brands fa-facebook"></i>
                   <span>Facebook</span>
                 </button>
               </div>
               <div class="col-6">
-                <button>
+                <button class="">
                   <i class="fa-brands fa-google"></i>
                   <span>Google</span>
                 </button>
@@ -242,13 +242,13 @@
             <input class="input-signup-username" type="eamil" required />
             <label for="">Username</label>
           </div>
-          <!-- <div class="input-box">
+          <div class="input-box">
             <span class="icon">
               <i class="fa-solid fa-envelope"></i>
             </span>
             <input type="eamil" required />
             <label for="">Email</label>
-          </div> -->
+          </div>
           <div class="input-box">
             <span class="icon">
               <i class="fa-solid fa-key"></i>
@@ -263,9 +263,26 @@
               </span>
             </label>
           </div>
-          <button type="submit" class="btn-submit signup__signInButton">Register</button>
+          <button type="submit" class="btn-submit signup__signInButton button__fill">Register</button>
           <div class="login-register">
-            <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+            <p>Already have account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box forgot">
+        <h2>Forgot Password</h2>
+        <form action="#">
+         
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="eamil" required />
+            <label for="">Email</label>
+            <button type="submit" class="btn-submit signup__signInButton button__fill mt-3">Send Email</button>
+          </div>
+          <div class="login-register">
+            <p>Already have account?<a class="signup__signInButton login-link2" href="#">Login</a></p>
           </div>
         </form>
       </div>
@@ -319,14 +336,11 @@
 
       <div class="row">
         <div class="col-12" style="display: flex; justify-content: center;">
-          <a href=""><button class="btn rounded-lg"
-              style="border: solid 1px var(--primary); height: 50px; width: 160px; padding: 0;">
-              <h3 style="font-size: 14px !important; padding: 0; justify-content: center; color: var(--primary);">
-                HOW WE DO IT</h3>
-            </button></a>
+          <button class="btn rounded-lg button__stroke" style="display:flex; justify-content: center; padding: 0;">
+            HOW WE DO IT</h3>
+          </button>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -359,16 +373,22 @@
                 </div>
                 <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
                 <div class="about_trannghia">
-                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
-                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
-                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                  <h3 style="font-size: 20px; margin-top: 30px; padding: 0 10px 0 0">About me</h3>
+                  <p style="padding: 10px 0 0 0; color: var(--title-color); margin-bottom: 10px !important;">
                     TRAN NGHIA's uplifting and accessible design philosophy has transformed countless homes around the
-                    world through her design work, home collections, books, television shows and media
-                    appearances.<br><br>
-                    TRAN NGHIA has become one of the most famous interior designers in the world and is on the ELLE
-                    DÉCOR “A-List”.<br><br>
-                    “My job as a designer is to be able to tell my clients' stories through the things they choose for
-                    their homes. What they saw, who they loved and where they hope to go next.” - TRAN NGHIA </p>
+                    world through her design work, home collections, books, television shows and media appearances.
+                  </p>
+                  <div class="blurred-content">
+                    <p style="color: var(--title-color); margin-bottom: 20px !important;" class="hide-text">
+                      TRAN NGHIA has become one of the most famous interior designers in the world and is on the ELLE
+                      DÉCOR “A-List”.
+                    </p>
+                    <p class="hide-text2">
+                      “My job as a designer is to be able to tell my clients' stories through the things they choose for
+                      their homes. What they saw, who they loved and where they hope to go next.” - TRAN NGHIA
+                    </p>
+                    <a href="" class="read-more d-lg-none d-md-block">READ MORE</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -424,8 +444,8 @@
                   </div>
                 </div>
               </div>
-              <button
-                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+              <button class="button__fill btn rounded-l"
+                style="display: flex; justify-content: center; margin:auto; margin-top: 48px; margin-bottom: 48px; padding: 0;">
                 VIEW MORE
               </button>
             </div>
@@ -439,7 +459,7 @@
             <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
             <div class="text-container">
               <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
-              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: #fff ; margin: 0;"
                 class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
                 mix of edgy and chic cohesiveness that truly makes it one of a kind.
               </p>
@@ -454,12 +474,12 @@
             <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_3.4.jpg" alt="" class="img-fluid">
           </div>
         </div>
         <div class="row">
           <div class="col-4" style="margin-top: 30px;">
-            <div class="img_profile 2 img-hide-nghia">
+            <div class="img_profile 2 img-hide-nghia style-profile">
               <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
             </div>
           </div>
@@ -468,22 +488,21 @@
               <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-nghia" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_3.6.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-nghia" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_3.5.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-nghia" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_3.7.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
+        <button class="btn rounded-lg button__stroke button_trannghia"
+          style="display:flex; justify-content: center; padding: 0; margin: auto; margin-top: 30px; margin-bottom: 20px;">
+          VIEW MORE</h3>
+        </button>
       </div>
-    </div>
-    <button class="button_trannghia"
-      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
-      VIEW MORE
-    </button>
     </div>
   </section>
 
@@ -513,23 +532,31 @@
                 </div>
                 <h3 style="margin-top: 20px; padding: 0 20px 0 0;">Celebrity Interior Designer</h3>
                 <div class="about_trannghia">
-                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
-                      class="fa-regular fa-chevron-down d-lg-none"></i></h3>
+                  <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me</h3>
                   <p style="padding: 10px 0 0 0; color: var(--title-color);">
                     Award winning Interior Designer. I have had the great honor of being named to the AD100,
-                    Architectural Digest's annual compendium of the world's top designers and Elle Décor's A-List. <br>
-                    <br>
-                    Clients: Will Ferrell, Octavia Spencer, Sam Rockwell. <br> <br>
+                    Architectural Digest's annual compendium of the world's top designers and Elle Décor's A-List.
+                  </p>
+                  <p>
+                    Clients: Will Ferrell, Octavia Spencer, Sam Rockwell.
+                  </p>
+                  <p>
                     My creative process begins by listening to my clients then contemplating how design can make their
                     lives more beautiful. The beauty is in the details: lightness, flexibility, and cleanliness.
-                    <br><br>
-                    As an interior designer, I believe I have a responsibility to inform my work with integrity. That
-                    means respecting the environment in every sense of the word: using craftsmen whose work is true to
-                    their art forms, working with sustainable materials, using vintage furnishings, and choosing
-                    products that are honestly produced and made.<br><br>
-                    Work has been published in AD, Veranda, Elle Decor, Luxe, House Beautiful, The New York Times, and
-                    NY Spaces.
                   </p>
+                  <div class="blurred-content">
+                    <p style="color: var(--title-color); margin-bottom: 20px !important;" class="hide-text">
+                      As an interior designer, I believe I have a responsibility to inform my work with integrity. That
+                      means respecting the environment in every sense of the word: using craftsmen whose work is true to
+                      their art forms, working with sustainable materials, using vintage furnishings, and choosing
+                      products that are honestly produced and made.
+                    </p>
+                    <p class="hide-text2">
+                      Work has been published in AD, Veranda, Elle Decor, Luxe, House Beautiful, The New York Times, and
+                      NY Spaces.
+                    </p>
+                    <a href="" class="read-more d-lg-none d-md-block">READ MORE</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -548,8 +575,10 @@
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                       <div class="row custom_imgs_profile">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
-                          <img src="./imgs/img_profile_9.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6 ">
+                          <img src="./imgs/img_profile_9.jpg" alt="" class="img-fluid d-none d-md-block" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                          <img src="./imgs/img_profile_9.1.jpg" alt="" class="img-fluid d-md-none" style="border-radius: 8px;
                           box-shadow: var(--card-box-shadow);">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
@@ -582,8 +611,8 @@
                   </div>
                 </div>
               </div>
-              <button
-                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+              <button class="button__fill btn rounded-l"
+                style="display: flex; justify-content: center; margin:auto; margin-top: 48px; margin-bottom: 48px; padding: 0;">
                 VIEW MORE
               </button>
             </div>
@@ -593,54 +622,54 @@
       <div class="col-12 box_img_profile">
         <div class="col-12">
           <div class="row img_profile image-container" style="margin-top: 48px;">
-            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <img src="./imgs/img_profile_4.1.jpg" alt="" class="zoom-image img-fluid">
             <div class="text-container">
-              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
-              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
-                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
-                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              <h2 class="text d-none d-md-block">STYLE ESTATE WITH A MODERN EDGE</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: #fff; margin: 0;"
+                class="sub_text d-none d-md-block">Steel windows encase a beautiful Mr.Khai Luu style home with stunning
+                grounds with
+                incredible indoor & outdoor living areas for entertaining family and friends.
               </p>
             </div>
           </div>
         </div>
         <div class="row " style="margin-top: 25px;">
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_4.3.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_4.4.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_4.5.jpg" alt="" class="img-fluid">
           </div>
         </div>
         <div class="row">
           <div class="col-4" style="margin-top: 30px;">
             <div class="img_profile 2 img-hide-khai">
-              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_4.2.jpg" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
             <div class="col-6 img_profile2 img-hide-khai" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_4.6.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-khai" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_4.7.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-khai" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_4.8.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-khai" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_4.9.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <button class="button_khailuu"
-      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
-      VIEW MORE
-    </button>
+      <button class="btn rounded-lg button__stroke button_khailuu"
+        style="display:flex; justify-content: center; padding: 0; margin: auto; margin-top: 30px; margin-bottom: 20px;">
+        VIEW MORE</h3>
+      </button>
     </div>
   </section>
 
@@ -679,14 +708,23 @@
                     of stone surfaces for bars, vanities, kitchens, and shower enclosures. <br><br>
                     His bold work and stylings have been featured in Elle Decor, Architectural Digest, Vogue, Interiors
                     California, House Beautiful, Robb Report, Traditional Home, and Modern Luxury, among other top tier
-                    outlets.<br><br>
-                    Today he is the vanguard of a new wave of millennial designers and has become a social media
-                    sensation. His popular Instagram account has over 160,000 followers from all around the world, who
-                    are obsessed with his design acumen, relentless work ethic, and hilarious commentary—and are equally
-                    as inspired by him.<br><br>
-                    “My approach to design is all about feeling. Creativity comes from the heart, it's intuitive. I
-                    create spaces that are pouring with self-expression, and that's the the identifiable Ryan Saghian
-                    experience.”</p>
+                    outlets.
+                  </p>
+                  <div class="blurred-content">
+                    <p style="color: var(--title-color); margin-bottom: 20px !important;" class="hide-text">
+                      Today he is the vanguard of a new wave of millennial designers and has become a social media
+                      sensation. His popular Instagram account has over 160,000 followers from all around the world, who
+                      are obsessed with his design acumen, relentless work ethic, and hilarious commentary—and are
+                      equally
+                      as inspired by him.
+                    </p>
+                    <p class="hide-text">
+                      “My approach to design is all about feeling. Creativity comes from the heart, it's intuitive. I
+                      create spaces that are pouring with self-expression, and that's the the identifiable Ryan Saghian
+                      experience.”
+                    </p>
+                    <a href="" class="read-more d-lg-none d-md-block">READ MORE</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -705,8 +743,10 @@
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                       <div class="row custom_imgs_profile">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
-                          <img src="./imgs/img_profile_17.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6 ">
+                          <img src="./imgs/img_profile_17.jpg" alt="" class="img-fluid d-none d-md-block" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                          <img src="./imgs/img_profile_17.1.jpg" alt="" class="img-fluid d-md-none" style="border-radius: 8px;
                           box-shadow: var(--card-box-shadow);">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
@@ -757,8 +797,8 @@
                   </div>
                 </div>
               </div>
-              <button
-                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+              <button class="button__fill btn rounded-l"
+                style="display: flex; justify-content: center; margin:auto; margin-top: 48px; margin-bottom: 48px; padding: 0;">
                 VIEW MORE
               </button>
             </div>
@@ -768,54 +808,54 @@
       <div class="col-12 box_img_profile">
         <div class="col-12">
           <div class="row img_profile image-container" style="margin-top: 48px;">
-            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <img src="./imgs/img_profile_5.1.jpg" alt="" class="zoom-image img-fluid">
             <div class="text-container">
-              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
-              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
-                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
-                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              <h2 class="text d-none d-md-block">STUNNING CUSTOM ITALIAN KITCHEN</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color:#fff; margin: 0;"
+                class="sub_text d-none d-md-block">This fully custom Italian kitchen design features Officine Gullo
+                hood, range, and cabinetry
+                as well as custom lighting and a backlit fireplace.
               </p>
             </div>
           </div>
         </div>
         <div class="row " style="margin-top: 25px;">
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_5.3.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_5.4.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_5.5.jpg" alt="" class="img-fluid">
           </div>
         </div>
         <div class="row">
           <div class="col-4" style="margin-top: 30px;">
             <div class="img_profile 2 img-hide-hoang">
-              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_5.2.jpg" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
             <div class="col-6 img_profile2 img-hide-hoang" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_5.6.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-hoang" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_5.7.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-hoang" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_5.8.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-hoang" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_5.9.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <button class="button_duyhoang"
-      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
-      VIEW MORE
-    </button>
+      <button class="btn rounded-lg button__stroke button_duyhoang"
+        style="display:flex; justify-content: center; padding: 0; margin: auto; margin-top: 30px; margin-bottom: 20px;">
+        VIEW MORE</h3>
+      </button>
     </div>
   </section>
 
@@ -847,19 +887,28 @@
                 <div class="about_trannghia">
                   <h3 style="font-size: 20px; margin-top: 30px;padding: 0 10px 0 0">About me <i
                       class="fa-regular fa-chevron-down d-lg-none"></i></h3>
-                  <p style="padding: 10px 0 0 0; color: var(--title-color);">
+                  <p style="padding: 10px 0 0 0; color: var(--title-color); margin-bottom: 20px !important;">
                     Mrs.Xuan Quy is recognized as an influential voice in the interior design industry.
-                    <br><br>
-                    Featured in Arch Digest, Elle, and more.
-                    <br><br>
-                    A high-end residential and commercial interior designer to a long list of
-                    high profile clientele worldwide. She's know for her innovative, colorful and inspiring designs. She
-                    is also a product developer and designer, launching a furniture, rug and jewelry collection
-                    2020/2021.<br><BR>
-
-                    Mrs.Xuan Quy is warm, friendly, easy to talk to and always eager to help others!<br><br>
-                    “I can't wait to connect and help!”
                   </p>
+                  <p style="margin-bottom: 0px !important; padding-top: 0 !important;">
+                    Featured in Arch Digest, Elle, and more.
+                  </p>
+                  
+                  <div class="blurred-content" >
+                    <p style="color: var(--title-color); margin-bottom: 20px !important; padding-top: 0 !important;" class="hide-text">
+                    <p>A high-end residential and commercial interior designer to a long list of
+                      high profile clientele worldwide. She's know for her innovative, colorful and inspiring designs.
+                      She
+                      is also a product developer and designer, launching a furniture, rug and jewelry collection
+                      2020/2021.</p>
+                    <p>
+                      Mrs.Xuan Quy is warm, friendly, easy to talk to and always eager to help others!
+                    </p>
+                    <p class="hide-text">
+                      “I can't wait to connect and help!”
+                    </p>
+                    <a href="" class="read-more d-lg-none d-md-block">READ MORE</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -878,8 +927,10 @@
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                       <div class="row custom_imgs_profile">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-6 ">
-                          <img src="./imgs/img_profile_29.jpg" alt="" class="img-fluid" style="border-radius: 8px;
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6 ">
+                          <img src="./imgs/img_profile_29.jpg" alt="" class="img-fluid d-none d-md-block" style="border-radius: 8px;
+                          box-shadow: var(--card-box-shadow);">
+                          <img src="./imgs/img_profile_29.1.jpg" alt="" class="img-fluid d-md-none" style="border-radius: 8px;
                           box-shadow: var(--card-box-shadow);">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-6 box_sub_img_fortfolio">
@@ -929,8 +980,8 @@
                   </div>
                 </div>
               </div>
-              <button
-                style="width: 160px; height: 50px; text-align: center; border: var(--card-box-shadow); border-radius: 8px; background-color: #ff5c00;  color: #fff; margin: auto; margin-top: 48px;margin-bottom: 48px; display: flex; justify-content: center; align-items: center; font-weight: bold;">
+              <button class="button__fill btn rounded-l"
+                style="display: flex; justify-content: center; margin:auto; margin-top: 48px; margin-bottom: 48px; padding: 0;">
                 VIEW MORE
               </button>
             </div>
@@ -940,247 +991,246 @@
       <div class="col-12 box_img_profile">
         <div class="col-12">
           <div class="row img_profile image-container" style="margin-top: 48px;">
-            <img src="./imgs/img_profile_3.jpg" alt="" class="zoom-image img-fluid">
+            <img src="./imgs/img_profile_6.1.jpg" alt="" class="zoom-image img-fluid">
             <div class="text-container">
-              <h2 class="text d-none d-md-block">VINHOME VILLA RESIDENCE</h2>
-              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: var(--bg-hd-color) ; margin: 0;"
-                class="sub_text d-none d-md-block">The bold interior decoration of this villa residence shows off a fine
-                mix of edgy and chic cohesiveness that truly makes it one of a kind.
+              <h2 class="text d-none d-md-block">PERFECTION OF FRENCH STYLE IN VIETNAM</h2>
+              <p style="text-align: center; padding-left: 5%; padding-right:5%; font-weight: bold; color: #fff; margin: 0;"
+                class="sub_text d-none d-md-block">Ceiling to floor fabulously curated design captures the essence of
+                luxury living.
               </p>
             </div>
           </div>
         </div>
         <div class="row " style="margin-top: 25px;">
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_4.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_6.3.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_6.4.jpg" alt="" class="img-fluid">
           </div>
           <div class="col-4 img_profile2">
-            <img src="./imgs/img_profile_5.jpg" alt="" class="img-fluid">
+            <img src="./imgs/img_profile_6.5.jpg" alt="" class="img-fluid">
           </div>
         </div>
         <div class="row">
           <div class="col-4" style="margin-top: 30px;">
             <div class="img_profile 2 img-hide-quy">
-              <img src="./imgs/img_profile_3.1.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_6.2.jpg" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-8" style="display: flex; flex-wrap: wrap; margin-top: 30px; align-content: space-between;">
             <div class="col-6 img_profile2 img-hide-quy" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_6.6.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-quy" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_6.7.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-quy" style="padding-left: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_6.8.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-6 img_profile2 img-hide-quy" style="padding-right: 0;">
-              <img src="./imgs/img_profile_7.jpg" alt="" class="img-fluid">
+              <img src="./imgs/img_profile_6.9.jpg" alt="" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <button class="button_xuanquy"
-      style="width: 160px; height: 50px; text-align: center; border: solid 1px #ff5c00; border-radius: 8px; background-color: var(--bg-hd-color); color: #ff5c00; margin: auto; margin-top: 48px; display: flex; justify-content: center;font-weight: bold; align-items: center;">
-      VIEW MORE
-    </button>
+      <button class="btn rounded-lg button__stroke button_xuanquy"
+        style="display:flex; justify-content: center; padding: 0; margin: auto; margin-top: 30px; margin-bottom: 20px;">
+        VIEW MORE</h3>
+      </button>
     </div>
   </section>
   <!----------Footer------------------------------------>
   <footer class="section__padding">
-      <div class="container">
-        <div class="footer__content">
-          <div class="row">
-            <div class="col-xl-12 col-md-6 col-sm-6">
-              <div class="row row__up">
-                <div class="col-xl-4 mb-3">
-                  <h2 class="btn-footer">
-                    <a href="./aboutus.html">
-                      about us
-                    </a>
-                    <i
-                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
-                    ></i>
-                  </h2>
-                  <ul class="footer__link">
-                    <li>
-                      <a href="./profile.html">Profiles</a>
-                    </li>
-                    <li>
-                      <a href="./careers.html">careers</a>
-                    </li>
-                    <li>
-                      <a href="./faq.html">FAQs</a>
-                    </li>
-                  </ul>
+    <div class="container">
+      <div class="footer__content">
+        <div class="row">
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row row__up">
+              <div class="col-xl-4 mb-3">
+                <h2 class="btn-footer">
+                  <a href="./aboutus.html">
+                    about us
+                  </a>
+                  <i
+                    class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                  ></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="./profile.html">Profiles</a>
+                  </li>
+                  <li>
+                    <a href="./careers.html">careers</a>
+                  </li>
+                  <li>
+                    <a href="./faq.html">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  <a href="./showroom.html">
+                    Showroom
+                  </a>
+                  <i
+                    class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                  ></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">location</a>
+                  </li>
+                  <li>
+                    <a href="">find nearest shop</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  <a href="#">
+                    Blog
+                  </a>
+                  <i
+                    class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                  ></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="">magazine</a>
+                  </li>
+                  <li>
+                    <a href="">editor's pick</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="payment__logo d-none d-xl-none d-lg-flex d-sm-flex d-md-flex">
+                <div class="bg__logo">
+                  <img src="./imgs/visa.png" alt="">
                 </div>
-                <div class="col-xl-4">
-                  <h2 class="btn-footer">
-                    <a href="./aboutus.html">
-                      Showroom
-                    </a>
-                    <i
-                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
-                    ></i>
-                  </h2>
-                  <ul class="footer__link">
-                    <li>
-                      <a href="">location</a>
-                    </li>
-                    <li>
-                      <a href="">find nearest shop</a>
-                    </li>
-                  </ul>
+                <div class="bg__logo">
+                  <img src="./imgs/master.png" alt="">
                 </div>
-                <div class="col-xl-4">
-                  <h2 class="btn-footer">
-                    <a href="./aboutus.html">
-                      Blog
-                    </a>
-                    <i
-                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
-                    ></i>
-                  </h2>
-                  <ul class="footer__link">
-                    <li>
-                      <a href="">magazine</a>
-                    </li>
-                    <li>
-                      <a href="">editor's pick</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="payment__logo d-none d-xl-none d-lg-flex d-sm-flex d-md-flex">
-                  <div class="bg__logo">
-                    <img src="./imgs/visa.png" alt="">
-                  </div>
-                  <div class="bg__logo">
-                    <img src="./imgs/master.png" alt="">
-                  </div>
-                  <div class="bg__logo">
-                    <img src="./imgs/JCB.png" alt="">
-                  </div>
+                <div class="bg__logo">
+                  <img src="./imgs/JCB.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="col-xl-12 col-md-6 col-sm-6">
-              <div class="row">
-                <div class="col-xl-4">
-                  <h2 class="btn-footer">
-                    <a href="./aboutus.html">
-                      Return and Cancellation
-                    </a>
-                    <i
-                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
-                    ></i>
-                  </h2>
-                  <ul class="footer__link">
-                    <li>
-                      <a href="./return.html">returns</a>
-                    </li>
-                    <li>
-                      <a href="">cancellations</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-xl-4">
-                  <h2 class="btn-footer">
-                    <a href="./aboutus.html">
-                      Shipping and Payment
-                    </a>
-                    <i
-                      class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
-                    ></i>
-                  </h2>
-                  <ul class="footer__link">
-                    <li>
-                      <a href="">shipping</a>
-                    </li>
-                    <li>
-                      <a href="">payment terms</a>
-                    </li>
-                    <div class="payment__logo d-flex d-none d-xl-flex d-lg-none d-sm-none d-md-none">
-                      <div class="bg__logo">
-                        <img src="./imgs/visa.png" alt="">
-                      </div>
-                      <div class="bg__logo">
-                        <img src="./imgs/master.png" alt="">
-                      </div>
-                      <div class="bg__logo">
-                        <img src="./imgs/JCB.png" alt="">
-                      </div>
+          </div>
+          <div class="col-xl-12 col-md-6 col-sm-6">
+            <div class="row">
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  <a href="./return.html">
+                    Return and Cancellation
+                  </a>
+                  <i
+                    class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                  ></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="./return.html">returns</a>
+                  </li>
+                  <li>
+                    <a href="">cancellations</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">
+                  <a href="#">
+                    Shipping and Payment
+                  </a>
+                  <i
+                    class="d-xl-none d-md-inline-blcok fa-solid fa-angle-down"
+                  ></i>
+                </h2>
+                <ul class="footer__link">
+                  <li>
+                    <a href="#">shipping</a>
+                  </li>
+                  <li>
+                    <a href="./Payment.html">payment terms</a>
+                  </li>
+                  <div class="payment__logo d-flex d-none d-xl-flex d-lg-none d-sm-none d-md-none">
+                    <div class="bg__logo">
+                      <img src="./imgs/visa.png" alt="">
                     </div>
-                  </ul>
-                </div>
-                <div class="col-xl-4">
-                  <h2 class="btn-footer">join the us</h2>
-                  <div class="footer__mail">
-                    <input type="mail" placeholder="email" required />
-                    <i class="fa-solid fa-paper-plane"></i>
+                    <div class="bg__logo">
+                      <img src="./imgs/master.png" alt="">
+                    </div>
+                    <div class="bg__logo">
+                      <img src="./imgs/JCB.png" alt="">
+                    </div>
                   </div>
-                  <p>
-                    Sign up for our latest news & articles. We won’t give you
-                    spam mails.
-                  </p>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <h2 class="btn-footer">join the us</h2>
+                <div class="footer__mail">
+                  <input type="mail" placeholder="email" required />
+                  <i class="fa-solid fa-paper-plane"></i>
                 </div>
+                <p>
+                  Sign up for our latest news & articles. We won’t give you
+                  spam mails.
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="d-flex copyright justify-content-between align-items-center pt-4 mt-5"
-        >
-          <div
-            class="columns col-xl-8 col-lg-8 col-sm-12 col-xs-12 text-lg-left"
-          >
-            <p class="CopyRights">
-              © 2023 Furniture. All Rights Reserved | Design by
-              <a href="./index.html">Cozy-Furniture</a>
-            </p>
-          </div>
-
-          <div
-            class="columns-2 col-xl-4 col-lg-4 col-sm-12 col-xs-12 mt-lg-0 mt-3 footerSocial "
-          >
-            <ul class="social d-flex ml-auto justify-content-center justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end">
-              <li>
-                <a href="https://www.facebook.com/w3layouts/">
-                  <i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://in.linkedin.com/company/w3layouts">
-                  <i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://twitter.com/W3layouts">
-                  <i class="fa-brands fa-twitter" aria-hidden="true"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://google.com/W3layouts">
-                  <i class="fa-brands fa-google-plus-g"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://github.com/W3layouts">
-                  <i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <div
+        class="d-flex copyright justify-content-between align-items-center pt-4 mt-5"
+      >
+        <div
+          class="columns col-xl-8 col-lg-8 col-sm-12 col-xs-12 text-lg-left"
+        >
+          <p class="CopyRights">
+            © 2023 Furniture. All Rights Reserved | Design by
+            <a href="./index.html">Cozy-Furniture</a>
+          </p>
+        </div>
+
+        <div
+          class="columns-2 col-xl-4 col-lg-4 col-sm-12 col-xs-12 mt-lg-0 mt-3 footerSocial "
+        >
+          <ul class="social d-flex ml-auto justify-content-center justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end">
+            <li>
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fa-brands fa-google-plus-g"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="./js/jquery-3.4.1.min.js"></script>

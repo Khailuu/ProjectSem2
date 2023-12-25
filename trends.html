@@ -28,7 +28,7 @@
           <i class="fa-solid fa-bars-staggered"></i>
         </div>
         <div class="col-3 header__logo">
-          <a href="./index.html">
+          <a href="#">
             <img src="./imgs/logo__bgwhite.png" class="change__logo" alt="" />
           </a>
         </div>
@@ -77,7 +77,7 @@
               </ul>
             </li>
             <li>
-              <a class="active" href="./trends.html">trends</a>
+              <a href="./trends.html">trends</a>
             </li>
             <li>
               <a href="./gift.html">giftset</a>
@@ -86,7 +86,7 @@
               <a href="./sale.html">sale</a>
             </li>
             <li>
-              <a href="">contact us</a>
+              <a href="./contact.html">contact us</a>
             </li>
             <li
               class="d-xl-none d-lg-inline d-md-inline d-sm-inline d-xs-inline"
@@ -186,9 +186,9 @@
                 Remember me
               </span>
             </label>
-            <a href="#">Forgot Password?</a>
+            <a class="fotgot__link" href="#">Forgot Password?</a>
           </div>
-          <button id="login__signInButton" type="submit" class="btn-submit">Login</button>
+          <button id="login__signInButton" type="submit" class="btn-submit button__fill">Login</button>
           <div class="login__social mt-3">
             <div class="row">
               <div class="col-5">
@@ -203,13 +203,13 @@
             </div>
             <div class="row row__bottom">
               <div class="col-6">
-                <button>
+                <button class="">
                   <i class="fa-brands fa-facebook"></i>
                   <span>Facebook</span>
                 </button>
               </div>
               <div class="col-6">
-                <button>
+                <button class="">
                   <i class="fa-brands fa-google"></i>
                   <span>Google</span>
                 </button>
@@ -236,13 +236,13 @@
             <input class="input-signup-username" type="eamil" required />
             <label for="">Username</label>
           </div>
-          <!-- <div class="input-box">
+          <div class="input-box">
             <span class="icon">
               <i class="fa-solid fa-envelope"></i>
             </span>
             <input type="eamil" required />
             <label for="">Email</label>
-          </div> -->
+          </div>
           <div class="input-box">
             <span class="icon">
               <i class="fa-solid fa-key"></i>
@@ -257,9 +257,26 @@
               </span>
             </label>
           </div>
-          <button type="submit" class="btn-submit signup__signInButton">Register</button>
+          <button type="submit" class="btn-submit signup__signInButton button__fill">Register</button>
           <div class="login-register">
-            <p>An have an account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+            <p>Already have account?<a class="signup__signInButton login-link" href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box forgot">
+        <h2>Forgot Password</h2>
+        <form action="#">
+         
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="eamil" required />
+            <label for="">Email</label>
+            <button type="submit" class="btn-submit signup__signInButton button__fill mt-3">Send Email</button>
+          </div>
+          <div class="login-register">
+            <p>Already have account?<a class="signup__signInButton login-link2" href="#">Login</a></p>
           </div>
         </form>
       </div>
@@ -294,7 +311,7 @@
     </div>
   </section>
 
-  <section class="section__padding" style="background-color: var(--bg-color);">
+  <section class="section__padding style_trends" style="background-color: var(--bg-color);">
     <div class="container">
       <div class="title">
         <h2 style="text-align: left;">Trends & Inspiration</h2>
@@ -414,7 +431,7 @@
   </section>
 
   <section>
-    <div class="container-fluid" style="background-color: var(--light-bg-color);">
+    <div class="container-fluid" style="background-color: var(--bg-gray-color); border-top: solid 1px var(--text-color);border-bottom: solid 1px var(--text-color);">
       <div class="container">
         <div class="row">
           <div
@@ -431,7 +448,7 @@
             <p style="color: var(--title-color);" class="box_style_trends_2">From cozy, sophisticated surroundings to an art deco revival, we've
               compiled the most sought-after
               interior design trends poised to stand out in 2023.</p>
-            <div style="display: flex; flex-direction:row; margin-top: 30px; " class="box_style_trends_2">
+            <div style="display: flex; flex-direction:row; margin-top: 30px; " class="box_style_trends_2 style2">
               <button type="button" class="button__fill mr-4">READ
                 MORE</button>
               <button type="button" class="button__stroke">MORE
@@ -486,30 +503,30 @@
             lists for undeniably luxe living.</p>
         </div>
       </div>
-      <div class="row" style="margin-top: 30px;">
+      <div class="row " style="margin-top: 30px;">
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
-          <div class="row">
+          <div class="row box-tutor">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6">
               <img src="./imgs/trend_8.jpg" alt="" style="width: 100%;
               height: auto; border-radius: var(--curve); box-shadow: var(--card-box-shadow);">
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-6">
-              <h4 style="font-weight: bold; margin-top: 20px; color: var(--title-color);">
+              <h4 style="font-weight: bold; margin-top: 20px; color: var(--title-color);" class="tutor_text">
                 Choosing a Dining Room Table</h4>
-              <p style="margin-top: 20px; color: var(--title-color);">From spacious soirees to intimate meals for two, we discuss the key factors you should consider when looking to purchase a new dining room table design.</p>
+              <p style="margin-top: 20px; color: var(--title-color);" class="tutor_text">From spacious soirees to intimate meals for two, we discuss the key factors you should consider when looking to purchase a new dining room table design.</p>
             </div>
           </div>
         </div>
 
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
-          <div class="row">
+          <div class="row box-tutor">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-7 col-7">
               <img src="./imgs/trend_9.jpg" alt="" style="width: 100%;
               height: auto; border-radius: var(--curve); box-shadow: var(--card-box-shadow);">
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-5 col-5">
-              <h4 style="font-weight: bold; margin-top: 20px; color: var(--title-color);">Chandelier Height Over A Bed</h4>
-              <p style="margin-top: 20px; color: var(--title-color);">With smart planning and a few easy steps, you can select the perfect size chandelier to add just the right touch of sparkle to any bedroom.</p>
+              <h4 style="font-weight: bold; margin-top: 20px; color: var(--title-color);" class="tutor_text">Chandelier Height Over A Bed</h4>
+              <p style="margin-top: 20px; color: var(--title-color);" class="tutor_text">With smart planning and a few easy steps, you can select the perfect size chandelier to add just the right touch of sparkle to any bedroom.</p>
             </div>
           </div>
         </div>
@@ -520,7 +537,7 @@
               <img src="./imgs/trend_10.jpg" alt="" style="width: 100%;
               height: auto; border-radius: var(--curve); box-shadow: var(--card-box-shadow);">
             </div>
-            <div class="col-12">
+            <div class="col-12 ">
               <h4 style="font-weight: bold; margin-top: 20px; color: var(--title-color);">Centering a Coffee Table</h4>
               <p style="margin-top: 20px; color: var(--title-color);">Do you prefer a charming centerpiece, or slightly askew accent? Helpful tips on deciding what coffee table position is right for you.</p>
             </div>
@@ -563,7 +580,7 @@
               </div>
               <div class="col-xl-4">
                 <h2 class="btn-footer">
-                  <a href="./aboutus.html">
+                  <a href="./showroom.html">
                     Showroom
                   </a>
                   <i
@@ -581,7 +598,7 @@
               </div>
               <div class="col-xl-4">
                 <h2 class="btn-footer">
-                  <a href="./aboutus.html">
+                  <a href="#">
                     Blog
                   </a>
                   <i
@@ -614,7 +631,7 @@
             <div class="row">
               <div class="col-xl-4">
                 <h2 class="btn-footer">
-                  <a href="./aboutus.html">
+                  <a href="./return.html">
                     Return and Cancellation
                   </a>
                   <i
@@ -632,7 +649,7 @@
               </div>
               <div class="col-xl-4">
                 <h2 class="btn-footer">
-                  <a href="./aboutus.html">
+                  <a href="#">
                     Shipping and Payment
                   </a>
                   <i
@@ -641,10 +658,10 @@
                 </h2>
                 <ul class="footer__link">
                   <li>
-                    <a href="">shipping</a>
+                    <a href="#">shipping</a>
                   </li>
                   <li>
-                    <a href="">payment terms</a>
+                    <a href="./Payment.html">payment terms</a>
                   </li>
                   <div class="payment__logo d-flex d-none d-xl-flex d-lg-none d-sm-none d-md-none">
                     <div class="bg__logo">
@@ -691,31 +708,31 @@
         >
           <ul class="social d-flex ml-auto justify-content-center justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xl-end">
             <li>
-              <a href="https://www.facebook.com/w3layouts/">
+              <a href="">
                 <i class="fa-brands fa-facebook-f"></i
               ></a>
             </li>
 
             <li>
-              <a href="https://in.linkedin.com/company/w3layouts">
+              <a href="">
                 <i class="fa-brands fa-linkedin-in"></i
               ></a>
             </li>
 
             <li>
-              <a href="https://twitter.com/W3layouts">
+              <a href="">
                 <i class="fa-brands fa-twitter" aria-hidden="true"></i
               ></a>
             </li>
 
             <li>
-              <a href="https://google.com/W3layouts">
+              <a href="">
                 <i class="fa-brands fa-google-plus-g"></i
               ></a>
             </li>
 
             <li>
-              <a href="https://github.com/W3layouts">
+              <a href="">
                 <i class="fa-brands fa-github"></i
               ></a>
             </li>

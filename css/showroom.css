@@ -14,7 +14,8 @@
 
 .store .title p {
     text-align: center;
-
+    width: 90%;
+    margin: auto;
 }
 
 .store p {
@@ -42,4 +43,7 @@
     /* .store__item .row {
         flex-direction: column;
     } */
+}
+iframe {
+    filter: var(--iframe-filter);
 }

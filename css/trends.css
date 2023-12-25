@@ -15,11 +15,24 @@ h4{
     .box_style_trends_2{
         margin: 10px 0 !important;
     }
+    .style2{
+        margin-bottom: 40px !important;
+    }
 }
 @media screen and (max-width:768px) {
     .box_style_trends_3{
         margin-top: 20px;
-    }    
+    }  
+    .style_trends{
+        padding-bottom: 20px !important;
+    }
+    .tutor_text{
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .box-tutor{
+        margin-bottom: 20px !important;
+    }
 }
 @media screen and (max-width:576px) {
     .box_style_trends{
@@ -30,5 +43,8 @@ h4{
     }
     .box_style_trends_3{
         margin-top: 20px;
+    }
+    .style2{
+        margin-bottom: 40px !important;
     }
 }

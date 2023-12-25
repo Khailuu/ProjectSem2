@@ -129,28 +129,25 @@
 }
 .buttons button:first-child {
   margin-right: 5px;
+  background: linear-gradient(to center, #ff5c00
+  100%, #f89a56 51%, #ff5c00 0);
 }
 
 .buttons button{
+  border:none;
   width:50px;
   height:50px;
   border-radius: 50%;
-  border:1px solid #ff5c00;
-  background-color: #ff5c00;
+  background: linear-gradient(to right, #ff5c00
+  0, #f89a56 51%, #ff5c00 100%);
   transition: all .3s;
+  background-size: 200%;
   cursor: pointer;
-}.buttons button:hover{
-  background-color: #000;
-  border-color: #000;
 }
-
 .buttons button:focus {
   outline: none;
 }
 
-.buttons button:hover i {
-  color: #ff5c00;
-}
 .buttons button i {
   color: #fff;
   transition: all .3s;
@@ -502,6 +499,17 @@
   position: relative;
 }
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: #ff5c00;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span:focus-visible {
+  outline: none;
+}
+
+.owl-theme .owl-dots .button.owl-dot:focus-visible {
+  outline: none;
+}
 .community {
   background-color: var(--bg-color);
 }
@@ -529,6 +537,10 @@
 }
 
 @media screen and (min-width: 991px) {
+  .buttons button:hover{
+    background-position: right center;
+  }
+  
   .colection .colection__content .colection__img:hover::before {
     left: 125%;
   }

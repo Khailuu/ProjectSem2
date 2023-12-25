@@ -22,15 +22,41 @@
     border-radius: 0;
     padding-left: 0;
     padding-right: 0;
+    background-color: var(--bg-color);
 }
 .form-control:focus {
     box-shadow: none;
     padding-left: 0;
-    padding-right: 0
+    background-color: var(--bg-color);
+    padding-right: 0;
+    border-color: var(--text-color);
+    color: var(--title-color)
+} 
+
+.contact {
+    background: var(--bg-color);
 }
-.btn-primary{
-    padding: 10px 20px;
-    background-color: #ff5c00;
-    border-radius: 8px;
-    border-color: #ff5c00;
-}   
+
+.contact h3 {
+    font-size: 20px;
+    color: var(--title-color);
+}
+ 
+.about__mail {
+    margin-bottom: 16px;
+}
+
+.about__mail a {
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 767px) {
+    .button__fill {
+        width: 100%;
+    }
+}
+

@@ -276,6 +276,13 @@ input:checked + .mode-container i.gg-moon {
   transform: translateX(400px);
   -webkit-transform: translateX(400px);
 }
+.wrapper .forgot {
+  position: absolute;
+  /* display: none; */
+
+  transform: translateX(-400px);
+  -webkit-transform: translateX(-400px);
+}
 .wrapper .register h2 {
   margin-top: 15px;
 }
@@ -329,6 +336,28 @@ input:checked + .mode-container i.gg-moon {
 
   transition: transform 0.4s ease;
   /* transition: none; */
+}
+.wrapper.active__forgot .form-box.forgot {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  /* transform: translate(400px, -50%); */
+
+  transition: transform 0.4s ease;
+  /* transition: none; */
+}
+
+.wrapper.active__forgot .form-box.login {
+  transform: translateX(400px);
+  -webkit-transform: translateX(400px);
+  transition: transform 0.4s ease;
+}
+
+.wrapper .form-box.forgot h2 {
+  margin-bottom: 100px;
+}
+
+.wrapper .form-box.forgot .input-box {
+  margin-bottom: 195px;
 }
 /* .wrapper.active . */
 .wrapper .icon-close {
@@ -399,19 +428,19 @@ input:checked + .mode-container i.gg-moon {
   color: #162938;
   margin: -15px 0 15px;
   justify-content: space-between;
-  color: var(--primary);
+  color: var(--title-color);
 }
 .wrapper .remember-forgot label input {
   accent-color: var(--title-color);
   margin-right: 3px;
 }
 .wrapper .remember-forgot a {
-  color: var(--primary);
+  color: var(--title-color);
   text-decoration: none;
   transition: all 0.5s;
 }
 
-.wrapper .btn-submit {
+/* .wrapper .btn-submit {
   width: 100%;
   height: 45px;
   background: var(--primary);
@@ -420,16 +449,20 @@ input:checked + .mode-container i.gg-moon {
   color: #000;
   transition: all 0.5s;
   font-size: 20px;
+} */
+
+.wrapper .button__fill {
+  width: 100%;
 }
 
 .wrapper .login-register {
   font-size: 0.9em;
-  color: var(--primary);
+  color: var(--title-color);
   text-align: center;
   margin-top: 15px;
 }
 .wrapper .login-register a {
-  color: #1ee697;
+  color: #ff5c00;
   text-decoration: none;
   margin-left: 5px;
   transition: all 0.5s;
@@ -633,6 +666,7 @@ footer .footer__mail input:focus-visible {
 footer .payment__logo img {
   background-color: #fff;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 footer .payment__logo .bg__logo {
@@ -744,19 +778,14 @@ footer .CopyRights a {
     color: var(--primary);
   }
   .wrapper button:hover {
-    background-color: #ccc0;
-    color: #ff6e65;
+    /* background-color: #ccc0;
+    color: #ff6e65; */
   }
   .wrapper .remember-forgot a:hover {
-    color: #1ee697;
+    color: #ff5c00;
     transition: all 0.5s;
   }
-  .wrapper .btn-submit:hover {
-    background: #000;
-    color: var(--primary);
-    transition: all 0.5s;
-    font-size: 25px;
-  }
+
   .wrapper .login-register a:hover {
     text-decoration: underline;
     transition: all 0.5s;

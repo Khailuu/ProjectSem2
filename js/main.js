@@ -106,7 +106,9 @@ function topFunction() {
 
 const wrapper = document.querySelector(".wrapper");
 const loginLink = document.querySelector(".login-link");
+const loginLink2 = document.querySelector(".login-link2");
 const registerLink = document.querySelector(".register-link");
+const forgotLink = document.querySelector(".fotgot__link");
 const btnPopup = document.querySelector(".btnLogin-popup");
 const btnPopup1 = document.querySelector(".btnLogin-popup-1");
 const btnClose = document.querySelector(".icon-close");
@@ -168,6 +170,8 @@ if (btnClose) {
     overlay.classList.remove("active");
     const menu = getEle(".header__nav");
     menu.classList.remove("active");
+    wrapper.classList.remove("active");
+    wrapper.classList.remove("active__forgot");
   });
 }
 
@@ -177,9 +181,20 @@ if (registerLink) {
   });
 }
 
+if(forgotLink) {
+  forgotLink.addEventListener("click",() => {
+    wrapper.classList.add("active__forgot");
+  })
+}
+
 if (loginLink) {
   loginLink.addEventListener("click", () => {
     wrapper.classList.remove("active");
+  });
+}
+if (loginLink2) {
+  loginLink2.addEventListener("click", () => {
+    wrapper.classList.remove("active__forgot");
   });
 }
 
@@ -315,11 +330,28 @@ window.fbAsyncInit = function () {
 //   pos.style.setProperty('--y', e.clientY + 'px');
 // })
 
-document.getElementById('next').onclick = function(){
-  let lists = document.querySelectorAll('.item__banner');
-  document.getElementById('slide').appendChild(lists[0]);
-}
-document.getElementById('prev').onclick = function(){
-  let lists = document.querySelectorAll('.item__banner');
-  document.getElementById('slide').prepend(lists[lists.length - 1]);
-}
+
+
+// function trumcateText(){
+//   let maxText = document.querySelectorAll(".text__about");
+//   console.log(maxText);
+//   maxText.forEach((text, index) => {
+//     var text = maxText[index].innerHTML;
+//     var newText = trumcateString(text, 30);
+//     text = newText;
+//   }) 
+// }
+
+// function trumcateString(str,num) {
+//   if(str.length > num ) {
+//     return str.slice(0, num) + "...see more";
+//   }
+//   else {
+//     return str;
+//   }
+// }
+
+// window.addEventListener("load", ()=> {
+//   trumcateText()
+// })
+
