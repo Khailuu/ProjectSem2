@@ -96,19 +96,25 @@ header .search-right .popup form input[type="search"] {
 }
 
 header .search-right .popup form button {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 28px;
   text-align: center;
-  color: #f5f9fc;
+  color: var(--title-color);
   font-weight: 500;
   height: 55px;
   border: none;
-  background: var(--primary);
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
+  background-size: 200%;
   padding: 0 25px;
   border-left: none;
   border-radius: initial;
   border-bottom-right-radius: var(--curve);
   border-top-right-radius: var(--curve);
+  transition: all .3s;
+}
+
+header .search-right .popup form button:hover {
+  background-position: right center;
 }
 
 header .search-right .popup .close {
