@@ -12,7 +12,10 @@
   --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
   --card-hover-box-shadow: 0 0.5rem 1rem rgba(149, 126, 126, 0.09);
   --border-color-light: #fff;
-  --sub-menu-color: #444;
+    --iframe-filter: grayscale(0%);
+    --sub-menu-color: #444;
+    --text-color-stroke: #000;
+    --text-hover-stroke: #fff;
 }
 
 [data-theme="dark"] {
@@ -24,7 +27,10 @@
   --text-color: #7b7b7b;
   --border-color-light: #333;
   --bg-feedback: rgba(0, 0, 0, 0.7);
-  --sub-menu-color: #ddd;
+    --iframe-filter: grayscale(100%);
+    --sub-menu-color: #ddd;
+    --text-color-stroke: #fff;
+    --text-hover-stroke: #000;
 }
 
 * {
@@ -90,7 +96,7 @@ img {
 
 .button__fill {
   background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
-  color: #fff;
+  color:  var(--text-color-stroke);
   text-transform: uppercase;
   font-size: 16px;
   border: 1px solid transparent;
@@ -101,9 +107,14 @@ img {
   background-size: 200%;
 }
 
+.button__fill:focus,
+.button__stroke:focus  {
+  outline: none;
+}
+
 .button__stroke {
   background-color: transparent;
-  color: #fff;
+  color: var(--text-color-stroke);
   text-transform: uppercase;
   font-size: 16px;
   border: 1px solid #ff5c00;
@@ -162,10 +173,11 @@ input:focus-visible {
 @media screen and (min-width: 992px) {
   .button__fill:hover {
     background-position: right center;
+    color: var(--text-hover-stroke);
   }
 
   .button__stroke:hover {
-    color: #fff;
+    color: var(--text-hover-stroke);
     background-position: right center;
 
   }

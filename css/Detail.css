@@ -121,6 +121,10 @@ hr {
   margin-top: 24px;
 }
 
+.hr__products {
+  opacity: 1;
+}
+
 
 body{
 background-color: var(--light-bg-color);
@@ -133,7 +137,6 @@ h1, h2, h3, h4 ,h5 ,h6{
 .img-fluid{
     border-radius: var(--curve);
     margin-bottom: 15px;
-    box-shadow: var(--card-box-shadow);
 }
 .owl-carousel{
   margin-bottom: 46px;
@@ -470,6 +473,10 @@ border-bottom-right-radius: 8px;
 .sub{
     font-weight: bold;
     color: var(--title-color);
+} 
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #ff5c00;
 }
 /* XL */
 @media (min-width:1200px) {
