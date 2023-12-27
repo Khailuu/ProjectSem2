@@ -490,6 +490,7 @@ input::after {
 .wrapper .login__social span {
   color: var(--title-color) !important;
   transition: all .3s;
+  font-size: 14px;
 }
 
 #customBtn {
@@ -528,14 +529,28 @@ span.buttonText {
 
 .wrapper .login__social button {
   width: 100%;
-  line-height: 40px;
   border-radius: var(--curve);
-  border-color: transparent;
   transition: all 0.3s;
 }
 
+.wrapper .login__social .pd1 {
+  padding-left: 15px;
+  padding-right: 8px;
+  margin-top: 10px;
+}
+
+
+.wrapper .login__social .pd1  img{
+  transform: translateY(-1px);
+}
+
+.wrapper .login__social .pd2 {
+  padding-left: 8px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
 .wrapper .login__social .row__bottom span {
-  color: #000 !important;
 }
 
 /* Toast  */
@@ -806,7 +821,7 @@ footer .CopyRights a {
     color: var(--primary);
   }
   .wrapper .login__social button:hover span{
-    color: #ff5c00 !important;
+    color: var(--text-hover-stroke) !important;
     transition: all .3s;
   }
   .wrapper .remember-forgot a:hover {
