@@ -332,19 +332,19 @@ border-bottom-right-radius: 8px;
   }
   
   .orange .button span {
-    background: black;
+    background: burlywood;
   }
   
   .amber .button span {
-    background: white;
+    background: aquamarine;
   }
   
   .lime .button span {
-    background: rgb(255, 196, 0);
+    background: lightskyblue;
   }
   
   .teal .button span {
-    background: navy;
+    background: coral;
   }
   
   

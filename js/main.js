@@ -242,7 +242,7 @@ checks.forEach((check, index) => {
           image.src = "./imgs/shipping.jpg";
           break;
         case 1:
-          image.src = "./imgs/return.jpg";
+          image.src = "./imgs/return.jpeg";
           break;
         case 2:
           image.src = "./imgs/warranty.jpeg";

@@ -114,7 +114,8 @@ header .search-right .popup form button {
 }
 
 header .search-right .popup form button:hover {
-  background-position: right center;
+    color: var(--text-hover-stroke);
+    background-position: right center;
 }
 
 header .search-right .popup .close {
@@ -437,9 +438,21 @@ input:checked + .mode-container i.gg-moon {
   color: var(--title-color);
 }
 .wrapper .remember-forgot label input {
-  accent-color: var(--title-color);
+  accent-color: #ff5c00;
   margin-right: 3px;
+  position: relative;
 }
+
+input::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: solid 1px #ff5c00;
+  border-radius: 3px;
+}
+
+
 .wrapper .remember-forgot a {
   color: var(--title-color);
   text-decoration: none;
@@ -476,6 +489,7 @@ input:checked + .mode-container i.gg-moon {
 
 .wrapper .login__social span {
   color: var(--title-color) !important;
+  transition: all .3s;
 }
 
 #customBtn {
@@ -650,13 +664,18 @@ footer .footer__mail i {
   color: #fff;
   height: 50px;
   width: 50px;
-  background-color: var(--primary);
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
+  background-size: 200%;
+  cursor: pointer;
   border-top-right-radius: var(--curve);
   border-bottom-right-radius: var(--curve);
   line-height: 50px;
   text-align: center;
   right: 0;
+  transition: all .3s;
+  color: var(--title-color);
 }
+
 
 footer p {
   color: #fff;
@@ -736,14 +755,17 @@ footer .CopyRights a {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: var(--primary);
-  color: white;
+  background-image: linear-gradient(to right, #ff5c00 0, #f89a56 51%, #ff5c00 100%);
+  background-size: 200%;
+  color: var(--title-color);
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   font-size: 12px;
   width: 50px;
+  transition: all .3s;
 }
+
 
 /* Responsive */
 @media screen and (min-width: 992px) {
@@ -783,9 +805,9 @@ footer .CopyRights a {
   header .header__link span:hover {
     color: var(--primary);
   }
-  .wrapper button:hover {
-    /* background-color: #ccc0;
-    color: #ff6e65; */
+  .wrapper .login__social button:hover span{
+    color: #ff5c00 !important;
+    transition: all .3s;
   }
   .wrapper .remember-forgot a:hover {
     color: #ff5c00;
@@ -803,7 +825,6 @@ footer .CopyRights a {
     cursor: pointer;
   }
   .wrapper .login__social button:hover {
-    background-color: var(--bg-color);
     color: var(--primary);
   }
   footer .footer__link li:hover a {
@@ -830,6 +851,14 @@ footer .CopyRights a {
 
   footer .CopyRights a:hover {
     color: var(--primary);
+  }
+  footer .footer__mail i:hover {
+    background-position: right center;
+    color: var(--text-hover-stroke);
+  }
+  #myBtn:hover {
+    background-position: right center;
+    color: var(--text-hover-stroke)
   }
 }
 

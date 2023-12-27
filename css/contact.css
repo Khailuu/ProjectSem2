@@ -48,6 +48,12 @@
 
 .about__mail a {
     color: var(--text-color);
+    transition: all .3s;
+}
+
+.about__mail a:hover {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 p {
