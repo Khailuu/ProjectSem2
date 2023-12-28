@@ -12,6 +12,10 @@ h3 {
   color: var(--title-color);
 }
 
+.input-range input::after {
+  display: none;
+}
+
 hr.hr_product {
   margin: 0 !important;
   border: solid 1px var(--primary) !important;
