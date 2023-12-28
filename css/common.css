@@ -765,8 +765,8 @@ footer .CopyRights a {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 28px;
+  bottom: 100px;
+  right: 30px;
   z-index: 99;
   border: none;
   outline: none;
