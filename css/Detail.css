@@ -33,14 +33,7 @@ input[type=number] {
 }
 
 
-.col-xl-4:first-child,
-.col-xl-4:nth-child(2),
-.col-xl-4:nth-child(3),
-.col-xl-4:nth-child(4),
-.col-xl-4:nth-child(5),
-.col-xl-4:nth-child(6) {
-  margin-bottom: 30px;
-}
+
 
 .product__bottom span {
   width: 30px;
