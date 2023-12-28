@@ -471,6 +471,12 @@ border-bottom-right-radius: 8px;
 .owl-theme .owl-dots .owl-dot.active span {
   background-color: #ff5c00;
 }
+.form-control:focus {
+  outline: none !important;
+  border-color: #0002;
+  box-shadow: none;
+}
+
 /* XL */
 @media (min-width:1200px) {
     #smallimgbox img{

@@ -144,6 +144,12 @@ label{
     text-align: center;
     padding: 0 15px
 }
+.BillingDetails .billing__box input:focus,
+.form-control:focus {
+  outline: none !important;
+  border-color: #0002;
+  box-shadow: none;
+}
 /* XL */
 @media (min-width:1200px) {
 
