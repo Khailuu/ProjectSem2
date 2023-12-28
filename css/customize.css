@@ -45,6 +45,11 @@
     letter-spacing: 0;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  * {
+    letter-spacing: 0;
+  }
+}
 @font-face {
   font-family: bold-nunito;
   src: url(./font/Nunito-Bold.eot);

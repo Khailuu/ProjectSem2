@@ -188,3 +188,10 @@ label{
 }
 
 }
+
+
+@media screen and (max-width: 437px) {
+    .product b {
+        font-size: 14px;
+    }
+}

@@ -19,7 +19,7 @@ h4{
         margin-bottom: 40px !important;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .box_style_trends_3{
         margin-top: 20px;
     }  

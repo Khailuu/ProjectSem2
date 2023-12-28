@@ -325,7 +325,7 @@ border-bottom-right-radius: 8px;
   }
   
   .orange .button span {
-    background: burlywood;
+    background: black;
   }
   
   .amber .button span {
@@ -564,6 +564,7 @@ border-bottom-right-radius: 8px;
         width: 85px;
         margin-right: 5px;
         margin-left: 5px;
+        margin-bottom: 0;
     }
     #bigimgbox{
         margin-bottom: 10px;
