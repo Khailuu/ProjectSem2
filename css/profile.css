@@ -30,6 +30,7 @@ a:hover{
 }
 header img {
   box-shadow: none;
+  border-radius: 0;
 }
 
 img {

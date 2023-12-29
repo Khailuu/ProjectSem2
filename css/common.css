@@ -580,6 +580,13 @@ span.buttonText {
   color: var(--title-color);
 }
 
+.message__err i:first-of-type {
+  left: 180px;
+  top: 28px;
+  font-size: 24px;
+  color: red;
+}
+
 .message__err i {
   position: absolute;
   top: 20px;
@@ -615,6 +622,13 @@ span.buttonText {
 
 .message__suc p {
   color: var(--title-color);
+}
+
+.message__suc i:first-of-type {
+  left: 215px;
+  top: 28px;
+  font-size: 24px;
+  color: #ff5c00;
 }
 
 .message__suc i {
