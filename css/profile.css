@@ -601,7 +601,7 @@ hr.hr_product {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--color-after-blur));
   /* Hiệu ứng làm mờ */
   pointer-events: none;
   /* Để không làm ảnh hưởng đến sự kiện click */

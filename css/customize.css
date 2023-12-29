@@ -16,6 +16,7 @@
     --sub-menu-color: #444;
     --text-color-stroke: #000;
     --text-hover-stroke: #fff;
+    --color-after-blur: #fff
 }
 
 [data-theme="dark"] {
@@ -31,6 +32,8 @@
     --sub-menu-color: #ddd;
     --text-color-stroke: #fff;
     --text-hover-stroke: #000;
+    --color-after-blur: #000
+
 }
 
 * {
