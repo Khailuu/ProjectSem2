@@ -320,7 +320,7 @@ window.fbAsyncInit = function () {
   js.id = id;
   js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
   fjs.parentNode.insertBefore(js, fjs);
-})(document, "script");
+})(document, "script", "facebook-jssdk");
 
 
 // Light 
