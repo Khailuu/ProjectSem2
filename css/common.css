@@ -574,6 +574,7 @@ span.buttonText {
 .message__err h2 {
   color: red;
   font-size: 26px;
+  font-weight: bold;
 }
 
 .message__err p {
@@ -585,6 +586,7 @@ span.buttonText {
   top: 28px;
   font-size: 24px;
   color: red;
+  line-height: 24px !important;
 }
 
 .message__err i {
@@ -618,6 +620,7 @@ span.buttonText {
 .message__suc h2 {
   color: var(--primary);
   font-size: 26px;
+  font-weight: bold;
 }
 
 .message__suc p {
@@ -628,6 +631,7 @@ span.buttonText {
   left: 215px;
   top: 28px;
   font-size: 24px;
+  line-height: 24px !important;
   color: #ff5c00;
 }
 
