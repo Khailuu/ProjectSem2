@@ -1220,6 +1220,13 @@ footer .CopyRights a {
   header .header__nav.active ul:hover li {
     color: var(--sub-menu-color)
   }
+
+  footer ul li {
+    margin-bottom: 0;
+  }footer .footer__link li a {
+    line-height: 38px;
+  }
+  
 }
 
 @media screen and (max-width: 767px) {
