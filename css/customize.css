@@ -13,10 +13,10 @@
   --card-hover-box-shadow: 0 0.5rem 1rem rgba(149, 126, 126, 0.09);
   --border-color-light: #fff;
     --iframe-filter: grayscale(0%);
-    --sub-menu-color: #444;
+    --sub-menu-color: #7f7f7f;
     --text-color-stroke: #000;
     --text-hover-stroke: #fff;
-    --color-after-blur: #fff
+    --color-after-blur: #fff;
 }
 
 [data-theme="dark"] {
@@ -29,7 +29,7 @@
   --border-color-light: #333;
   --bg-feedback: rgba(0, 0, 0, 0.7);
     --iframe-filter: grayscale(100%);
-    --sub-menu-color: #ddd;
+    --sub-menu-color: #aeaeae;
     --text-color-stroke: #fff;
     --text-hover-stroke: #000;
     --color-after-blur: #000

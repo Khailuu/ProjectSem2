@@ -716,6 +716,8 @@ footer p {
 
 footer .footer__link li a {
   transition: all 0.5s;
+  width: 100%;
+  display: inline-block;
 }
 footer .footer__mail input:focus-visible {
   outline: none;
@@ -892,6 +894,15 @@ footer .CopyRights a {
   #myBtn:hover {
     background-position: right center;
     color: var(--text-hover-stroke)
+  }
+  .header__nav.active ul li:hover span,
+  .header__nav.active ul li:hover i {
+    transition: all .3s;
+  }
+
+  .header__nav.active ul li:hover span,
+  .header__nav.active ul li:hover i{
+    color: var(--primary);
   }
 }
 
@@ -1163,7 +1174,6 @@ footer .CopyRights a {
 
 @media screen and (max-width: 991px) {
   header .header__nav.active ul li:hover a {
-    color: var(--title-color);
   }
   footer h2 {
     font-size: 20px;
@@ -1202,6 +1212,13 @@ footer .CopyRights a {
   }
   footer .copyright {
     margin-top: 26px !important;
+  }
+
+  footer .footer__link li a:hover {
+    color: #7b7b7b ;  
+  } 
+  header .header__nav.active ul:hover li {
+    color: var(--sub-menu-color)
   }
 }
 
