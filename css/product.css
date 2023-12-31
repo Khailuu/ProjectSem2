@@ -117,13 +117,15 @@ a{
 }
 
 .button_product_card h1 {
-  color: #fff;
+  color: var(--title-color);
   font-size: 16px;
   line-height: 50px;
   vertical-align: middle;
   margin: 0;
 
 }
+
+
 
 .toolbar {
   padding: 30px 10px 30px 10px;
@@ -523,6 +525,10 @@ button:focus-visible{
   }
   .products .products__content .product__img:hover .product__overlay {
     opacity: 1;
+  }
+  .button_product_card button:hover h1{
+    color: var(--text-hover-stroke) ;
+    transition: all .3s;
   }
   
 }
